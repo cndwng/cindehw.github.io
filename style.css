@@ -1,0 +1,25 @@
+body {
+    background-image: url('ellan.png');
+}
+
+.topnav {
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    margin: 0%;
+}
+
+h1 {
+    text-align: center;
+    color: #00c585;
+}
+
+p {
+    font-size: 72px;
+}
+
+.hotbod {
+    margin: 3% 3%;
+    width: 94%;
+    position: relative;
+}
