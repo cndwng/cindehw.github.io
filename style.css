@@ -2,24 +2,50 @@ body {
     background-image: url('ellan.png');
 }
 
-.topnav {
+ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+li a:hover {
+    color: #828282;
+}
+
+.container {
+    min-height: 100%;
+    display: flex;
+}
+
+.nav {
     width: 100%;
     position: fixed;
     height: 70px;
     margin: 0%;
-}
-
-h1 {
-    text-align: center;
     color: #00c585;
+    background: #a6edc3;
 }
 
-p {
+
+.main {
+    margin: 0;
+    width: 100%;
+    padding: 90px 0px 0px 0px;
+    position: absolute;
     font-size: 72px;
-}
-
-.hotbod {
-    margin: 3% 3%;
-    width: 94%;
-    position: relative;
 }
