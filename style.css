@@ -71,7 +71,7 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 72px;
     font-family: 'Vollkorn', serif;
     color: #945861;
     text-transform: lowercase;
@@ -182,6 +182,12 @@ p a:hover:before {
     font-family: 'Lato';
     font-weight: 300;
     min-height: 100%;
+    background-image: url('me.png');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: right bottom;
+			background-size: 30%;
+			min-height: 100vh;
 }
 
 .art {
@@ -230,7 +236,7 @@ p a:hover:before {
     height: 350px;
     display: inline-block;
     text-align: right;
-    margin: 10px 0px;
+    margin: 10px;
 }
 
     .portfolio.cover {
