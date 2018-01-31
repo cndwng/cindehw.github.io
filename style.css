@@ -183,12 +183,13 @@ p a:hover:before {
     font-weight: 300;
     min-height: 100%;
     background-image: url('me.png');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-position: right bottom;
-			background-size: 30%;
-			min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: 30%;
+    min-height: 100vh;
 }
+
 
 .art {
     width: 65%;
