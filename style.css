@@ -212,7 +212,6 @@ p a:hover:before {
 .art {
     width: 65%;
     display: inline-block;
-    /* text-transform: lowercase; */
     margin: 10px 0px;
 }
 
