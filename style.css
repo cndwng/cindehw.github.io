@@ -61,6 +61,16 @@ body {
     background: #efefef;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    opacity: .8;
+    color: 
+}
+
 h1 {
     font-size: 34px;
     font-family: 'Vollkorn', serif;
@@ -71,11 +81,12 @@ h1 {
 }
 
 h2 {
-    font-size: 72px;
+    font-size: 64px;
     font-family: 'Vollkorn', serif;
     color: #945861;
     text-transform: lowercase;
     font-weight: 300;
+    line-height: 30%;
 }
 
 h3 {
@@ -83,6 +94,10 @@ h3 {
     font-family: 'Vollkorn', serif;
     color: rgba(0, 0, 0, .3);
     margin: 10px 0px -20px 0px;
+}
+
+h3 a:hover {
+    color: #945861;
 }
 
 ul {
@@ -179,7 +194,7 @@ p a:hover:before {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     font-weight: 300;
     }
 
@@ -230,14 +245,14 @@ p a:hover:before {
 
 .hot__bod {
     position: relative;
-    margin: 2% 10% 0% 10%;
+    margin: 2% 10% 0% 5%;
     font-size: 14px;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .portfolio {
     width: 400px;
-    height: 350px;
+    min-height: 350px;
     display: inline-block;
     text-align: right;
     margin: 10px;
@@ -245,7 +260,7 @@ p a:hover:before {
 
     .portfolio.cover {
         width: 400px;
-        height: 300px;
+        max-height: 300px;
         overflow: hidden;
         box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
     }​
