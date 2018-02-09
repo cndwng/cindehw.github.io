@@ -201,7 +201,6 @@ p a:hover:before {
         background-attachment: fixed;
         background-position: right bottom;
         background-size: 30%;
-        min-height: 100vh;
     }
 
 
@@ -244,8 +243,6 @@ p a:hover:before {
     font-size: 15px;
     font-family: 'Lato', sans-serif;
 }
-
-
 
 .portfolio {
     width: 400px;
