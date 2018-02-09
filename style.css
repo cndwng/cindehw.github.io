@@ -201,6 +201,7 @@ p a:hover:before {
         background-attachment: fixed;
         background-position: right bottom;
         background-size: 30%;
+        height: 100vh;
     }
 
 

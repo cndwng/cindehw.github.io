@@ -1,27 +1,14 @@
-<html>
-<head>
-	<title>cindy</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="icon" href="me100.png">
-	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-</head>
-<body>
-<div class="container">
-<div class="nav">
-	<ul>
-		<li><a href="index.html"><h1>Cindy Wang</h1></a></a></li>
-		<!-- <li><a href="about.html">About</a></li> -->
-		<li><a class="active" href="projects.html">Projects</a></li>
-		<li><a href="art.html">Doodles</a></li>
-		<li><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></li>
-	</ul>
-	<div class="nav__social">
-		<a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
-		<a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
-		<a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
-	</div>
+<?php
+include("includes/init.php");
 
-</div>
+$page_id = "<h1>Cindy Wang</h1>";
+
+?>
+
+<body>
+
+<div class="container">
+<?php include("includes/header.php");?>
 <div class="main fade-in">
 	<div class="hot__bod">
 
@@ -57,8 +44,7 @@
 	</div>
 </div>
 </div>
-<script>
-	feather.replace({ viewBox: '0 0 30 30' , width: '35', height: '35', preserveAspectRatio:'xMidYMid meet'})
-</script>
+
 </body>
-</html>
+
+<?php include("includes/footer.php"); ?>
