@@ -171,7 +171,8 @@ p a:hover:before {
         position: fixed;
         bottom: 0;
         width: 10%;
-        text-align: right;
+        padding-left: 10px;
+        padding-bottom: 10px;
     }
 
     .nav__social a {
