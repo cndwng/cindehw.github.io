@@ -71,7 +71,7 @@ a:hover {
 }
 
 h1 {
-    font-size: 5.5vh;
+    font-size: 34px;
     font-family: 'Vollkorn', serif;
     text-transform: lowercase;
     text-align: right;
@@ -102,7 +102,7 @@ ul {
     position: fixed;
     top: 0;
     width: 10%;
-    font-size: 2.5vh;
+    font-size: 16px;
 }
 
 li {
