@@ -96,10 +96,6 @@ h3 {
     margin: 10px 0px -20px 0px;
 }
 
-h3 a:hover {
-    color: #945861;
-}
-
 ul {
     list-style-type: none;
     margin: 20px;
@@ -248,6 +244,8 @@ p a:hover:before {
     font-size: 15px;
     font-family: 'Lato', sans-serif;
 }
+
+
 
 .portfolio {
     width: 400px;
