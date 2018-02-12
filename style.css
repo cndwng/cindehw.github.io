@@ -264,6 +264,9 @@ p a:hover:before {
     }
 
 @media screen and (max-width:479px) {
+    .nav {
+        opacity: .5;
+    }
     .art {
         width: 100%;
     }
