@@ -264,7 +264,7 @@ p a:hover:before {
         box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
     }
 
-@media screen and (max-width:479px) {
+@media screen and (max-width:425px) {
     .nav {
         opacity: .5;
     }
