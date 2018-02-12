@@ -211,6 +211,7 @@ p a:hover:before {
 
 .art {
     width: 65%;
+    min-width: 300px;
     display: inline-block;
     margin: 10px 0px;
     }
@@ -270,6 +271,7 @@ p a:hover:before {
     }
     .art {
         width: 100%;
+        min-width: unset;
     }
     .portfolio {
         width: 100%;
