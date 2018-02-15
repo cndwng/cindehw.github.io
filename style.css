@@ -274,7 +274,7 @@ p a:hover:before {
 
 @media screen and (min-width:426px) and (max-width:800px) {
     .vid {
-        height: 40vh;
+        height: 250px;
         width: 100%;
         min-width: unset;
 }
@@ -284,7 +284,7 @@ p a:hover:before {
         opacity: .5;
     }
     .vid {
-        height: 30vh;
+        height: 125px;
         width: 100%;
         min-width: unset;
 }
