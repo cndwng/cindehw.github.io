@@ -1,0 +1,84 @@
+<html>
+<head>
+	<title>cindy</title>	
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="icon" href="me100.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="nav">
+	<ul>
+		<li><a href="index.html"><h1>Cindy Wang</h1></a></a></li>
+		<!-- <li><a href="about.html">About</a></li> -->
+		<li><a class="active" href="projects.html">Projects</a></li>
+		<li><a href="art.html">Doodles</a></li>
+		<li><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></li>
+	</ul>
+	<div class="nav__social">
+		<a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
+		<a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
+		<a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
+	</div>
+
+</div>
+<div class="main fade-in">
+	<div class="hot__bod">
+
+        <h2>beepboop: A Reddit Bot Explorer</h2>
+        <p>For CS4300 - Language and Information, we explored the usage of different techniques to return relevant results for queries. 
+            Our final project was a search engine that explored Reddit bots based on bot identity, functionality, and characteristics. 
+            We offered three search methods to accomplish this: searching directly by name, based on the bot's comments, and based on the user replies to the bot.</p>
+        <p>I focused primarily on UI/UX and frontend web development.</p>
+
+        <h3>Prototypes</h3>
+        <p>Note that there is an initially long load time because it takes time to build the dataset for the first time!</p>
+        <p><a href="https://beepboop-findabot.herokuapp.com/">FINAL PROTOTYPE</a>
+        <br /><a href="https://beepboop-4300.herokuapp.com/">1st PROTOTYPE</a>
+        <br /><a href="https://beepboop-m2.herokuapp.com/">2nd PROTOTYPE</a></p>
+
+        <div class="vid"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTQLyYag86q30GGAAovkIHu6ScnX4FdZ-mv6Teg9aoYDHmAFKUvbEV_hkPqaTzuUlSTvdJs_8srCVPv/embed?start=false&loop=false&delayms=5000" 
+            frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+
+        <h3>Technical details</h3>
+        <p>We built this application using Flask. For each search method, we used some of the following techniques to return relevant results:</p>
+        <ul>
+            <li>Levenshtein/edit distance</li>
+            <li>Tf-idf</li>
+            <li>Cosine similarity</li>
+            <li>Sentiment analysis</li>
+        </ul>
+
+        <h3>A general idea</h3>
+        <p>I began with a simple wireframe for a query + results based site. </p>
+		<div class="art"><div class="art pic"><img src="portfolio/beepboop/0.png" width="100%" /></div></div>
+        <h3>More fleshed out mockups</h3>
+        <p>To display more results on the page, we opted to hide some information and instead create a modal for each bot.</p>
+        <div class="art"><div class="art pic"><img src="portfolio/beepboop/00.png" width=100% /></div></div>
+        <div class="art"><div class="art pic"><img src="portfolio/beepboop/01.png" width=100% /></div></div>
+
+        <h3>The graphics</h3>
+        <p>I whipped up some simple bot icons for the query results, seeing as there were no images to fetch from Reddit, and a cute animation for the main splash. </p>
+        <div class="art">
+            <img class="boticon" src="portfolio/beepboop/icon1.png" width="50px" />
+            <img class="boticon" src="portfolio/beepboop/icon2.png" width="50px" />
+            <img class="boticon" src="portfolio/beepboop/icon3.png" width="50px" />
+            <img class="boticon" src="portfolio/beepboop/icon4.png" width="50px" />
+            <img class="boticon" src="portfolio/beepboop/icon5.png" width="50px" />
+            <img class="boticon" src="portfolio/beepboop/icon6.png" width="50px" />
+            <img class="boticon" src="portfolio/beepboop/icon7.png" width="50px" />
+        </div>
+        <div class="art"><img src="portfolio/beepboop/beepboop.gif" width=100% /></div>
+
+
+	</div>
+</div>
+</div>
+<script>
+	feather.replace({ viewBox: '0 0 30 30' , width: '35', height: '35', preserveAspectRatio:'xMidYMid meet'})
+</script>
+</body>
+</html>
