@@ -203,6 +203,7 @@ p a:hover:before {
     padding: 10px 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+    line-height: 1.6em;
     }
 
     .main.index {
