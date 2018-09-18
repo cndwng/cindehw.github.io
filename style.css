@@ -213,6 +213,7 @@ p a:hover:before {
         background-attachment: fixed;
         background-position: right bottom;
         background-size: 30%;
+        line-height: unset;
     }
 
 .vid {
@@ -250,14 +251,14 @@ p a:hover:before {
 
 .sub__hello {
     position: relative; 
-    margin: -3% 10% 0% 15%;
+    margin: -2% 12% 0% 15%;
     font-size: 30px;
 
 }
 
 .home {
     position: relative;
-    margin: 2% 15% 0% 15%;
+    margin: 2% 20% 0% 15%;
     font-size: 16px;
     line-height: 160%;
     font-weight: 300;
