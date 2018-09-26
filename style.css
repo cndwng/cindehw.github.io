@@ -404,7 +404,7 @@ footer {
     display: flex;  
     flex-flow: column nowrap;
     padding: 10px 20px;
-    border-left: 1px dashed black;
+    border-left: 1px dashed #777;
 }
 
 .right__activity {
@@ -421,6 +421,11 @@ footer {
     .hawaii img {opacity: .25;}
 }
 
+@media screen and (max-width:800px){
+    .activities {flex-wrap: wrap; width: 100%;}
+    .left, .right {width: 100%; border: none;}
+}
+
 @media screen and (max-width:650px) {
     .grass {bottom: 0;}
     .grass img {width: 400px;}
@@ -430,6 +435,4 @@ footer {
     .topnav {text-align: center; padding-bottom: 10px;}
     .topnav .name {display: block; margin: auto; padding: 10px 10px 0px 10px;}
     .activities__title {display: none;}
-    .activities {flex-wrap: wrap; width: 100%;}
-    .left, .right {width: 100%; border: none;}
 }
