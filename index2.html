@@ -22,13 +22,12 @@
 <body>
 <div class="topnav" id="myTopnav">
     <div class="topnav item"><a class="active" href="#"><span id="home">Cindy Wang</span></a></div>
+    <div class="topnav item"><a class="active" href="#">cindy wang</a></div>
     <div class="topnav item"><a href="projects.html">Projects</a></div>
     <div class="topnav item"><a href="art.html">Doodles</a></div>
     <div class="topnav item"><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
 </div>
+<div class="container">
 
 <div class="landing">
     <div class="hellobox">
@@ -36,14 +35,25 @@
     <div class="sub__hello fade-drop delayed">a computer science major turned product designer (through a series of accidents!) studying at Cornell University.</div>
     <div class="subsub__hello fade-drop delayed">
         <p>Currently, I am a designer for <a href="http://bigredhacks.com" target="_blank">BigRed//Hacks</a>, sing in the 
-        <a href="https://www.cornellchorale.com/" target="_blank">Cornell Chorus</a>, am the Vice President for <a href="http://cornellmedium.design" target="_blank">Medium Design Collective</a>, 
+        <a href="http://cuchorus.com/cindy-wang" target="_blank">Cornell Chorus</a>, am the Vice President for <a href="http://cornellmedium.design" target="_blank">Medium Design Collective</a>, 
         and handle Public Relations for my <a href="http://www.apogamma.org/" target="_blank">service fraternity</a>.</p>
         <p>I have previously worked as a graphic and product designer at <a href="http://startuptree.co" target="_blank">StartupTree</a> and as a UX designer at <a href="https://www.factset.com/">FactSet.</a></p>
         <p>Burning question? <a href="mailto:cw653@cornell.edu">Talk to me</a>!!</p>
     </div></div>
 </div>
+<div class="landing">
+        <div class="hellobox">
+        <div class="hello fade-drop">I'm Cindy,</div>
+        <div class="sub__hello fade-drop delayed">a computer science major turned product designer (through a series of accidents!) studying at Cornell University.</div>
+        <div class="subsub__hello fade-drop delayed">
+            <p>Currently, I am a designer for <a href="http://bigredhacks.com" target="_blank">BigRed//Hacks</a>, sing in the 
+            <a href="https://www.cornellchorale.com/" target="_blank">Cornell Chorus</a>, am the Vice President for <a href="http://cornellmedium.design" target="_blank">Medium Design Collective</a>, 
+            and handle Public Relations for my <a href="http://www.apogamma.org/" target="_blank">service fraternity</a>.</p>
+            <p>I have previously worked as a graphic and product designer at <a href="http://startuptree.co" target="_blank">StartupTree</a> and as a UX designer at <a href="https://www.factset.com/">FactSet.</a></p>
+            <p>Burning question? <a href="mailto:cw653@cornell.edu">Talk to me</a>!!</p>
+        </div></div>
+    </div>
 
-<div class="container">
 </div>
 
 <footer>
@@ -53,14 +63,32 @@
 </footer>
 <script>
     feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
-    function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
+    function responsiveNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
     }
-}
+
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {stickyNav()};
+
+    var navbar = document.getElementById("myTopnav");
+
+    var sticky = navbar.offsetTop;
+
+    function stickyNav() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+
+
 </script>
 </body>
 </html>
