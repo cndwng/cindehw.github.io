@@ -425,7 +425,7 @@ footer {
     .grass {bottom: 0;}
     .grass img {width: 400px;}
     hawaii img {width: 200px;}
-    .container {width: 100%;}
+    .container {width: 90%;}
     .hello, .sub__hello, .subsub__hello {margin-right: 5%;}
     .topnav {text-align: center; padding-bottom: 10px;}
     .topnav .name {display: block; margin: auto; padding: 10px 10px 0px 10px;}
