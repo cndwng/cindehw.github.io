@@ -175,7 +175,7 @@ h2 {
 }
 
 p {
-    text-align: left;
+    /* text-align: left; */
 }
 
     p a:before {
@@ -289,7 +289,7 @@ footer {
     .sticky {
         position: fixed;
         top: 0;
-        background-color: rgb(247, 247, 247, .7);
+        background-color: rgb(247, 247, 247, .85);
     }
     
     /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -339,10 +339,10 @@ footer {
     margin: auto;
     text-align: center;
 }
-.activities__title img {
-    width: 150px;
-    padding: 0px 22px;
-}
+    .activities__title img {
+        width: 150px;
+        padding: 0px 22px;
+    }
 
 .activities {
     width: 80%;
@@ -351,15 +351,15 @@ footer {
     flex-flow: row nowrap;
 }
 
-.activities a {
+    .activities a {
     display: inline-block;
     text-decoration: none;
     color: #945861;
     font-family: "Vollkorn", serif;
     font-size: 1.2em;
-}
+    }
 
-.activities a:before {
+    .activities a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -372,55 +372,55 @@ footer {
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-}
+    }
 
-.activities a:hover:before {
+    .activities a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-}
+    }
 
 
-.activities img {
+    .activities img {
     width: 100px;
     padding: 0px 15px;
-}
+    }
 
 
-.left {
+    .left {
     text-align: right;
     width: 48%;
     display: flex;  
     flex-flow: column nowrap;
     padding: 10px 20px;
 
-}
+    }
 
-.left__activity {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 0px;
-}
+        .left__activity {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 0px;
+        }
 
-.right {
+    .right {
     text-align: left;
     width: 48%;
     display: flex;  
     flex-flow: column nowrap;
     padding: 10px 20px;
     border-left: 1px dashed #777;
-}
+    }
 
-.right__activity {
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 0px;
-}
+        .right__activity {
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px 0px;
+        }
 
 @media screen and (max-width:1000px) {
     .grass img {opacity: .15;}
@@ -439,7 +439,7 @@ footer {
     hawaii img {width: 200px;}
     .container {width: 90%;}
     .hello, .sub__hello, .subsub__hello {margin-right: 5%;}
-    .topnav {text-align: center; padding-bottom: 10px; }
-    .topnav .name {display: block; margin: auto; padding: 10px 10px 0px 10px; background-color: rgb(247, 247, 247, .7);
-    }
+    .topnav {text-align: center; padding-bottom: 10px; background-color: rgb(247, 247, 247, .85)}
+    .topnav .name {display: block; margin: auto; padding: 10px 10px 0px 10px; background-color: unset;}
+    .topnav .item {background-color: unset;}
 }
