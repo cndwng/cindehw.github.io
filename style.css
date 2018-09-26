@@ -430,6 +430,7 @@ footer {
 @media screen and (max-width:800px){
     .activities {flex-wrap: wrap; width: 100%;}
     .left, .right {width: 100%; border: none;}
+    .activities__title {display: none;}
 }
 
 @media screen and (max-width:650px) {
@@ -438,7 +439,7 @@ footer {
     hawaii img {width: 200px;}
     .container {width: 90%;}
     .hello, .sub__hello, .subsub__hello {margin-right: 5%;}
-    .topnav {text-align: center; padding-bottom: 10px;}
-    .topnav .name {display: block; margin: auto; padding: 10px 10px 0px 10px;}
-    .activities__title {display: none;}
+    .topnav {text-align: center; padding-bottom: 10px; }
+    .topnav .name {display: block; margin: auto; padding: 10px 10px 0px 10px; background-color: rgb(247, 247, 247, .7);
+    }
 }

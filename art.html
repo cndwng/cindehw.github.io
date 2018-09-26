@@ -81,10 +81,23 @@
     <a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
     </div>
 </footer>
-
-
 <script>
-	feather.replace({ viewBox: '0 0 30 30' , width: '35', height: '35', preserveAspectRatio:'xMidYMid meet'})
+    feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
+
+    window.onscroll = function() {stickyNav()};
+
+    var navbar = document.getElementById("myTopnav");
+
+    var sticky = navbar.offsetTop;
+
+    function stickyNav() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
 </script>
 </body>
 </html>
