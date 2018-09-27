@@ -199,6 +199,10 @@ p {
         transform: scaleX(1);
     }
 
+    p ul {
+        list-style: none;
+    }
+
 footer {
     padding: 15px 20px;
     position: relative;

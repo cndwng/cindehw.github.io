@@ -103,6 +103,7 @@ p {
         transform: scaleX(1);
     }
 
+
 footer {
     padding: 15px 20px;
     position: relative;
@@ -323,25 +324,6 @@ footer {
     padding: 10px 0px;
 }
 
-.projects {
-    margin: auto;
-}
-
-.projects__col {
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: flex-start;
-    /* align-items: center; */
-    flex: 1;
-}
-
-.projects__row {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
-    
-}
-
 
 .portfolio {
     min-width: 250px;
@@ -350,22 +332,92 @@ footer {
     padding: 10px;
 }
 
-.portfolio img, .art img {
+.portfolio img {
     align-self: start;
     width: 100%;    
-    box-shadow: 0px 2px 3px 0 rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
 }
+
+.projects__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.projects {
+    max-width: 340px;
+    padding: 10px;
+}
+
+.projects img:hover {
+    opacity: .8;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.art__container {
+    margin: auto;
+}
+
+.art__col {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+    flex: 1;
+}
+
+.art__row {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
 
 .art {
     min-width: 250px;
     padding: 10px;
 }
 
+.art img {
+    align-self: start;
+    width: 100%;    
+    box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
+    background-color: #fff;
+}
+
+.shade1 {
+    position: absolute;
+    top: -300;
+    left: 0;
+    width: 15%;
+    z-index: -100;
+    opacity: .6;
+}
+
+.shade1 img {
+    width: 100%;
+}
+
+.shade2 {
+    position: absolute;
+    top: 200;
+    right: -30;
+    width: 20%;
+    z-index: -100;
+    opacity: .6;
+}
+
+.shade2 img {
+    width: 100%;
+}
+
 @media screen and (max-width:1000px) {
     .grass img {opacity: .25;}
     .hawaii img {opacity: .25;}
-    .projects__col {max-width: 50%;}
+    .art {max-width: 50%;}
 }
 
 @media screen and (max-width:650px) {
@@ -380,4 +432,7 @@ footer {
     .activities {flex-wrap: wrap; width: 100%;}
     .left, .right {width: 100%; border: none;}
     .portfolio {max-width: 90%; margin: auto;}
+    .art {max-width: unset; width: 90%; margin: auto;}
+    .shade1, .shade2 {width: 50%;}
+    .projects {max-width: 90%;}
 }
