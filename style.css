@@ -199,9 +199,9 @@ p {
         transform: scaleX(1);
     }
 
-    p ul {
-        list-style: none;
-    }
+ul {
+    display: block;
+}
 
 footer {
     padding: 15px 20px;
@@ -306,7 +306,7 @@ footer {
     min-height: 80vh;
     width: 86%;
     margin: auto;
-    text-align: center;
+    /* text-align: center; */
 }
 .hellobox {
     text-align: left;
