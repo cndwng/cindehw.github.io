@@ -3,8 +3,9 @@
 	<title>cindy</title>	
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<link rel="icon" href="me100.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+	<link rel="icon" href="images/sprite.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     
@@ -29,14 +30,15 @@
     <div class="topnav item"><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
 </div>
 <div class="container fade-in">
+        <span id="back"><a href="#" onClick="history.go(-1)"><img src="images/arrow2_left.png">back</a></span>
 
         <h2>Interactive Visual Music Sequencer</h2>
         <p>A project built for INFO4320: Introduction to Rapid Prototyping and Programming. This is an overview of the project; to see the full writeup, click <a href="portfolio/sequencer/sequencer.pdf">here</a>.</p>
 		
 		<p>See us in the <a href="http://infosci.cornell.edu/news/we-burned-couple-things-learning-build-info-4320">press</a>!</p>
-
-        <div class="vid"><iframe src="https://player.vimeo.com/video/246288434" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-		<div class="art"><div class="art pic"><img src="portfolio/sequencer/poster.png" width="100%" /></div></div>
+		
+		<div class="vid"><iframe src="https://player.vimeo.com/video/246288434" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+		<div class="art"><div class="art pic"><img src="images/portfolio/sequencer/poster.png" width="100%" /></div></div>
 		<h3>Technical details</h3>
 		<p>We used a Teensy 3.5 microcontroller and a corresponding Teensy Audio Shield. The Teensy had just enough pins to connect to our Adafruit Trellis PCBs and power the LEDs 
 			and button pad and the Audio Shield allowed us to more easily control audio outputs.</p>
@@ -53,12 +55,12 @@
 		<p>Our initial brainstorming involved experimenting with the format of the sequencer -- we played around with 
 			the idea of mimicking radar with a circular, clock-like functionality as well as the original grid we found online.
 		In the end, because of hardware constraints we opted for the simpler to implement grid.</p>
-        <div class="art"><div class="art pic"><img src="portfolio/sequencer/0.jpg" width="100%" /></div></div>
+        <div class="art"><div class="art pic"><img src="images/portfolio/sequencer/0.jpg" width="100%" /></div></div>
 		<p>We had silicon buttons and corresponding PCBs to implement the system, but still needed to think about casing and presentation. Our plan was to create a box to encase the hardware and have the button grid sit on top.</p>
-        <div class="art"><div class="art pic"><img src="portfolio/sequencer/00.jpg" width="100%" /></div></div>
+        <div class="art"><div class="art pic"><img src="images/portfolio/sequencer/00.jpg" width="100%" /></div></div>
 		<p>Our system used a grid system with time across the x-axis and pitch across the y-axis, where pitch increases on a pentatonic scale. Because we have a finite x-axis, at the end of the grid, we loop back to the beginning. 
 			We also had three button states depending on where we were on the x-axis and what had been pressed. To indicate position on the x-axis, we had a row of indicator lights across the top of the grid.</p>
-        <div class="art"><div class="art pic"><img src="portfolio/sequencer/001.jpg" width="100%" /></div></div>
+        <div class="art"><div class="art pic"><img src="images/portfolio/sequencer/001.jpg" width="100%" /></div></div>
 
         <!-- <div class="art"><div class="art pic"><img src="portfolio/sequencer/002.jpg" width="100%" /></div></div> -->
 
@@ -67,21 +69,18 @@
 			Our chosen microcontroller (Teensy 3.5) did not have an adequate number of pins to implement indicator lights across the top while also using the Teensy Audio Shield. 
 			Additionally, the button PCBs did not allow for control of the brightness of our LEDs.</p>
 		<p>The physical box that we kept our hardware in was a wood frame with a removable acrylic sheet to encase the buttons.</p>
-        <div class="art"><div class="art pic"><img src="portfolio/sequencer/01.jpg" width="100%" /></div></div>
+        <div class="art"><div class="art pic"><img src="images/portfolio/sequencer/01.jpg" width="100%" /></div></div>
 		<p>Instead of indicator lights, we had the entire active column illuminate when on that particular time unit. We used small wood blocks to keep the PCBs in place.</p>
-        <div class="art"><div class="art pic"><img src="portfolio/sequencer/02.jpg" width="100%" /></div></div>
+        <div class="art"><div class="art pic"><img src="images/portfolio/sequencer/02.jpg" width="100%" /></div></div>
 		<p>We kept the bottom of the box open and attached the Teensy underneath the top panel where the PCBs sat. This kept the hardware open and accessible. Additionally, our audio output was an AUX cable, 
 			so we connected a speaker and during our demo, kept the speaker inside the box.
 		</p>
-        <div class="art"><div class="art pic"><img src="portfolio/sequencer/03.jpg" width="100%" /></div></div>
+        <div class="art"><div class="art pic"><img src="images/portfolio/sequencer/03.jpg" width="100%" /></div></div>
 
 </div>
 
 
 <footer>
-	<div class="hawaii">
-		<img src="images/hawaii.png">
-	</div>
 	<div class="social">
 	<a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
 	<a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
