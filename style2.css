@@ -509,7 +509,7 @@ footer {
     .art {
         max-width: unset; 
         width: 90%; 
-        margin: auto;}
+        margin: 0px auto 20px;}
     .shade1, .shade2 {width: 50%;}
     .projects {max-width: 90%;}
     .art__container, .misc {  
