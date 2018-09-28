@@ -69,6 +69,31 @@ h3 {
         /* height: 100%; */
     }
 
+.port {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.port img, .container img {
+    width: 100%;
+    box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
+    margin: 10px 0px;
+}
+    
+.col2 {    
+    margin: auto;
+    -webkit-column-count: 3;
+    -webkit-column-gap:   20px;
+    -moz-column-count:    3;
+    -moz-column-gap:      20px;
+    column-count:         3;
+    column-gap:           20px; 
+
+}
+
 @media screen and (min-width:426px) and (max-width:800px) {
     .vid {
         height: 250px;
@@ -91,6 +116,7 @@ h3 {
         min-height: unset;
     }
     }
+    
 
 /* NEW STYLES */
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
