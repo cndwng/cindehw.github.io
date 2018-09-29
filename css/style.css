@@ -192,12 +192,12 @@ footer {
     right: 0;
     top: 0;
     z-index: -5;
-    overflow: hidden;
 }
     .hat img {
         width: 200px;
         opacity: .5;
         transform: rotate(30deg);
+        overflow: hidden;
     }
 
     .leaf img {
