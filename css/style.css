@@ -227,19 +227,20 @@ footer {
     font-family: 'Vollkorn', serif;
     opacity: .7;
     transition: .3s ease;
-    color: rgb(0, 0, 0, .8);
+    color: rgba(0, 0, 0, .8);
 }
 
-#back a:hover {
-    opacity: 1;
-}
+#back a:hover {opacity: 1;}
 
 .topnav {
     font-family: 'Vollkorn', serif;
     text-transform: lowercase;
-    text-align: left;
     z-index: 100;
     width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
     .grass {
@@ -254,7 +255,6 @@ footer {
 
 
     .name {
-        display: inline-block;
         width: 200px;
         padding: 30px 20px 20px 30px;
     }
@@ -266,15 +266,15 @@ footer {
         transition: .3s ease;
     }
 
-    .name svg:hover {
-        fill: #945861;
+    .name svg:hover {fill: #945861;}
+
+    .navlink {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
     }
 
-    .topnav .item {
-        padding: 1% 20px;
-        display: inline-block;
-        width: unset;
-    }
+    .topnav .item {padding: 5px 20px;}
 
     .topnav a {
         text-decoration: none;
@@ -284,24 +284,18 @@ footer {
 
     }
 
-    .topnav a.active {
-        color: #aaa;
-    }
+    .topnav a.active {color: #aaa;}
 
-    .topnav a:hover {
-        color: #945861;
-    }
+    .topnav a:hover {color: #945861;}
 
     .sticky {
         position: fixed;
         top: 0;
-        background-color: rgb(247, 247, 247, .7);
+        background-color: rgba(247, 247, 247, .8);
     }
     
     /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-    .sticky + .container {
-        padding-top: 100px;
-    }
+    .sticky + .container {padding-top: 100px;}
 
 
 .sidebyside {
@@ -557,7 +551,7 @@ footer {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(148, 88, 97, .8);
+    background-color: rgba(148, 88, 97, .8);
   }
 
 .art:hover .overlay {
@@ -600,9 +594,9 @@ footer {
 }
 
 @media screen and (max-width:1000px) {
-    .grass img {opacity: .25;}
-    .hawaii img {opacity: .25;}
-    .moe {opacity: .25;}
+    .grass img {opacity: .2;}
+    .hawaii img {opacity: .2;}
+    .moe {opacity: .2;}
     .art__container, .cols {  
         -moz-column-count:    2;
         -webkit-column-count: 2;
@@ -623,15 +617,17 @@ footer {
     .hat img {width: 200px;}
     .hello, .sub__hello, .subsub__hello {margin-right: 5%;}
     .topnav {
+        top: 0;
         text-align: center; 
         padding-bottom: 10px;
-        background-color: rgb(247, 247, 247, .7);
+        display: block;
     }
-    .name, .item {background-color: unset;}
     .topnav .name {
-        display: block; 
         margin: auto; 
         padding: 10px 10px 0px 10px;}
+    .topnav .navlink {
+        margin: auto;
+    }
     .activities__title {display: none;}
     .activities, .sidebyside {
         flex-wrap: wrap; 
@@ -654,4 +650,10 @@ footer {
         column-count:         1;
     }
     .mobile {width: 100%;}
+}
+
+@media screen and (max-width:320px) {
+    .topnav {font-size: .8em;}
+    .topnav .item {padding: 10px;}
+    .topnav .name {width: 100px;}
 }
