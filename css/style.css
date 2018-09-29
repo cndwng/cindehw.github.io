@@ -136,6 +136,7 @@ footer {
         left: -20;
         bottom: -60;
         z-index: -5;
+        overflow: hidden;
     }
 
     .hawaii img {
@@ -191,6 +192,7 @@ footer {
     right: 0;
     top: 0;
     z-index: -5;
+    overflow: hidden;
 }
     .hat img {
         width: 200px;
@@ -210,6 +212,7 @@ footer {
     top: 40%;
     z-index: -5;
     width: 300px;
+    overflow: hidden;
 }
 
     .doodle img {
@@ -516,11 +519,13 @@ footer {
 
 .shade1 {
     position: absolute;
-    top: -300;
+    top: -100px;
     left: 0;
     width: 15%;
     z-index: -100;
+    transform: rotate(30deg);
     opacity: .6;
+    overflow: hidden;
 }
 
 .shade1 img {
@@ -529,11 +534,12 @@ footer {
 
 .shade2 {
     position: absolute;
-    top: 200;
-    right: -30;
+    top: 200px;
+    right: -30px;
     width: 20%;
     z-index: -100;
     opacity: .6;
+    overflow: hidden;
 }
 
 .shade2 img {
@@ -652,7 +658,7 @@ footer {
     .mobile {width: 100%;}
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:280px) {
     .topnav {font-size: .8em;}
     .topnav .item {padding: 10px;}
     .topnav .name {width: 100px;}
