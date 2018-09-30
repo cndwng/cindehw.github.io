@@ -311,7 +311,6 @@ footer {
 
     .sidebyside img, .port img {
         width: 100%;
-        box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
         margin: 10px 0px;
     }
 
@@ -530,6 +529,7 @@ footer {
 
 .shade1 img {
     width: 100%;
+    overflow: hidden;
 }
 
 .shade2 {
@@ -544,6 +544,7 @@ footer {
 
 .shade2 img {
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -570,6 +571,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 80%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
