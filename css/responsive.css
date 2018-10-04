@@ -12,6 +12,7 @@
     .pic {width: 100%;}
     .mobile {width: 47%;}
     .leaf img {width: 100px;}
+    
 
 }
 
@@ -43,7 +44,7 @@
     .portfolio {
         max-width: 90%; 
         margin: auto;}
-    .art {
+    .art, .description {
         max-width: unset; 
         width: 90%; 
         margin: 0px auto 20px;}

@@ -221,20 +221,31 @@ footer {
         opacity: .5;
     }
 
-#back img {
+#back img, #next img {
     width: 50px;
     padding: 10px 10px 0px 0px;
     margin: 0;
 }
 
-#back a {
+#back a, #next a {
     font-family: 'Vollkorn', serif;
     opacity: .7;
     transition: .3s ease;
     color: rgba(0, 0, 0, .8);
 }
 
-#back a:hover {opacity: 1;}
+#back a:hover, #next a:hover {opacity: 1;}
+
+
+#back {
+    text-align: left; 
+    float: left;
+}
+
+#next {
+    text-align: right; 
+    float: right;
+}
 
 .topnav {
     font-family: 'Vollkorn', serif;
@@ -547,6 +558,21 @@ footer {
     overflow: hidden;
 }
 
+.overview {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview img {
+    width: 250px;
+    padding: 10px;
+}
+
+.description {
+    width: 60%;
+}
 
 .overlay {
     position: absolute;
