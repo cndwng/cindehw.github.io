@@ -193,18 +193,18 @@ footer {
     right: 0;
     top: 0;
     z-index: -5;
+    overflow: hidden;
 }
     .hat img {
         width: 200px;
         opacity: .5;
         transform: rotate(30deg);
-        overflow: hidden;
+
     }
 
     .leaf img {
-        width: 300px;
-        opacity: 1;
-        transform: rotate(30deg);
+        width: 150px;
+        opacity: .5;
     }
 
 .doodle {
@@ -523,7 +523,6 @@ footer {
     left: 0;
     width: 15%;
     z-index: -100;
-    transform: rotate(30deg);
     opacity: .6;
     overflow: hidden;
 }
@@ -536,7 +535,7 @@ footer {
 .shade2 {
     position: absolute;
     top: 200px;
-    right: -30px;
+    right: 0;
     width: 20%;
     z-index: -100;
     opacity: .6;
