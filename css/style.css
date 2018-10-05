@@ -87,7 +87,8 @@ h3 {
 }
 
 p {
-
+    font-size: 1.1em;
+    line-height: 1.6em;
 }
     p a:before {
         content: "";
@@ -114,12 +115,13 @@ p {
 footer {
     padding: 15px 20px;
     position: relative;
-    bottom: 0;
+    bottom: 30px;
 }
 
     footer a {
         padding: 0px 5px;
         color: #aaa;
+        transition: .3s ease;
     }
 
     footer a:hover {
@@ -170,30 +172,30 @@ footer {
 .port {width: 60%;}
 
 .vid {
-    width: 80%;
-    margin: auto;
-}
-.vid iframe {
-    width: 100%; 
-    height: 80%; 
+    width: 100%;
     margin: 20px auto;
 }
+
+    .vid iframe {
+        width: 100%;
+        height: 75%;
+    }
 
 .pic {
     width: 100%;
     margin: 20px auto;
 }
 
-.pic img {
-    box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
-}
+    .pic img {
+        box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
+    }
 
 .hat {
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 0;
     z-index: -5;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
     .hat img {
         width: 200px;
@@ -521,12 +523,12 @@ footer {
     position: relative;
 }
 
-.art img {
-    align-self: start;
-    width: 100%;    
-    box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
-    background-color: #fff;
-}
+    .art img {
+        align-self: start;
+        width: 100%;    
+        box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
+        background-color: #fff;
+    }
 
 .shade1 {
     position: absolute;
@@ -538,10 +540,10 @@ footer {
     overflow: hidden;
 }
 
-.shade1 img {
-    width: 100%;
-    overflow: hidden;
-}
+    .shade1 img {
+        width: 100%;
+        overflow: hidden;
+    }
 
 .shade2 {
     position: absolute;
@@ -553,10 +555,10 @@ footer {
     overflow: hidden;
 }
 
-.shade2 img {
-    width: 100%;
-    overflow: hidden;
-}
+    .shade2 img {
+        width: 100%;
+        overflow: hidden;
+    }
 
 .overview {
     display: flex;
@@ -565,13 +567,13 @@ footer {
     justify-content: center;
 }
 
-.overview img {
-    width: 250px;
-    padding: 10px;
-}
+    .overview img {
+        width: 250px;
+        padding: 10px;
+    }
 
 .description {
-    width: 60%;
+    width: 64%;
 }
 
 .overlay {
@@ -624,4 +626,30 @@ footer {
 
 .boticon img {
     width: 100px;
+}
+
+.whatis {
+    float: right;
+    font-size: .8em;
+}
+
+.whatis a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #945861;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.whatis a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
