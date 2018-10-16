@@ -52,13 +52,10 @@
         </div>
     </div>
 
-    <p>The construction of this particular module came from the need <strong>1) to build a more consistent interface for StartupTree's 
-        platform and 2) create an end-to-end competition judging platform. </strong></p>
+    <p>The construction of this particular module came from the need <strong>1) to build a more consistent interface for StartupTree's platform and 2) create an end-to-end competition judging platform. </strong></p>
 
     <h3>Sketches and Notes</h3>
-    <p>We had a meeting with a school that intended to use our platform and determined our target users' needs. We asked about their specific use cases and challenges. 
-        
-        </p>
+    <p>We had a meeting with a school that intended to use our platform and determined our target users' needs. We asked about their specific use cases and challenges. </p>
     My notes from this meeting are included below.
     <div class="art"><div class="art pic"><img src="images/portfolio/apps/00.jpg"></div>
     </div>
@@ -68,77 +65,48 @@
             <li>the applicant</li>
             <li>the judge</li>
         </ol>
-    <p>We decided that our focus would primarily be the administrator and judge users. 
-        The applicant's interface would need to change minimally (a very rudimentary 
-        form of the module existed already); however, the administrator would gain a lot
-        of functionality and freedom and there was no existing judge user.</p>
+    <p>We decided that our focus would primarily be the administrator and judge users. The applicant's interface would need to change minimally (a very rudimentary form of the module existed already); however, the administrator would gain a lot of functionality and freedom and there was no existing judge user.</p>
     </p>
-    <p>I drafted some basic flows as well as a list of needs for each part of the competition flow, 
-        from creating the competition on the admin side to reviewing rubrics and judging. Because of 
-        time constraints, we tried to stick with existing, familiar UI components.</p>
+    <p>I drafted some basic flows as well as a list of needs for each part of the competition flow, from creating the competition on the admin side to reviewing rubrics and judging. Because of time constraints, we tried to stick with existing, familiar UI components.</p>
     <div class="art"><div class="art pic"><img src="images/portfolio/apps/001.jpg"></div>
     </div>
     
     <h3>For the Administrator</h3>
-    <p>The administrator's workflow was the most complicated to map out. There were many actions an admin
-        could take, so we had to find a way that listed all the actions visibly and also showed important 
-        information at a glance. Thus, we adopted a dashboard for each application. We chose statistics that
-        showed the most important information about the competition as well as some insightful information about the 
-        applicant breakdown. While designing this dashboard, I also redesigned the dashboards for the rest of
-        the admin panel and graphs.
+    <p>The administrator's workflow was the most complicated to map out. There were many actions an admin could take, so we had to find a way that listed all the actions visibly and also showed important information at a glance. Thus, we adopted a dashboard for each application. We chose statistics that showed the most important information about the competition as well as some insightful information about the applicant breakdown. While designing this dashboard, I also redesigned the dashboards for the rest of the admin panel and graphs.
     </p>
     <div class="pic"><img src="images/portfolio/apps/0.png"></div>
 
-    <p>Creation of each application was broken down into multiple layers to allow for creating competitions without
-        having to provide all the information upfront. Admins first add the most crucial information -- the details about
-        time, deadline, etc. -- then create the application questions for applicants, and add rubrics for judging and judges last.
-        Giving administrators flexibility (being able to add and remove judges, edit the application, etc.) is important for
-        error recovery. Editing an application brings them through the same process.
+    <p>Creation of each application was broken down into multiple layers to allow for creating competitions without having to provide all the information upfront. Admins first add the most crucial information -- the details about time, deadline, etc. -- then create the application questions for applicants, and add rubrics for judging and judges last. Giving administrators flexibility (being able to add and remove judges, edit the application, etc.) is important for error recovery. Editing an application brings them through the same process.
     </p>
     <div class="pic"><img src="images/portfolio/apps/03.png"></div>
 
-    <p>The final step for the administrator is the review of all the evaulations to choose winners (or applicants to advance to the next round). 
-        Evaluations can be shown by applicant or by judge and may also be downloaded as pdfs.
+    <p>The final step for the administrator is the review of all the evaulations to choose winners (or applicants to advance to the next round). Evaluations can be shown by applicant or by judge and may also be downloaded as pdfs.
     </p>
 
     <div class="pic"><img src="images/portfolio/apps/04.png"></div>
 
     <h3>For the Judge</h3>
-    <p>From the conversation with our school and our CEO's knowledge of the kinds of competitions that are run by university entrepreneurship,
-        we identified the judge user to primarily be of an older demographic with industry experience. That being said, they likely would be 
-        less tech-savvy, so we chose to create as straightforward and narrow of a process as possible.
+    <p>From the conversation with our school and our CEO's knowledge of the kinds of competitions that are run by university entrepreneurship, we identified the judge user to primarily be of an older demographic with industry experience. That being said, they likely would be less tech-savvy, so we chose to create as straightforward and narrow of a process as possible.
     </p>
 
     <div class="pic"><img src="images/portfolio/apps/05.png"></div>
-    <p>An obstacle we ran into when designing the judging side is that judges may not be on the StartupTree platform -- and may not want to be.
-        But some judges may already be on the platform! </p>
-    <p>We determined that judges would access their platform through a customized link. The link would bring them to a sign in that allowed them to
-        either sign in with their StartupTree account. We wanted to encourage judges to sign up, but not enforce it, so the main CTA on the page is the
-        Log In button. However, judges may also continue as a guest. There is a competition passcode (set by the admin) for each competition
-        on top of having a customized link for a second level of security.
+    <p>An obstacle we ran into when designing the judging side is that judges may not be on the StartupTree platform -- and may not want to be. But some judges may already be on the platform! </p>
+    <p>We determined that judges would access their platform through a customized link. The link would bring them to a sign in that allowed them to either sign in with their StartupTree account. We wanted to encourage judges to sign up, but not enforce it, so the main CTA on the page is the Log In button. However, judges may also continue as a guest. There is a competition passcode (set by the admin) for each competition on top of having a customized link for a second level of security.
     </p>
-    <p>The judges' initial view is a list of applicants, with ranking (that changes as judges complete evaluations), the status of their evaluations, 
-        and personal notes to help the judge differentiate between individual applicants.
+    <p>The judges' initial view is a list of applicants, with ranking (that changes as judges complete evaluations), the status of their evaluations, and personal notes to help the judge differentiate between individual applicants.
     </p>
 
     <div class="pic"><img src="images/portfolio/apps/01.png"></div>
-    <p>As judges read through each application, they are also presented with an evaluation to complete. The evaluation section was designed 
-        to mimic a piece of paper or physical rubric to help improve the judge's mental model.
+    <p>As judges read through each application, they are also presented with an evaluation to complete. The evaluation section was designed to mimic a piece of paper or physical rubric to help improve the judge's mental model.
     </p>
 
     <div class="pic"><img src="images/portfolio/apps/07.png"></div>
 
-    <p>One of our biggest pain points was determining how to incorporate force rankings. We asked questions like "Where does it fit in the flow?" and 
-        "How do we make it intuitive?" We did not want to bring judges away from their evaluations, but also did not necessarily want to add steps to the overall 
-        process. In the end, we chose to nest a modal with a table of rankings inside each evaluation (that would update globally); however, I believe this 
-        solution was not the best we could find. Because of the short timeline and limited resources, we could not user test and opted to implement it 
-        as best we could, but I would have liked to explore more options and test them with real users. 
+    <p>One of our biggest pain points was determining how to incorporate force rankings. We asked questions like "Where does it fit in the flow?" and "How do we make it intuitive?" We did not want to bring judges away from their evaluations, but also did not necessarily want to add steps to the overall process. In the end, we chose to nest a modal with a table of rankings inside each evaluation (that would update globally); however, I believe this solution was not the best we could find. Because of the short timeline and limited resources, we could not user test and opted to implement it as best we could, but I would have liked to explore more options and test them with real users. 
     </p>
     <div class="pic"><img src="images/portfolio/apps/08.png"></div>
     <h3>Outcome</h3>
-    <p>As a result of building this module, StartupTree signed over a dozen of university and other entrepreneurship-related programs. 
-        Hosting competitions (VC, accelerator programs, etc.) is a large part of university entrepreneurship and it fulfilled a 
-        previously unaddressed need.
+    <p>As a result of building this module, StartupTree signed over a dozen of university and other entrepreneurship-related programs. Hosting competitions (VC, accelerator programs, etc.) is a large part of university entrepreneurship and it fulfilled a previously unaddressed need.
     </p>
 
 </div>
