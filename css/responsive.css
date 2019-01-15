@@ -15,8 +15,8 @@
 }
 
 @media screen and (max-width:650px) {
-    .grass {bottom: 0;}
-    .grass img {width: 400px; }
+    .grass {position: relative; }
+    .grass img {width: 400px; opacity: 1;}
     .hawaii img {width: 200px;}
     .hat img {width: 200px;}
     .hello, .sub__hello, .subsub__hello {margin-right: 5%;}
