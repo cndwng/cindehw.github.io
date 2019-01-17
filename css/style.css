@@ -400,11 +400,14 @@ footer {
         padding: 0px 40px;
     }
 
+    .activities__mobile {display: none;}
+
 .activities {
     width: 90%;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
+    line-height: 1.5em;
 }
     .activities img {
         width: 80px;
@@ -422,7 +425,7 @@ footer {
         text-decoration: none;
         color: #945861;
         font-family: "Vollkorn", serif;
-        font-size: 1.2em;
+        font-size: 18px;
     }
 
     .blurb a:before {
@@ -622,7 +625,15 @@ footer {
     }
 
 .description {
-    width: 64%;
+    width: 63%;
+    padding-left: 10px;
+}
+
+.caption {
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
 }
 
 .overlay {
@@ -705,6 +716,11 @@ footer {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+}
+
+.gameplay {
+    width: 100%;
+    margin: 20px 0px;
 }
 
 .unselectable {

@@ -33,6 +33,12 @@
         margin: auto;
     }
     .activities__title {display: none;}
+    .activities__titlem {
+        display: block; 
+        opacity: 1; 
+        margin: auto; 
+        width: 40%;}
+    .activities__titlem img {width: 100%;}
     .activities, .sidebyside {
         flex-wrap: wrap; 
         width: 100%;}
