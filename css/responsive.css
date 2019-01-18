@@ -37,7 +37,7 @@
         display: block; 
         opacity: 1; 
         margin: auto; 
-        width: 40%;}
+        width: 120px;}
     .activities__titlem img {width: 100%;}
     .activities, .sidebyside {
         flex-wrap: wrap; 
