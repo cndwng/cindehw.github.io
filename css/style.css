@@ -505,7 +505,7 @@ footer {
 
     .projects {
         max-width: 300px;
-        padding: 10px;
+        padding: 10px 10px 20px;
     }
 
     .projects img {
@@ -633,7 +633,8 @@ footer {
     margin: auto;
     text-align: center;
     font-style: italic;
-    font-size: 12px;
+    font-size: 16px;
+    padding: 10px 0px 25px;
 }
 
 .overlay {
@@ -730,4 +731,8 @@ footer {
     -o-user-select: none;
     user-select: none;  
     pointer-events: none;
+}
+
+ul {
+    line-height: 1.5em;
 }
