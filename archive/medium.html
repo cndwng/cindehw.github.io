@@ -3,9 +3,9 @@
 	<title>cindy wang</title>	
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-	<link rel="icon" href="images/sprite.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+	<link rel="icon" href="../images/sprite.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     
@@ -28,68 +28,70 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="projects.html">Projects</a></div>
-        <div class="topnav item"><a href="art.html">Doodles</a></div>
-        <div class="topnav item"><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
+        <div class="topnav item"><a href="../projects.html">Projects</a></div>
+        <div class="topnav item"><a href="../art.html">Doodles</a></div>
+        <div class="topnav item"><a href="../Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
 </div>
-
 <div class="container port fade-in">
-    <div>
-        <span id="back"><a href="javascript:history.go(-1)"><img src="images/arrow2_left.png">back</a></span>
-        <span id="next"><a href="factset.html">next<img src="images/arrow2_right.png"></a></span>
-        <br /><br />
-    </div>
+		<div>
+			<span id="back"><a href="javascript:history.go(-1)"><img src="../images/arrow2_left.png">back</a></span>
+			<br /><br />
+		</div>
 
-    <h2>FamilyTies</h2>
-
-    <div class="overview">
-        <img src="images/covers/hci_cover1.png">
-        <div class="description"><h3>INFO3450: Human Computer Interaction</h3>
-            <!-- <div class="whatis"><a href="" target="_blank">Link</a></div> -->
-            <i>Fall 2018</i>
-            <p>An iOS application with iMessage integration designed to improve communication between college students and their families at home.</p>
+		<h2>Medium Design Collective</h2>
+		
+		<div class="overview">
+            <img src="../images/covers/medium_cover.png">
+            <div class="description"><h3>Medium Design Collective, UX/UI Designer</h3>
+                <div class="whatis"><a href="http://cornellmedium.design/" target="_blank">What's Medium?</a></div>
+                <i>Fall 2016 - Fall 2017</i>
+                <p>Reimagining Medium's site to better reflect the brand and message.</p>
+            </div>
         </div>
-    </div>
 
-    <p>Write-up coming soon!</p>
+		<h3>The old site</h3>
+		<p>Medium's branding is largely monochromatic with CMYK "pops" of color. However, the web team felt that the existing website was not very representative of Medium's message and purpose. Through our events, we found that there was a significant amount of visual content in our archives that was being underutilized. </p>
+		<p>The original website is below. </p>
+        <div class="pic"><img src="../images/portfolio/medium/medium web mockup.png"></div>
 
-    <img src="images/portfolio/hci/poster.png">
-
-
-    <img src="images/portfolio/hci/affinity.png">
-    <img src="images/portfolio/hci/persona.png">
-    <img src="images/portfolio/hci/flow.png">
-
-
+		<h3>The new site</h3>
+		<p>We redesigned the site to better use our assets and tell a visual story about our organization.</p>
+		<div class="pic"><img src="../images/portfolio/medium/0.png"></div>
+		<p>When we came to our events page, we wondered: how can we showcase both past and upcoming events? Our solution was to build a wheel that initially landed the user at the nearest upcoming event, but allowed them to scroll into our history. <a href="http://cornellmedium.design/events/" target="_blank">See it in action here!</a>
+		</p>
+		<div class="pic"><img src="../images/portfolio/medium/events.png"></div>
+		<p>We also needed a page to exhibit our signature event, RAW Expo. This first iteration for our initial launch is shown below. The most recent iteration is <a href="http://cornellmedium.design/raw/" target="_blank">here.</a>
+		</p>
+        <div class="pic"><img src="../images/portfolio/medium/raw.png"></div>
 
 
 </div>
 
 <footer>
-    <div class="social">
-    <a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
-    <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
-    <a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
-    </div>
+	<div class="social">
+	<a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
+	<a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
+	<a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
+	</div>
 </footer>
 
 <script>
-    feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
+	feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
 
-    window.onscroll = function() {stickyNav()};
+	window.onscroll = function() {stickyNav()};
 
-    var navbar = document.getElementById("myTopnav");
+	var navbar = document.getElementById("myTopnav");
 
-    var sticky = navbar.offsetTop;
+	var sticky = navbar.offsetTop;
 
-    function stickyNav() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
+	function stickyNav() {
+		if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		} else {
+			navbar.classList.remove("sticky");
+		}
+	}
 
 </script>
 </body>

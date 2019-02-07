@@ -3,9 +3,9 @@
 	<title>cindy wang</title>	
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-	<link rel="icon" href="images/sprite.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+	<link rel="icon" href="../images/sprite.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     
@@ -28,111 +28,124 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="projects.html">Projects</a></div>
-        <div class="topnav item"><a href="art.html">Doodles</a></div>
-        <div class="topnav item"><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
+        <div class="topnav item"><a href="../projects.html">Projects</a></div>
+        <div class="topnav item"><a href="../art.html">Doodles</a></div>
+        <div class="topnav item"><a href="../Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
 </div>
+
 <div class="container port fade-in">
-		<div>
-			<span id="back"><a href="javascript:history.go(-1)"><img src="images/arrow2_left.png">back</a></span>
-			<span id="next"><a href="beepboop.html">another one!<img src="images/arrow2_right.png"></a></span>
-			<br /><br />
-		</div>
+    <div>
+        <span id="back"><a href="javascript:history.go(-1)"><img src="../images/arrow2_left.png">back</a></span>
+        <span id="next"><a href="hci.html">next<img src="../images/arrow2_right.png"></a></span>
+        <br /><br />
+    </div>
 
-		<h2>Interactive Visual Music Sequencer</h2>
+    <h2>dripdrop</h2>
 
-		<div class="overview">
-			<img src="images/covers/sequencer_cover.png">
-			<div class="description"><h3>INFO4320: Introduction to Rapid Prototyping and Programming</h3>
-				<i>Fall 2017</i>
-				<p>A project built for a Cornell Info Science course. One of 20 student projects showcased during a demo day held at the Sciencenter on Saturday, Dec. 2, 2017.</p>
-			</div>
-		</div>
+    <div class="overview">
+        <img src="../images/covers/dripdrop_cover1.png">
+        <div class="description"><h3>INFO4154: Analytics Driven Game Design</h3>
+            <div class="whatis"><a href="https://www.kongregate.com/games/beeeeeep_studios/dripdrop" target="_blank">Play me!</a></div>
+            <i>Fall 2018</i>
+            <p>An action game focused around Dewd Drewp the dew drop dewde propelling water to move, developed in Unity for CS/INFO4154.</p>
+        </div>
+    </div>
 
-		<p>This is an overview of the project; to see the full writeup, click <a href="portfolio/sequencer/sequencer.pdf" target="_blank">here</a>.</p>
-		
-		<p>See us in the <a href="http://infosci.cornell.edu/news/we-burned-couple-things-learning-build-info-4320" target="_blank">press</a>!</p>
-		
-		<div class="vid" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/246288434?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			<script src="https://player.vimeo.com/api/player.js"></script>
-		</div>
+    <p>For INFO4154: Analytics Driven Game Design, I served as a visual and UX designer for a team of 6 students developing a web game. I worked on character design/terrain, animation, level design, and the interface elements.</p>
 
-		<div class="pic"><img src="images/portfolio/sequencer/poster.png"></div>
-		<h3>Technical details</h3>
-		<p>We used a Teensy 3.5 microcontroller and a corresponding Teensy Audio Shield. The Teensy had just enough pins to connect to our Adafruit Trellis PCBs and power the LEDs and button pad and the Audio Shield allowed us to more easily control audio outputs.</p>
-		A couple useful things we used/learned during this project:
-		<ul>
-			<li>Laser cutting</li>
-			<li>Soldering</li>
-			<li>Microcontroller</li>
-		</ul>
-		<h3>Initial design</h3>
-		<p>Our primary goal for this project was to create a tool for non-musicians and musicians alike to make music. We found an <a href="http://tonematrix.audiotool.com/" target="_blank">online tool</a> that built a sequencer based off a pentatonic scale, and decided to create a physical model.</p>
+    <h3>Gameplay</h3>
+    <p>"Dewd Drewp the dew drop dewde has found himself far, far away from his fellow friends at the falls. Insects and plants alike are doing everything in their power to prevent our bubbly buddy from going home. Will Drewp ever careen over the cascade with his cronies again?"        </p>
+        <video autoplay loop muted class="gameplay">
+            <source src="../images/portfolio/dripdrop/dripdrop.mov">
+        </video>
+        <div class="caption">The player uses the mouse to aim and space to shoot projectiles to move</div>
+    <p><a href="https://www.kongregate.com/games/beeeeeep_studios/dripdrop" target="_blank">PLAY ME ON KONGREGATE</a></p>
 
-		<p>Our initial brainstorming involved experimenting with the format of the sequencer -- we played around with the idea of mimicking radar with a circular, clock-like functionality as well as the original grid we found online. In the end, because of hardware constraints we opted for the simpler to implement grid.</p>
+    <h3>Developing Game Mechanics</h3>
+    <p>One of the biggest challenges was creating game mechanics that felt fresh and entertaining. We knew we wanted to create an action game with unique terrain. After iterating through a couple ideas, we settled on a mechanic where the player navigates a terrain by choosing to grow or shrink.</p>
+    <img src="../images/portfolio/dripdrop/prototype1.png">
+    <div class="caption">A paper prototype</div>
+    
+    <h3>The Design</h3>
+    <p>Our group discussed general themes that matched our game mechanics and, armed with a theme, I worked with the other designer on the team to create a general mood and aesthetic for the game. We created a mood board and pulled designs that inspired the aesthetics of the game.</p>
+    <img src="../images/portfolio/dripdrop/moodboard.png">
+    <div class="caption">A few examples from our Pinterest board</div>
+    <div class="sidebyside">
+        <div class="left">
+            <img src="../images/portfolio/dripdrop/initialdesign.png">
+        </div>
+        <div class="right">
+            <img src="../images/portfolio/dripdrop/gameplay_mockup.png"></div>
+    </div>
+    <div class="caption">Playing with character design and UI</div>
 
-		<div class="pic"><img src="images/portfolio/sequencer/0.jpg"></div>
-		
-		<p>We had silicon buttons and corresponding PCBs to implement the system, but still needed to think about casing and presentation. Our plan was to create a box to encase the hardware and have the button grid sit on top.</p>
-		
-		<div class="pic"><img src="images/portfolio/sequencer/00.jpg"></div>
-		
-		<p>Our system used a grid system with time across the x-axis and pitch across the y-axis, where pitch increases on a pentatonic scale. Because we have a finite x-axis, at the end of the grid, we loop back to the beginning. We also had three button states depending on where we were on the x-axis and what had been pressed. To indicate position on the x-axis, we had a row of indicator lights across the top of the grid.</p>
-        <div class="pic"><img src="images/portfolio/sequencer/001.jpg"></div>
+    <h3>Developing Gameplay</h3>
+    <div class="sidebyside">
+        <div class="left">
+            <img src="../images/portfolio/dripdrop/leveldesign.jpg">
+        </div>
+        <div class="right">
+            <img src="../images/portfolio/dripdrop/levelchart.jpg">
+        </div>
+    </div>
+    <div class="caption">Some level design sketches and an (early) Gantt chart for determining level progression</div>
 
-        <div class="pic"><img src="images/portfolio/sequencer/002.jpg"></div>
+    <h3>Iterating with Analytics</h3>
+    <p>From the first two releases, we could see that players were frequently dying at the very beginning of the first level, and subsequently not continuing to play.</p>
+    <img src="../images/portfolio/dripdrop/level1heatmap.png">
+    <div class="caption">A heatmap of deaths for our first level of our first release</div>
+    <p>Our focus for the rest of the semester became developing tutorial levels that kept players engaged. We released four different versions of our game:
+        <ul>
+            <li><strong>Friends Release:</strong> Our first version with only 11 levels, advertised only to close friends and classmates.</li>
+            <li><strong>Newgrounds Release (A/B):</strong> We created two versions to test on Newgrounds with 20 levels each to determine whether players knowing "star values, the amount of time required to achieve 3 stars for the level. (We found the results to be inconclusive.)</li>
+            <li><strong>Kongregate Release:</strong> Our final 25 level game.</li>
+        </ul>
+    </p>
+    <div class="sidebyside">
+        <div class="left">
+            <img src="../images/portfolio/dripdrop/levelsburndown.png">
+        </div>
+        <div class="right">
+            <img src="../images/portfolio/dripdrop/timeburndown.png">
+        </div>
+    </div>
+    <div class="caption">Burndown charts showing our player engagement between releases</div>
 
-		<h3>Final Product</h3>
+    <p>While generally the amount of time players played remained similar between releases, the number of players that reached level 3 increased significantly. We also refined the mechanics, art, and animations as we progressed through releases.</p>
 
-		<p>Our final product ended up quite different than the initial design. Basic functionality was the same, but because of budget constraints we could only implement a 16x8 grid of buttons. Our chosen microcontroller (Teensy 3.5) did not have an adequate number of pins to implement indicator lights across the top while also using the Teensy Audio Shield. Additionally, the button PCBs did not allow for control of the brightness of our LEDs.</p>
-		
-		<p>The physical box that we kept our hardware in was a wood frame with a removable acrylic sheet to encase the buttons.</p>
-		
-		<div class="pic"><img src="images/portfolio/sequencer/01.jpg"></div>
+    <p>Curious about previous iterations?
+    <br /><a href="https://gdiac.cs.cornell.edu/gallery/flash/launch.php?semester=2018fa&name=group2" target="_blank">OUR INITIAL RELEASE</a>
+    <br /><a href="https://www.newgrounds.com/portal/view/719881" target="_blank">OUR NEWGROUNDS RELEASE</a></p>
 
-		<p>Instead of indicator lights, we had the entire active column illuminate when on that particular time unit. We used small wood blocks to keep the PCBs in place.</p>
-		
-		<div class="pic"><img src="images/portfolio/sequencer/02.jpg"></div>
-		
-		<p>We kept the bottom of the box open and attached the Teensy underneath the top panel where the PCBs sat. This kept the hardware open and accessible. Additionally, our audio output was an AUX cable, so we connected a speaker and during our demo, kept the speaker inside the box.</p>
-		
-        <div class="pic"><img src="images/portfolio/sequencer/03.jpg"></div>
-		<div class="pic"><img src="images/portfolio/sequencer/04.jpg"></div>
-
-		A photo of our group with our TA:
-        <div class="pic"><img src="images/portfolio/sequencer/05.jpg"></div>
 
 
 </div>
 
-
 <footer>
-	<div class="social">
-	<a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
-	<a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
-	<a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
-	</div>
+    <div class="social">
+    <a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
+    <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
+    <a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
+    </div>
 </footer>
 
-
-
 <script>
-	feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
+    feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
 
-	window.onscroll = function() {stickyNav()};
+    window.onscroll = function() {stickyNav()};
 
-	var navbar = document.getElementById("myTopnav");
+    var navbar = document.getElementById("myTopnav");
 
-	var sticky = navbar.offsetTop;
+    var sticky = navbar.offsetTop;
 
-	function stickyNav() {
-		if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		} else {
-			navbar.classList.remove("sticky");
-		}
-	}
+    function stickyNav() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 
 </script>
 </body>

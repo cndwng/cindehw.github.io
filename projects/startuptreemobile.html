@@ -3,9 +3,9 @@
 	<title>cindy wang</title>	
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-	<link rel="icon" href="images/sprite.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+	<link rel="icon" href="../images/sprite.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     
@@ -28,89 +28,67 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="projects.html">Projects</a></div>
-        <div class="topnav item"><a href="art.html">Doodles</a></div>
-        <div class="topnav item"><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
+        <div class="topnav item"><a href="../projects.html">Projects</a></div>
+        <div class="topnav item"><a href="../art.html">Doodles</a></div>
+        <div class="topnav item"><a href="../Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
 </div>
 <div class="container port fade-in">
-
     <div>
-        <span id="back"><a href="javascript:history.go(-1)"><img src="images/arrow2_left.png">back</a></span>
-        <span id="next"><a href="startuptreemobile.html">another project<img src="images/arrow2_right.png"></a></span>
+        <span id="back"><a href="javascript:history.go(-1)"><img src="../images/arrow2_left.png">back</a></span>
+        <span id="next"><a href="sequencer.html">another project<img src="../images/arrow2_right.png"></a></span>
         <br /><br />
     </div>
 
-    <h2>StartupTree Applications/Competitions</h2>
+    <h2>StartupTree's Mobile App</h2>
 
     <div class="overview">
-        <img src="images/covers/comps_cover.png">
+        <img src="../images/covers/startuptreemobile_cover.png">
         <div class="description"><h3>StartupTree, Product Design Intern</h3>
             <div class="whatis"><a href="https://startuptree.co" target="_blank">What is StartupTree?</a></div>
             <i>Summer 2017</i>
-            <p>Researched and designed a module for creating, managing, entering, and judging applications and competitions within the StartupTree platform.</p>
+            <p>Creating a mobile application to support student and general users on the StartupTree platform.</p>
         </div>
     </div>
-
-    <p>The construction of this particular module came from the need <strong>1) to build a more consistent interface for StartupTree's platform and 2) create an end-to-end competition judging platform. </strong></p>
-
-    <h3>Sketches and Notes</h3>
-    <p>We had a meeting with a school that intended to use our platform and determined our target users' needs. We asked about their specific use cases and challenges. </p>
-    My notes from this meeting are included below.
-    <div class="art"><div class="art pic"><img src="images/portfolio/apps/00.jpg"></div>
-    </div>
-    <p>From these notes, we identified 3 main users:</p>
-        <ol>
-            <li>the administrator</li>
-            <li>the applicant</li>
-            <li>the judge</li>
-        </ol>
-    <p>We decided that our focus would primarily be the administrator and judge users. The applicant's interface would need to change minimally (a very rudimentary form of the module existed already); however, the administrator would gain a lot of functionality and freedom and there was no existing judge user.</p>
-    </p>
-    <p>I drafted some basic flows as well as a list of needs for each part of the competition flow, from creating the competition on the admin side to reviewing rubrics and judging. Because of time constraints, we tried to stick with existing, familiar UI components.</p>
-    <div class="art"><div class="art pic"><img src="images/portfolio/apps/001.jpg"></div>
-    </div>
     
-    <h3>For the Administrator</h3>
-    <p>The administrator's workflow was the most complicated to map out. There were many actions an admin could take, so we had to find a way that listed all the actions visibly and also showed important information at a glance. Thus, we adopted a dashboard for each application. We chose statistics that showed the most important information about the competition as well as some insightful information about the applicant breakdown. While designing this dashboard, I also redesigned the dashboards for the rest of the admin panel and graphs.
-    </p>
-    <div class="pic"><img src="images/portfolio/apps/0.png"></div>
+    <p>Many requests had come in for StartupTree to build a mobile application, so a major project the summer interns tackled was the framework for a working mobile app.</p>
 
-    <p>Creation of each application was broken down into multiple layers to allow for creating competitions without having to provide all the information upfront. Admins first add the most crucial information -- the details about time, deadline, etc. -- then create the application questions for applicants, and add rubrics for judging and judges last. Giving administrators flexibility (being able to add and remove judges, edit the application, etc.) is important for error recovery. Editing an application brings them through the same process.
-    </p>
-    <div class="pic"><img src="images/portfolio/apps/03.png"></div>
+    <div class="pic"><img src="../images/portfolio/startuptreemobile/mockup.png"></div>
 
-    <p>The final step for the administrator is the review of all the evaulations to choose winners (or applicants to advance to the next round). Evaluations can be shown by applicant or by judge and may also be downloaded as pdfs.
-    </p>
+    <h3>Our Target Audience and Goals</h3>
+    <p>StartupTree's user base is primarily students and faculty/mentors involved in entrepreneurship on a university level. Each school has a personalized web platform.</p>
+    <p>Thus, our goal for our mobile application was <strong>to provide means for our users to use our platform on the go</strong>. </p>
+    <p>While this seems straightforward, we also had to consider our limitations. Our platform has multiple sets of audiences: the admin, the student/entrepreneur, and the mentor. With time constraints (this project was to be completed during the summer) and engineering limitations (our developers were learning React), we decided to focus on just the student.</p>
+    
+    <h3>Planning</h3>
+    <p>The mobile team worked with a remote senior designer as a mentor to map out the flow and blueprint for the app. One of the biggest challenges was determining which features were critical and which could be implemented at a later date. We wound up prioritizing "discover" (a way to find people, mentors, startups, etc.), events, and messages.</p>
+    <div class="pic"><img src="../images/portfolio/startuptreemobile/00.png"></div>
 
-    <div class="pic"><img src="images/portfolio/apps/04.png"></div>
+    <p>We then drew up some wireframes in Sketch to begin mapping out the layout of the application. Once we decided how the general navigation would look, we could iterate further. With limited resources and time, we opted not to user test with prototypes and instead utilized patterns that users would be familiar with.</p>
+    <div class="pic"><img src="../images/portfolio/startuptreemobile/01.png"></div>
 
-    <h3>For the Judge</h3>
-    <p>From the conversation with our school and our CEO's knowledge of the kinds of competitions that are run by university entrepreneurship, we identified the judge user to primarily be of an older demographic with industry experience. That being said, they likely would be less tech-savvy, so we chose to create as straightforward and narrow of a process as possible.
-    </p>
+    <div class="pic"><img src="../images/portfolio/startuptreemobile/02.png"></div>
 
-    <div class="pic"><img src="images/portfolio/apps/05.png"></div>
-    <p>An obstacle we ran into when designing the judging side is that judges may not be on the StartupTree platform -- and may not want to be. But some judges may already be on the platform! </p>
-    <p>We determined that judges would access their platform through a customized link. The link would bring them to a sign in that allowed them to either sign in with their StartupTree account. We wanted to encourage judges to sign up, but not enforce it, so the main CTA on the page is the Log In button. However, judges may also continue as a guest. There is a competition passcode (set by the admin) for each competition on top of having a customized link for a second level of security.
-    </p>
-    <p>The judges' initial view is a list of applicants, with ranking (that changes as judges complete evaluations), the status of their evaluations, and personal notes to help the judge differentiate between individual applicants.
-    </p>
+    <h3>Final Mockups</h3>
+    <p>Our final mockups used StartupTree green as the primary color. Although our web platform uses the school's primary colors, we chose to strengthen the StartupTree brand by using our color. Users also choose their school after entering the app, so the flow lends itself better to using one color across all platforms.</p>
+    
+    <p>We used horizontal scrolling tabs on our main discover page as a form of secondary navigation -- we found these to be more discoverable than a dropdown or alternative form of navigation.</p>
 
-    <div class="pic"><img src="images/portfolio/apps/01.png"></div>
-    <p>As judges read through each application, they are also presented with an evaluation to complete. The evaluation section was designed to mimic a piece of paper or physical rubric to help improve the judge's mental model.
-    </p>
+    <div class="mobile"><img src="../images/portfolio/startuptreemobile/9.png">
+        <img src="../images/portfolio/startuptreemobile/0.png"></div>
+    
+    <p>As often as possible, we mimicked the structure of the desktop application for consistency across platforms. For example, messaging in the app was adapted from the web platform's messaging redesign.</p>
 
-    <div class="pic"><img src="images/portfolio/apps/07.png"></div>
+    <div class="mobile">
+        <img src="../images/portfolio/startuptreemobile/2.png">
+        <img src="../images/portfolio/startuptreemobile/6.png">
+        <img src="../images/portfolio/startuptreemobile/4.png">
+        <img src="../images/portfolio/startuptreemobile/8.png">
+    </div>
 
-    <p>One of our biggest pain points was determining how to incorporate force rankings. We asked questions like "Where does it fit in the flow?" and "How do we make it intuitive?" We did not want to bring judges away from their evaluations, but also did not necessarily want to add steps to the overall process. In the end, we chose to nest a modal with a table of rankings inside each evaluation (that would update globally); however, I believe this solution was not the best we could find. Because of the short timeline and limited resources, we could not user test and opted to implement it as best we could, but I would have liked to explore more options and test them with real users. 
-    </p>
-    <div class="pic"><img src="images/portfolio/apps/08.png"></div>
-    <h3>Outcome</h3>
-    <p>As a result of building this module, StartupTree signed over a dozen of university and other entrepreneurship-related programs. Hosting competitions (VC, accelerator programs, etc.) is a large part of university entrepreneurship and it fulfilled a previously unaddressed need.
-    </p>
+    <p>Our end product was an app that ultimately achieved our goals; it implemented the main functionality of the platform and was within the scope of our engineers' talents in the given time.</p>
 
 </div>
-
 
 <footer>
     <div class="social">
@@ -120,6 +98,8 @@
     </div>
 </footer>
     
+    
+
 <script>
     feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
 

@@ -3,9 +3,9 @@
 	<title>cindy wang</title>	
 	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="css/responsive.css"/>
-	<link rel="icon" href="images/sprite.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css"/>
+	<link rel="icon" href="../images/sprite.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
     
@@ -28,72 +28,70 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="projects.html">Projects</a></div>
-        <div class="topnav item"><a href="art.html">Doodles</a></div>
-        <div class="topnav item"><a href="Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
+        <div class="topnav item"><a href="../projects.html">Projects</a></div>
+        <div class="topnav item"><a href="../art.html">Doodles</a></div>
+        <div class="topnav item"><a href="../Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
 </div>
 
 <div class="container port fade-in">
+    <div>
+        <span id="back"><a href="javascript:history.go(-1)"><img src="../images/arrow2_left.png">back</a></span>
+        <span id="next"><a href="factset.html">next<img src="../images/arrow2_right.png"></a></span>
+        <br /><br />
+    </div>
 
-		<div>
-			<span id="back"><a href="javascript:history.go(-1)"><img src="images/arrow2_left.png">back</a></span>
-			<span id="next"><a href="lore.html">another!<img src="images/arrow2_right.png"></a></span>
-			<br /><br />
-		</div>
+    <h2>FamilyTies</h2>
 
-        <h2>StartupTree Mentorship</h2>
-		<div class="overview">
-			<img src="images/covers/comps_cover.png">
-			<div class="description"><h3>StartupTree, Product Design Intern</h3>
-				<div class="whatis"><a href="https://startuptree.co/" target="_blank">What is StartupTree?</a></div>
-				<i>Summer 2017</i>
-				<p>Revamped the interface and user experience for becoming and finding mentors within the StartupTree platform.</p>
-			</div>
-		</div>
+    <div class="overview">
+        <img src="../images/covers/hci_cover1.png">
+        <div class="description"><h3>INFO3450: Human Computer Interaction</h3>
+            <!-- <div class="whatis"><a href="" target="_blank">Link</a></div> -->
+            <i>Fall 2018</i>
+            <p>An iOS application with iMessage integration designed to improve communication between college students and their families at home.</p>
+        </div>
+    </div>
 
-        <div class="pic"><img src="images/portfolio/mentor/0.png" width=100% /></div>
+    <p>Write-up coming soon!</p>
 
-        <div class="pic"><img src="images/portfolio/mentor/01.png" width=100% /></div>
+    <img src="../images/portfolio/hci/poster.png">
+    <div class="caption">Our final presentation poster</div>
+    <img src="../images/portfolio/hci/affinity.png">
+    <div class="caption">An affinity diagram from our 5 user interviews</div>
+    <img src="../images/portfolio/hci/persona.png">
+    <div class="caption">Our persona, Jennifer</div>
+    <img src="../images/portfolio/hci/flow.png">
+    <div class="caption">A sketch of the flow of our application</div>
 
-        <div class="pic"><img src="images/portfolio/mentor/02.png" width=100% /></div>
 
-        <div class="pic"><img src="images/portfolio/mentor/03.png" width=100% /></div>
 
-        <div class="pic"><img src="images/portfolio/mentor/04.png" width=100% /></div>
-
-        <div class="pic"><img src="images/portfolio/mentor/05.png" width=100% /></div>
-
-        <div class="pic"><img src="images/portfolio/mentor/06.png" width=100% /></div>
-
-        <div class="pic"><img src="images/portfolio/mentor/07.png" width=100% /></div>
 
 </div>
 
 <footer>
-	<div class="social">
-	<a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
-	<a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
-	<a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
-	</div>
+    <div class="social">
+    <a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
+    <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
+    <a href="mailto:cw653@cornell.edu"><img data-feather="mail" /></a>
+    </div>
 </footer>
 
 <script>
-	feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
+    feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
 
-	window.onscroll = function() {stickyNav()};
+    window.onscroll = function() {stickyNav()};
 
-	var navbar = document.getElementById("myTopnav");
+    var navbar = document.getElementById("myTopnav");
 
-	var sticky = navbar.offsetTop;
+    var sticky = navbar.offsetTop;
 
-	function stickyNav() {
-		if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		} else {
-			navbar.classList.remove("sticky");
-		}
-	}
+    function stickyNav() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 
 </script>
 </body>

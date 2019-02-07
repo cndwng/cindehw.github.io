@@ -185,13 +185,13 @@ footer {
 
 .container {
     min-height: 80vh;
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
 .container img {width: 100%;}
 
-.port {width: 60%;}
+.port {width: 65%;}
 
 .vid {
     width: 100%;
@@ -205,7 +205,7 @@ footer {
 
 .pic {
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto 0px;
 }
 
     .pic img {
