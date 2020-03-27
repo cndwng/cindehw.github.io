@@ -22,6 +22,9 @@
         <script src="https://d3js.org/topojson.v2.min.js"></script>
     </head>
     <style>
+        h2 {
+            margin-block-end: 0.5em;
+        }
         .visualization {
             display: block;
         }
@@ -71,6 +74,30 @@
             font-weight: bold;
         }
 
+        #list {
+            width: 330px;
+            height: 220px;
+            overflow: scroll;
+        }
+
+        #list ul {
+            list-style: none;
+            padding-inline-start: 0px;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+        }
+
+        #list li {
+            padding: 5px 15px;
+            margin: 5px 0px;
+        }
+
+        #list li:hover {
+            font-weight: bold;
+            background-color: #f0f0f0;
+            color: #945861;
+        }
+
     </style>
 
     <body>
@@ -92,21 +119,24 @@
             <div class="visualization">
                 <div class="chart-container">
                     <svg id="chart" width="900" height="600">
-                        
+                        <g id="labels">
+                            <text x="70" y="350">Size of balls  --></text>
+                            <text x="-300" y="30"  style="text-anchor:middle;" transform="rotate(-90)"><--  Quality of calls  --></text>
+                        </g>
                     </svg>
                 </div>
                 <div class="legend">
                     <div id="info">
                         <h2 id="name">Name</h2>
-                        <svg id="soloData" width="330" height="210">
-                            <text class="dataHeader" x="225" y="15" text-anchor="middle">Balls</text>
-                            <text class="dataHeader" x="135" y="15" text-anchor="middle">Calls</text>
+                        <svg id="soloData" width="330" height="220">
+                            <text class="dataHeader" x="225" y="15" text-anchor="middle">Calls</text>
+                            <text class="dataHeader" x="135" y="15" text-anchor="middle">Balls</text>
                             <text class="dataHeader" x="60" y="80" text-anchor="end">Mean</text>
                             <text class="dataHeader" x="60" y="140" text-anchor="end">Median</text>
-                            <text id="ballMean" x="225" y="80" text-anchor="middle">0</text>
-                            <text id="callMean"x="135" y="80" text-anchor="middle">0</text>
-                            <text id="ballMedian"x="225" y="140" text-anchor="middle">0</text>
-                            <text id="callMedian"x="135" y="140" text-anchor="middle">0</text>
+                            <text id="callMean" x="225" y="80" text-anchor="middle">0c</text>
+                            <text id="ballMean"x="135" y="80" text-anchor="middle">0b</text>
+                            <text id="callMedian"x="225" y="140" text-anchor="middle">0c</text>
+                            <text id="ballMedian"x="135" y="140" text-anchor="middle">0b</text>
                         </svg>
                     </div>
                     <div id="directory">
@@ -132,10 +162,12 @@
             var avgBall = {};
             var avgCall = {};
 
+            var active;
+
             function median(numbers) {
                 // median of [3, 5, 4, 4, 1, 1, 2, 3] = 3
                 var median = 0, numsLen = numbers.length;
-                numbers.sort();
+                numbers.sort(function(a, b){return a-b});
             
                 if (
                     numsLen % 2 === 0 // is even
@@ -158,33 +190,35 @@
                 return total / numbers.length;
             }
             d3.csv("/data/balls.csv").then(function(ballsData) {
-                // console.log(ballsData);
                 ballsData.forEach( (d,i) => {
-                    // console.log(d);
                     for(entry in d) {
-                        if (balls[entry] == undefined) {
-                            balls[entry] = [Number(d[entry])];
-                        } else {
-                            balls.entry = balls[entry].push(Number(d[entry]));
+                        if (checkIfNumber(d[entry])) {
+                            if (balls[entry] == undefined) {
+                                balls[entry] = [Number(d[entry])];
+                            } else {
+                                balls.entry = balls[entry].push(Number(d[entry]));
+                            }
                         }
                     }
                 });
                 delete balls["entry"];
                 for( entry in balls ) {
                     avgBall[entry] = {};
-                    avgBall[entry]['mean'] = mean(balls[entry]);
-                    avgBall[entry]['median'] = Number(median(balls[entry]));
+                    avgBall[entry]['nos']=balls[entry];
+                    avgBall[entry]['mean'] = mean(balls[entry]).toFixed(2);
+                    avgBall[entry]['median'] = median(balls[entry]);
                 };
+
             });
             d3.csv("/data/calls.csv").then(function(callsData) {
-                // console.log(ballsData);
                 callsData.forEach( (d,i) => {
-                    // console.log(d);
                     for(entry in d) {
-                        if (calls[entry] == undefined) {
-                            calls[entry] = [Number(d[entry])];
-                        } else {
-                            calls.entry = calls[entry].push(Number(d[entry]));
+                        if (checkIfNumber(d[entry])) {
+                            if (calls[entry] == undefined) {
+                                calls[entry] = [Number(d[entry])];
+                            } else {
+                                calls.entry = calls[entry].push(Number(d[entry]));
+                            }
                         }
                     }
                 });
@@ -193,7 +227,7 @@
                     avgCall[entry] = {};
                     avgCall[entry]['nas'] = calls[entry].filter(function(n) {return isNaN(n);});
                     calls[entry] = calls[entry].filter(function(n) {return !isNaN(n);});
-                    avgCall[entry]['mean'] = mean(calls[entry]);
+                    avgCall[entry]['mean'] = mean(calls[entry]).toFixed(2);
                     avgCall[entry]['median'] = median(calls[entry]);
                 };
 
@@ -205,12 +239,25 @@
                         .attr("class","point")
                         .attr("id", nxjer)
                         .attr("r",5)
-                        .attr("cx", xScale(avgBall[nxjer]["mean"]))
-                        .attr("cy", yScale(avgCall[nxjer]["mean"]))
+                        .attr("cx", xScale(translateNaN(avgBall[nxjer]["mean"])))
+                        .attr("cy", yScale(translateNaN(avgCall[nxjer]["mean"])))
                         .attr("transform", "translate("+(margin.left)+","+(margin.top)+")");
                 };
 
                 scatter.selectAll("circle")
+                    .data(Object.keys(avgBall))
+                    // .on('mouseover', function(id) {updateInfo(id)})
+                    .on('click', function(id) {updateInfo(id)});
+
+                list = d3.select("#list").append("ul");
+
+                for(nxjer in avgBall) {
+                    list.append("li")
+                        .attr("id", nxjer)
+                        .text(nxjer)
+                };
+                
+                list.selectAll("li")
                     .data(Object.keys(avgBall))
                     .on('click', function(id) {updateInfo(id)});
             });
@@ -218,7 +265,7 @@
             let chart = d3.select("svg#chart")
             let width = chart.attr("width");
             let height = chart.attr("height");
-            let margin = {top: 50, right: 50, bottom: 30, left:50};
+            let margin = {top: 50, right: 40, bottom: 30, left:60};
             let chartWidth = width - margin.left - margin.right; 
             let chartHeight = height - margin.top - margin.bottom;
 
@@ -230,33 +277,45 @@
                 .domain([-5, 5])
                 .range([chartHeight, 0]);
 
-            let yAxis =  d3.axisLeft(yScale).ticks(11,d3.format(""));
+            let yAxis =  d3.axisLeft(yScale).ticks(11);
                 chart.append("g").attr("class", "y axis")
                     .attr("transform", "translate("+(margin.left)+","+(margin.top)+")")
                     .style("stroke-width", "1")
                     .call(yAxis);
-            let xAxis = d3.axisBottom(xScale).ticks(11,d3.format(""));
+            let xAxis = d3.axisBottom(xScale).ticks(11);
                 chart.append("g").attr("class","x axis")
                     .attr("transform", "translate("+(margin.left)+","+(margin.top + chartHeight/2)+")")
                     .style("stroke-width", "1")
                     .call(xAxis);
 
-            chart.append("rect")
-                .attr("width", width)
-                .attr("height", height)
-                .style("fill", "none")
-                .style("pointer-events", "all")
-                .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
-                .call(zoom);
+            let labels = chart.append("g").attr("class","labels");
 
-            function updateInfo(d) {
-                d3.select("#name").text(d);
-                d3.select("#ballMean").text(avgBall[d]['mean']);
-                d3.select("#callMean").text(avgCall[d]['mean']);
-                d3.select("#ballMedian").text(avgBall[d]['median']);
-                d3.select("#callMedian").text(avgCall[d]['median']);
+            function updateInfo(id) {
+                active = id;
+                d3.select("#name").text(id);
+                d3.select("#ballMean").text(isNA(avgBall[id]['mean']));
+                d3.select("#callMean").text(isNA(avgCall[id]['mean']));
+                d3.select("#ballMedian").text(isNA(avgBall[id]['median']));
+                d3.select("#callMedian").text(isNA(avgCall[id]['median']));
             }
 
+            function checkIfNumber(n) {
+                return n != "";
+            }
+
+            function isNA(n) {
+                if (isNaN(n)) { 
+                    return "N/A";
+                }
+                return n;
+            }
+
+            function translateNaN(n) {
+                if (isNaN(n)) {
+                    return 0;
+                }
+                return n;
+            }
 
             // feather icons
             feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
