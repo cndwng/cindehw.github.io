@@ -1,70 +1,70 @@
-name,office,team
-Aaron Liu,BOS,Engineering
-Angela Cavallaro,BOS,EPP
-Anjanie Camodeo,NY,Finance
-Annie Zhang,NY,Engineering
-Awais Shah,BOS,Design
-Bharadwaz Annam,NY,Engineering
-Buggy Vadapalli,NY,Engineering
-Billy Zhu,NY,Engineering
-Chad Jiang,NY,Engineering
-Charlie Kim,NY,Strat
-Chasity Rivera,NY,Ops
-Christian Lemieux,BOS,Engineering
-Christian Vanderhoef,NY,CXT
-Christina Laguatan,NY,Finance
-Cindy Wang,NY,Design
-Dana Coutant,NY,CXT
-Daniel Sullivan,NY,Merchant
-Darrell Platz,NY,Ops
-David Jacobs,NY,Finance
-Deepak Kumar,NY,DB
-Ebun Bazuaye,NY,CXT
-Eric Lee,BOS,Biz 2
-Gowri Lakshminarayanan,NY,Engineering
-Greg Kunkel,BOS,Strat
-Harsh Sadhvani,SF,Engineering
-Henry Wu,BOS,Engineering
-Jing Wei,NY,Kids Club
-John Hilliard,BOS,Engineering
-Jooe Kim,BOS,Biz 2
-Kalyan Jakka,NY,Engineering
-Kamarish Shrivastava,NY,Engineering
-Kanchan Shrivastava,NY,Engineering
-Kathy Moran,NY,Engineering
-Kee Hanumanthagowda,SF,Engineering
-Keith Orlando,BOS,Engineering
-Kevin McCoy,UK,
-Khoa Ho,BOS,
-Kira Lou,NY,FInance
-Kristin Gandini,BOS,EPP
-Laura Robertson,NY,Ops
-Lei Guan,BOS,Engineering
-Lienne Ng,,
-Lokeya Venkatachalam,,
-Meghan Messenger,,
-Monika Pendse,,
-Nadia Bajan,,
-Nayan Busa,,
-Nicole Depaola,,
-Onyinye Umeaka,,
-Peter Chiarchiaro,,
-Rachel McClain,,
-Rajbir Kadyan,,
-Ramani Dodda,,
-Rawle Singh,,
-Richie Sajan,,
-Rick Ochoa,,
-Sagar Rane,,
-Saurabh Mehta,,
-Shae Eldridge,,
-Shardul Dabholkar,,
-Shea Bohan,,
-Sky Lee,,
-Stephen Grealish,,
-Supriya Mishra,,
-Tarun Gidoomal,,
-Tom Fuller,,
-Vaishali Kshatriya,,
-Weiwei Hu,,
-Xuelan Zhang,,
+name,office,team,leaders,gender
+Aaron Liu,BOS,"Biz 1 Eng, Biz 2 Eng",N,M
+Angela Cavallaro,BOS,EPP,N,F
+Anjanie Camodeo,NY,Finance,N,F
+Annie Zhang,NY,Biz 2 Eng,N,F
+Awais Shah,BOS,Design,N,M
+Bharadwaz Annam,NY,Biz 1 Eng,N,M
+Buggy Vadapalli,NY,Biz 1 Eng,N,M
+Billy Zhu,NY,Biz 1 Eng,N,M
+Chad Jiang,NY,Biz 1 Eng,N,M
+Charlie Kim,NY,Strat,MV21,M
+Chasity Rivera,NY,Ops,N,F
+Christian Lemieux,BOS,Biz 2 Eng,N,M
+Christian Vanderhoef,NY,CXT,N,M
+Christina Laguatan,NY,Finance,N,F
+Cindy Wang,NY,Design,N,F
+Dana Coutant,NY,CXT,YLC,F
+Daniel Sullivan,NY,Merchant,N,M
+Darrell Platz,NY,Ops,N,M
+David Jacobs,NY,Finance,N,M
+Deepak Kumar,NY,Biz 1 Eng,N,M
+Ebun Bazuaye,NY,CXT,N,F
+Eric Lee,BOS,Biz 2,N,M
+Gowri Lakshminarayanan,NY,Biz 1 Eng,N,M
+Greg Kunkel,BOS,Strat,MV21,M
+Harsh Sadhvani,SF,Biz 1 Eng,N,M
+Henry Wu,BOS,Biz 2 Eng,N,M
+Jing Wei,NY,Ops,N,F
+John Hilliard,BOS,"Biz 1 Eng, Biz 2 Eng",MV21,M
+Jooe Kim,BOS,Biz 2,N,F
+Kalyan Jakka,NY,Biz 1 Eng,N,M
+Kamarish Shrivastava,NY,Biz 1 Eng,N,M
+Kanchan Shrivastava,NY,Biz 1 Eng,N,F
+Kathy Moran,NY,CRM,YLC,F
+Kee Hanumanthagowda,SF,Biz 1 Eng,N,F
+Keith Orlando,BOS,Biz 2 Eng,N,M
+Kevin McCoy,UK,Biz 1,MV21,M
+Khoa Ho,BOS,Biz 2 Eng,N,M
+Kira Lou,NY,Finance,N,F
+Kristin Gandini,BOS,EPP,N,F
+Laura Robertson,NY,Ops,N,F
+Lei Guan,BOS,Biz 2 Eng,N,M
+Lienne Ng,BOS,EPP,YLC,F
+Lokeya Venkatachalam,NY,Biz 1,MV21,F
+Meghan Messenger,NY,Strat,MV21,F
+Monika Pendse,BOS,CRM,N,F
+Nadia Bajan,NY,Ops,N,F
+Nayan Busa,NY,Biz 2 Eng,MV21,M
+Nicole Depaola,NY,Merchant,N,F
+Onyinye Umeaka,NY,CXT,N,F
+Peter Chiarchiaro,NY,Ops,N,M
+Rachel McClain,BOS,EPP,MV21,F
+Rajbir Kadyan,NY,Finance,N,M
+Ramani Dodda,SF,Biz 1 Eng,N,F
+Rawle Singh,NY,Ops,N,M
+Richie Sajan,BOS,"Biz 1 Eng, Biz 2 Eng",N,M
+Rick Ochoa,NY,Biz 1 Eng,N,M
+Sagar Rane,NY,Biz 2 Eng,N,M
+Saurabh Mehta,NY,Biz 1 Eng,N,M
+Shae Eldridge,NY,Merchant,YLC,F
+Shardul Dabholkar,BOS,Biz 2 Eng,N,M
+Shea Bohan,NY,CXT,N,F
+Sky Lee,NY,Merchant,N,F
+Stephen Grealish,NY,CRM,N,M
+Supriya Mishra,NY,Biz 1,N,F
+Tarun Gidoomal,UK,Biz 1,MV21,M
+Tom Fuller,NY,Strat,MV21,M
+Vaishali Kshatriya,NY,Biz 1,MV21,F
+Weiwei Hu,BOS,Biz 2 Eng,N,M
+Xuelan Zhang,NY,Biz 2 Eng,MV21,F

@@ -110,7 +110,7 @@ h3 {
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 20px;
     line-height: 1.6em;
 }
     p a:before {
@@ -191,7 +191,7 @@ footer {
 
 .container img {width: 100%;}
 
-.port {width: 65%;}
+.port {width: 800px;}
 
 .vid {
     width: 100%;
