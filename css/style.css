@@ -107,6 +107,7 @@ h3 {
     color: #aaa;
     text-align: left;
     margin: 10px 0px 5px;
+    font-size: 20px;
 }
 
 p {
@@ -184,8 +185,8 @@ footer {
     }
 
 .container {
-    min-height: 80vh;
-    width: 85%;
+    min-height: 70vh;
+    width: 78%;
     margin: auto;
 }
 
@@ -733,5 +734,5 @@ footer {
 }
 
 ul {
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
