@@ -185,7 +185,7 @@ footer {
     }
 
 .container {
-    min-height: 70vh;
+    min-height: 40vh;
     width: 80%;
     margin: auto;
 }
@@ -284,15 +284,13 @@ footer {
     flex-flow: row wrap;
     align-items: center;
 }
-
+    .bio { float: left;}
     .grass {
-        position: absolute;
-        right: 0;
+        float: right;
         z-index: -5;
     }
         .grass img {
             width: 450px;
-            opacity: .5;
         }
 
 

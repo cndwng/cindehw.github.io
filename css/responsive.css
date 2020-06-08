@@ -1,6 +1,7 @@
 
 @media screen and (max-width:1000px) {
-    .grass img, .hawaii img, .moe img{opacity: .2;}
+    .hawaii img, .moe img{opacity: .2;}
+    .grass img {width: 400px;}
     .art__container, .cols, .adobe {  
         -moz-column-count:    2;
         -webkit-column-count: 2;
@@ -15,7 +16,7 @@
 
 @media screen and (max-width:650px) {
     .grass {position: relative; }
-    .grass img {width: 400px; opacity: 1;}
+    .grass img {max-width: 100%; width: 400px; opacity: 1;}
     .hawaii img {width: 200px;}
     .hat img {width: 200px;}
     .hello, .sub__hello, .subsub__hello {margin-right: 5%;}
@@ -68,6 +69,7 @@
 }
 
 @media screen and (max-width:280px) {
+    .sticky + .container {padding-top: none;}
     .topnav {font-size: .8em;}
     .topnav .item {padding: 10px;}
     .topnav .name {width: 100px;}
