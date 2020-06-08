@@ -110,7 +110,7 @@ h3 {
     font-size: 20px;
 }
 
-p {
+p, ul {
     font-size: 20px;
     line-height: 1.6em;
 }
@@ -141,13 +141,13 @@ footer {
     position: relative;
 }
 
-    footer a {
+    footer a, .socials a {
         padding: 0px 5px;
         color: #aaa;
         transition: .3s ease;
     }
 
-    footer a:hover {
+    footer a:hover, .socials a:hover {
         color: #945861;
     }
 
@@ -186,13 +186,13 @@ footer {
 
 .container {
     min-height: 70vh;
-    width: 78%;
+    width: 80%;
     margin: auto;
 }
 
 .container img {width: 100%;}
 
-.port {width: 800px;}
+.port {min-height: unset; width: 800px;}
 
 .vid {
     width: 100%;
@@ -505,7 +505,7 @@ footer {
 }
 
     .projects {
-        max-width: 300px;
+        max-width: 350px;
         padding: 10px 10px 20px;
     }
 
@@ -520,14 +520,14 @@ footer {
     .overlay2 {
         position: absolute;
         margin-top: 0;
-        width: 285px;
+        width: 350px;
         opacity: 0;
         transition: .3s linear;
         z-index: 89;
       }
 
     .overlay2 img {
-        width: 100%;
+        max-width: 95%;
     }
     
     .projects:hover .overlay2 {
@@ -731,8 +731,4 @@ footer {
     -o-user-select: none;
     user-select: none;  
     pointer-events: none;
-}
-
-ul {
-    line-height: 1.6em;
 }
