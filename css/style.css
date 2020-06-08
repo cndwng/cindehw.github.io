@@ -194,6 +194,8 @@ footer {
 
 .port {min-height: unset; width: 800px;}
 
+.port-overflow {width: 1100px;}
+
 .vid {
     width: 100%;
     margin: 20px auto;
