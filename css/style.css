@@ -455,7 +455,7 @@ footer {
     width: 48%;
     display: flex;  
     flex-flow: column nowrap;
-    padding: 10px 20px;
+    padding-right: 10px;
 
     }
     .left__activity {
@@ -471,7 +471,7 @@ footer {
     width: 48%;
     display: flex;  
     flex-flow: column nowrap;
-    padding: 10px 20px;
+    padding-left: 10px;
     border-left: 1px dashed black;
 }
 
@@ -505,7 +505,7 @@ footer {
 }
 
     .projects {
-        max-width: 350px;
+        max-width: 400px;
         padding: 10px 10px 20px;
     }
 
@@ -520,7 +520,7 @@ footer {
     .overlay2 {
         position: absolute;
         margin-top: 0;
-        width: 350px;
+        width: 400px;
         opacity: 0;
         transition: .3s linear;
         z-index: 89;
@@ -620,13 +620,16 @@ footer {
 }
 
     .overview img {
-        width: 250px;
+        max-width: 300px;
         padding: 10px;
     }
 
 .description {
-    width: 63%;
+    width: 58%;
     padding-left: 10px;
+}
+.description p {
+    margin-block-start: .1em;
 }
 
 .caption {
@@ -634,7 +637,7 @@ footer {
     text-align: center;
     font-style: italic;
     font-size: 16px;
-    padding: 10px 0px 25px;
+    padding: 10px 0px 20px;
 }
 
 .overlay {
@@ -694,8 +697,8 @@ footer {
 }
 
 .whatis {
-    float: right;
-    font-size: .8em;
+    padding-top: 10px;
+    font-size: 16px;
 }
 
 .whatis a:before {
