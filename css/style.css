@@ -110,7 +110,7 @@ h3 {
     font-size: 20px;
 }
 
-p {
+p, ul {
     font-size: 20px;
     line-height: 1.6em;
 }
@@ -141,13 +141,13 @@ footer {
     position: relative;
 }
 
-    footer a {
+    footer a, .socials a {
         padding: 0px 5px;
         color: #aaa;
         transition: .3s ease;
     }
 
-    footer a:hover {
+    footer a:hover, .socials a:hover {
         color: #945861;
     }
 
@@ -185,14 +185,16 @@ footer {
     }
 
 .container {
-    min-height: 70vh;
-    width: 78%;
+    min-height: 40vh;
+    width: 80%;
     margin: auto;
 }
 
 .container img {width: 100%;}
 
-.port {width: 800px;}
+.port {min-height: unset; width: 800px;}
+
+.port-overflow {width: 1100px;}
 
 .vid {
     width: 100%;
@@ -282,15 +284,13 @@ footer {
     flex-flow: row wrap;
     align-items: center;
 }
-
+    .bio { float: left;}
     .grass {
-        position: absolute;
-        right: 0;
+        float: right;
         z-index: -5;
     }
         .grass img {
             width: 450px;
-            opacity: .5;
         }
 
 
@@ -455,7 +455,7 @@ footer {
     width: 48%;
     display: flex;  
     flex-flow: column nowrap;
-    padding: 10px 20px;
+    padding-right: 10px;
 
     }
     .left__activity {
@@ -471,7 +471,7 @@ footer {
     width: 48%;
     display: flex;  
     flex-flow: column nowrap;
-    padding: 10px 20px;
+    padding-left: 10px;
     border-left: 1px dashed black;
 }
 
@@ -505,7 +505,7 @@ footer {
 }
 
     .projects {
-        max-width: 300px;
+        max-width: 400px;
         padding: 10px 10px 20px;
     }
 
@@ -520,14 +520,14 @@ footer {
     .overlay2 {
         position: absolute;
         margin-top: 0;
-        width: 285px;
+        width: 400px;
         opacity: 0;
         transition: .3s linear;
         z-index: 89;
       }
 
     .overlay2 img {
-        width: 100%;
+        max-width: 95%;
     }
     
     .projects:hover .overlay2 {
@@ -620,13 +620,16 @@ footer {
 }
 
     .overview img {
-        width: 250px;
+        max-width: 300px;
         padding: 10px;
     }
 
 .description {
-    width: 63%;
+    width: 58%;
     padding-left: 10px;
+}
+.description p {
+    margin-block-start: .1em;
 }
 
 .caption {
@@ -634,7 +637,7 @@ footer {
     text-align: center;
     font-style: italic;
     font-size: 16px;
-    padding: 10px 0px 25px;
+    padding: 10px 0px 20px;
 }
 
 .overlay {
@@ -694,8 +697,8 @@ footer {
 }
 
 .whatis {
-    float: right;
-    font-size: .8em;
+    padding-top: 10px;
+    font-size: 16px;
 }
 
 .whatis a:before {
@@ -731,8 +734,4 @@ footer {
     -o-user-select: none;
     user-select: none;  
     pointer-events: none;
-}
-
-ul {
-    line-height: 1.6em;
 }

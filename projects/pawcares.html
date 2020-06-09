@@ -48,65 +48,200 @@
     <h2>Perks at Work Fundraising</h2>
 
     <div class="overview">
-        <img src="/images/portfolio/paw/thumb.png">
+        <img src="/images/portfolio/paw/graphic.png">
         <div class="description"><h3>Perks at Work, Next Jump</h3>
-            <div class="whatis"><a href="https://www.perksatwork.com/" target="_blank">Perks at Work</a></div>
             <i>Spring 2020</i>
+            <div class="whatis"><a href="https://www.perksatwork.com/" target="_blank">What is Perks at Work?</a></div>
             <p>A fundraising platform built during COVID-19 to send supplies to NYC hospitals.</p>
         </div>
     </div>
 
     <p>
-        As COVID-19 cases in New York City began to spike, leadership at my company wanted to leverage our unique position as an e-  commerce platform with connections to merchants, corporate clients, and customers to help hospitals. We wanted to build care packages with electronics and snacks to support frontline workers. 
+        The impact of COVID-19 has been felt worldwide, one of the hardest hit being NYC -- this past year has been my first time living in such a densely populated, diverse area, and the effects of the pandemic locally has been difficult to watch. With hospitals overwhelmed, Next Jump decided to push for a pro bono initiative to raise funds to build care packages for frontline workers.
     </p>
     <p>
-        I served as the UI/UX designer to build the fundraising platform. The high fidelity mockups and protoype can be found below. Since the beginning of April 2020, our platform has raised over $180k in the US and over &#163;40k in the UK.
+        I served as the UI/UX designer to build a fundraising platform. Since April this year, our platform has raised over $180k in the US and over &#163;40k in the UK. 
     </p>
 
-    <iframe style="border: none;" width="100%" height="65%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBiMKlbng4eISBdNweJxTmO%2Fnxj-cares%3Fnode-id%3D314%253A1%26viewport%3D1172%252C187%252C0.1832997053861618%26scaling%3Dscale-down-width" allowfullscreen></iframe>
-    <div class="caption">A prototype of the page in Figma</div>
-    
-    <h3>Planning</h3>
+    <h3>The Final Prototype</h3>
     <p>
-        Our team's initial aim was to roll out a product to support two local NYC hospitals: Elmhurst & Kings County. One of our clients is NYC Health + Hospitals, so our client success team was able to connect with their contacts and determine their needs. Beyond just PPE, they listed their greatest needs as more laptops/tablets, clothing (scrubs, towels), & snacks.
+        The high fidelity mockups and prototype can be found below. Keeping scrolling for the process!
+    </p>
+</div>
+<div class="container port-overflow">
+    <iframe style="border: none;" width="100%" height="75%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBiMKlbng4eISBdNweJxTmO%2Fnxj-cares%3Fnode-id%3D314%253A1%26viewport%3D1172%252C187%252C0.1832997053861618%26scaling%3Dscale-down-width" allowfullscreen></iframe>
+    <div class="caption" style="padding-top: 20px;">If the embedded experience does not work for you, you can find the prototype <a href="https://www.figma.com/proto/BiMKlbng4eISBdNweJxTmO/nxj-cares?node-id=314%3A1&scaling=scale-down-width&viewport=1172%2C187%2C0.1832997053861618">here</a>.</div>
+</div>
+<div class="container port fade-in">
+    <h3>The Beginning: How Do We Best Help Hospitals in Need?</h3>
+    <p>
+        Next Jump runs an e-commerce platform with corporate clients and merchant partners and over 70 million unique users on the site. We were able to leverage each of these angles to <b>1) understand what hospitals needed</b> most from our corporate contacts at NYC Health + Hospitals, <b>2)</b> ask our customer base to help us <b>fund care packages</b> with those items, and <b>3)</b> utilize our merchant contacts to <b>organize order fulfillment</b> and send these packages to the hospitals.
     </p>
     <p>
-        We decided to help fund a fixed group of items, particularly electronics and snacks because of our existing relationships with merchants that sell these items. I produced wireframes to meet the following criteria:
+        With our NYC Health + Hospitals contacts, we identified two of the hardest hit local hospitals: Elmhurst & Kings County as well as the items they needed the most. Beyond personal protective equipment, their greatest needs were laptops & tablets, clothing (like scrubs & towels), and snacks.
+    </p>
+    <img src="/images/portfolio/paw/hospitalneeds.png">
+    <div class="caption">A breakdown of hospital needs beyond PPE</div>
+    <p>
+        We focused on the biggest and smallest ticket items (electronics and snacks) due to our existing relationships with the merchants that sell these items.
+    </p>
+    
+    <!-- <h3>A Brief Look at Flows</h3>
+    <p>
+        Two main flows we took into consideration were order fulfillment and the customer flow. We wanted the order fulfillment process to be scalable for many fundraisers, so we planned the product keeping in mind all of the teams involved. The overall customer flow was similar to the standard e-commerce flow.
+    </p>
+    <img src="/images/portfolio/paw/flowcharts.png">
+    <div class="caption">A high level overview of order fulfillment and customer flow</div> -->
+    
+    <h3>Wireframing</h3>
+    <p>
+        I looked into GoFundMe as our primary inspiration for this platform. GoFundMe serves similar goals, but with a few differences, the three most important being:
         <ul>
-            <li>See progress for each individual item, focusing on # funded vs dollar amount</li>
-            <li>Highlight contributions made by individuals, corporations, and merchant partners</li>
-            <li>Adaptable and scalable for many hospitals in the future</li>
+            <li>Must showcase progress for each individual item, focusing on the # funded rather than the dollar amount</li>
+            <li>Must highlight contributions made by all three possible contributors (individuals, corporations, merchant partners)</li>
+            <li>Must be able to stream a feed of updates</li>
         </ul>
     </p>
-    <img src="/images/portfolio/paw/wireframe.png">
-    <div class="caption">Initial page wireframe</div>
+    <img src="/images/portfolio/paw/gofundme_comparison.png">
+    <div class="caption">A comparison of GoFundMe features and the Perks at Work platform needs</div>
+    
     <p>
-        I opted for a fixed sidebar to keep the primary call to action (contribute) visible at all times as well as showcase the live feed.
+        With these in mind, I created the following wireframe, adopting GoFundMe's right sidebar highlighting overall progress and activity feed, keeping the primary call to action visible at all times. I used the left side of the screen for breaking down the details and specifics for each fundraiser.
     </p>
+    <img src="/images/portfolio/paw/wireframe.png">
+    <div class="caption">The initial page wireframe</div>
+
     <p>
         Clicking the "contribute" button opens a modal that allows customers to choose their contribution amount (fixed amounts due to tech constraints) and add a personalized message.
     </p>
     <img src="/images/portfolio/paw/wiremodal.png">
     <div class="caption">Wireframe of the purchase modal</div>
 
-    <p>The rest of the purchase flow adopted our existing cart experience, with a new item icon and messaging unique to this platform.</p>
+    <p>
+        The rest of the purchase flow adopted our existing cart experience, with a new item icon and messaging unique to this platform.
+    </p>
     <img src="/images/portfolio/paw/cart.png" />
     <div class="caption">After adding to the cart</div>
 
     <h3>Iterating to the Final Product</h3>
-    <p>We pushed out an initial version of the page with a very similar layout as the initial wireframe, but felt that the experience could be further improved. A question particularly on our minds was, "What happens after I donate?" so we added a tab navigation with an "Updates" tab on the individual hospital's listing.</p>
+    <p>
+        After handing off initial wireframes and higher fidelity mockups to the engineers, we pushed out a version of the page very similar to the initial wireframe for our initial sprint. Our MVP included only funding individual items and the activity feed. Donations began streaming in, and we began thinking about how to answer the question, "What happens after I donate?"
+    </p>
+    <p>
+        We looked to Kickstarter's tab navigation and adapted it to highlight milestones (e.g. "Tablets completely funded!"), progress on fulfillment, and updates directly from the hospitals.
+    </p>
     <img src="/images/portfolio/paw/updates.png" />
     <div class="caption">The updates tab</div>
 
-    <p>We also found that our client success team was very quickly expanding to several more hospitals. Thus, we needed to create a page to allow discovery of the breadth of offerings. Their team was also getting overwhelmed with requests to add more hospitals, so we dropped in a button to the "Nominate a Hospital" form at the bottom of the page.</p>
+    <p>
+        We also found that our client success team was very quickly expanding to several more hospitals. Thus, we needed to create a page to allow discovery of the breadth of offerings as well as an avenue for the community to nominate their own local hospitals.
+    </p>
     <img src="/images/portfolio/paw/listing.png" />
     <div class="caption">The listing section & entry point for the form</div>
 
-    <p>Our final hospital page ended up looking quite different in order to better tell the "story" for that particular hospital.</p>
+    <p>
+        This was our final individual hospital page mockup, with a bigger focus on telling the "story" for each hospital.
+    </p>
     <img src="/images/portfolio/paw/hospital.png" />
     <div class="caption">A final mockup</div>
 
-    <p>As of now, after seeing success with this iteration of the project, the team is now moving toward funding laptops and tablets for schools to distribute to their students for online learning.</p>
+    <img src="/images/portfolio/paw/graphic.png" style="float: left; max-width: 400px;">
+
+    <h3>Looking to the Future</h3>
+    <p>
+        Within the first 48 hours of launch and very little marketing, the platform raised almost $90k for Elmhurst and Kings County Hospital. I was blown away by the customer response to our initiative!
+    </p>
+    <p>
+        Our team is looking to expand our impact. We've connected with local schools; many students do not have access to personal laptops or tablets to access online learning easily, so our goal is to provide these children with the tech they need to continue their education. 
+    </p>
+    <p>
+        In the future, I hope to further explore post-fulfillment messaging, both on the platform and working with our email marketing team in order to better connect the donors and healthcare workers and students.
+    </p>
+    <div>
+        <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">back</a></span>
+        <span id="next"><a href="/projects/starstruck.html">another<img src="/images/arrow2_right.png"></a></span>
+        <br /><br />
+    </div>
+</div>
+
+<div class="container fade-in">
+
+    <h2>more projects</h2>
+    <div class="projects__container">
+
+		<!-- <div class="projects"><a href="/projects/pawcares.html">
+			<div class="overlay2">
+				<img src="/images/covers/pawcares_cover2.png">
+			</div>
+			<img src="/images/covers/pawcares_cover1.png">
+			<h3>Perks at Work Fundraising</h3>
+			A fundraising platform hosted on Next Jump's e-commerce site.
+		</a></div> -->
+
+		<div class="projects"><a href="/projects/starstruck.html">
+			<div class="overlay2">
+				<img src="/images/covers/starstruck_cover2.png">
+			</div>
+			<img src="/images/covers/starstruck_cover1.png">
+			<h3>Starstruck</h3>
+			A 1 or 2 player gravity-less puzzle platformer set in space.
+		</a></div>
+
+		<div class="projects"><a href="/projects/factset.html">
+			<div class="overlay2">
+				<img src="/images/covers/factset_cover2.png">
+			</div>
+			<img src="/images/covers/factset_cover1.png">
+			<h3>FactSet Design Systems</h3>
+			Creating a responsive library for FactSet's design systems.
+		</a></div>
+
+		<div class="projects"><a href="/projects/apps.html">
+			<div class="overlay2">
+				<img src="/images/covers/comps_cover2.png">
+			</div>
+			<img src="/images/covers/comps_cover1.png">
+			<h3>StartupTree Competitions/Applications</h3>
+			A module built to host competitions on StartupTree.
+		</a></div>
+
+		<div class="projects"><a href="/projects/startuptreemobile.html">
+			<div class="overlay2">
+				<img src="/images/covers/startuptreemobile_cover2.png">
+			</div>
+			<img src="/images/covers/startuptreemobile_cover1.png">
+			<h3>StartupTree Mobile App</h3>
+			A mobile application built for StartupTree.
+		</a></div>
+
+		<div class="projects"><a href="/projects/echoesofsilence.html">
+			<div class="overlay2">
+				<img src="/images/covers/echoes_cover2.png">
+			</div>
+			<img src="/images/covers/echoes_cover1.png">
+			<h3><i>Echoes of Silence</i></h3>
+			A mental health publication modeled after <i>Portraits of Resiliency</i>.
+		</a></div>
+
+		<div class="projects"><a href="/projects/dripdrop.html">
+			<div class="overlay2">
+				<img src="/images/covers/dripdrop_cover2.png">
+			</div>
+			<img src="/images/covers/dripdrop_cover1.png">
+			<h3>dripdrop</h3>
+			A web-based action game following the journey of a dew drop.
+		</a></div>
+		
+		<div class="projects"><a href="/projects/sequencer.html">
+			<div class="overlay2">
+				<img src="/images/covers/sequencer_cover2.png">
+			</div>
+			<img src="/images/covers/sequencer_cover1.png">
+			<h3>Interactive Visual Music Sequencer</h3>
+			A pentatonic tone sequencer built with a Teensy Arduino.
+		</a></div>
+
+	</div>
 </div>
 
 <footer>
