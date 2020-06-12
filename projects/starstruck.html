@@ -33,7 +33,7 @@
     </div>
     <div class="navlink">
         <div class="topnav item"><a href="/projects/">Work</a></div>
-        <div class="topnav item"><a href="/projects/graphics.html">Play</a></div>
+        <div class="topnav item"><a href="/projects/graphics.html">Fun</a></div>
         <div class="topnav item"><a href="/Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
 </div>
@@ -61,14 +61,15 @@
     <p>
         I served as a programmer, focusing on the UI, and did some part-time design work. 
     </p>
-    <p><a href="https://gamejolt.com/games/starstruck/431185" target="_blank">Play the game!</a></p>
+
+    <a href="https://gamejolt.com/games/starstruck/431185" target="_blank" class="animated-button thar-three">Play Starstruck</a>
 
     <div style="padding:56.25% 0 0 0;position:relative;"> <iframe src="https://www.youtube.com/embed/vwoJ0Cq6URA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
     <div class="caption">The game trailer</div>
    
     <h3>Initial Prototyping & Brainstorming</h3>
     <p>
-        Our initial inspiration for our game was the story of Laika, the first dog to be sent to space. What started as a dog on a leash playing fetch evolved into two astronauts connected by a rope collecting the stars. Jumping from planet to planet
+        Our initial inspiration for our game was the story of Laika, the first dog to be sent to space. What conceptually started as a dog on a leash playing fetch evolved into two astronauts connected by a rope collecting the stars. Jumping from planet to planet, they lasso around stars to fill their empty home galaxy.
     </p>
     <p>
         In order to test the initial mechanics, we built a paper prototype. We simulated actions on a large foam board, with our characters being controlled with push pins connected by a rubber band.
@@ -92,27 +93,36 @@
 
     <h3>Playtesting Prototypes</h3>
     <p>
-        In our development cycle, we built several prototypes to playtest with gamers. With each prototype, we took notes and interviewed our playtesters and created new levels. Some important decisions that came from these, including the following:
+        In our development cycle, we built several prototypes to playtest with gamers. With each prototype, we took notes and interviewed our playtesters and created new levels. The game went through a lot of big changes thanks to their feedback.
     </p>
+    <p>
+        Originally we wanted to the rope to stretch like a rubber band &mdash; although rope physics was challenging, we managed to implement a stretching rope. After playtesting, players found it unintuitive and clunky, so we scrapped the mechanism altogether.
+    </p>
+    <img src="/images/portfolio/starstruck/rope.png">
+    <div class="caption">The rope was built using a chain of small objects, linked together at the end. Our original thoughts were to insert a new link somewhere in our chain to "stretch" the rope</div>
+    <p>The mechanic for collecting stars underwent a number of drastic changes:</p>
     <ul>
-        <li>Originally we wanted to the rope to stretch like a rubber band -- although rope physics was challenging, we managed to implement a stretching rope. After playtesting, however, players found it unintuitive and clunky, so we scrapped the mechanism altogether.</li>
-        <li>The mechanic for collecting stars underwent a number of drastic changes</li>
-        <ul>
-            <li>For the paper prototype, the initial thought was the rope would have to loop around each star to collect. The math ended up being too difficult to implement!</li>
-            <li>In our first prototype, the astronauts' bodies had to make contact with a star in order to collect it, but after playtesting, contact with the rope made gameplay far more satisfying.</li>
-            <li>The intention was for the game to be single player, but after demoing a second set of controls for the second astronaut, it was a huge hit and became the primary control scheme for the game.</li>
-        </ul>
-    </ul>
-    <video autoplay loop muted class="gameplay">
+        <li>For the paper prototype, the initial thought was the rope would have to loop around each star to collect. The math ended up being pretty difficult to implement, so we started with just contact with the astronauts' bodies.</li>
+        <li>We created our first prototype's star collection to be triggered by contact with bodies only, but also built a version where contact with the rope would also collect the stars. As soon as we debuted the latter, the gameplay became way more satisfying and way more fun!</li>
+    </ul>    
+    <img src="/images/portfolio/starstruck/starcollection.png">
+    <div class="caption">Our original intended star collection mechanic</div>
+    <p>The control scheme for the game also went through a few iterations:</p>
+    <ul>
+        <li>The intention was for the game to be single player, but after demoing a second set of controls for the second astronaut, it was a huge hit and became the primary control schema for the game. We also added Xbox controls for better co-op experience!</li>
+        <img src="/images/portfolio/starstruck/controls.png">
+        <div class="caption">Two ways to map arrow key movement to rotational movement on the planets. [A] was the winner!</div>    
+        <li>Movement around planets was rotational, so we faced some challenges mapping this movement to the arrow keys. We started with [A] (shown above), but playtesters found it confusing. But after changing it to [B], it was even worse! We ended up sticking to our guns and keeping the original scheme.</li>
+    </ul>    <video autoplay loop muted class="gameplay">
         <source src="/images/portfolio/starstruck/playtest.mov">
     </video>
-    <div class="caption">Playtesting</div>
+    <div class="caption">We had nearly a dozen playtesting sessions with different groups of people &mdash; it was helpful to get their feedback and input on the game and really fun to see them enjoy what we had built.</div>
     <h3>Demoing the Game</h3>
     <p>
         We demoed our final game at <a href="https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/" target="_blank">BOOM</a> as well as the <a href="https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/" target="_blank">GDIAC showcase</a> at the end of the semester in May 2019. Students, professors, and community members in the Ithaca community gather on Cornell's campus to playtest the games built during the semester. Audience members vote for their favorite picks.
     </p>
     <p>
-        Our game ended up winning "Most Polished," judged by staff members in the Game Design community, as well as "Audience Favorite."
+        Our game ended up winning "Most Polished," judged by staff members in the Game Design community, as well as "Audience Favorite." Watching people co-op the game with their friends was incredibly satisfying and a lot of fun.
     </p>
     <img src="/images/portfolio/starstruck/gameplay.gif">
     <div class="caption">A quick gif of gameplay</div>
@@ -129,6 +139,9 @@
         </div>
     </div>
     <div class="caption">Our team at BostonFIG</div>
+
+    <p>Starstruck was a ton of fun to demo, especially watching friends (and strangers!) co-op together. When I have time to kill, I always use two player controls on the keyboard (one hand per astronaut) or co-op it with a friend. </p>
+    <a href="https://gamejolt.com/games/starstruck/431185" target="_blank" class="animated-button thar-three">Play Starstruck</a>
 
     <div>
         <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">back</a></span>
