@@ -62,12 +62,12 @@
     </p>
 
     <p>
-        I created a quick five minute video to explain some context & demo the component library. I walk through a tutorial of how to use the library (& some handy Figma features) and break down how some of the components were built.
+        I created a quick five minute video to explain some context & demo the component library. I walk through a tutorial of how to use the library (& some handy Figma features) and break down how some of the components were built. Further explanation can be found below!
     </p>
     <div style="padding:56.25% 0 0 0;position:relative;">
         <iframe src="https://player.vimeo.com/video/294787543?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-    <div class="caption">Walking through the final demo file</div>
+    <div class="caption">Walking through the final demo file (5m15s)</div>
 
     <h3>A Period of Transition</h3>
     <p>
@@ -89,7 +89,7 @@
         <ul>
             <li>Figma is hosted in-browser, so it is compatible with both Windows & Mac OS. No one on the team would need to to switch operating systems!</li>
             <li>Team libraries are hosted on the web and update automatically, so there was a simpler internal version control than Sketch</li>
-            <li>Figma's built-in CSS and developer view lends itself well to a cleaner engineering hand-off, one of the major goals for the new design system</li>
+            <li>Figma's built-in CSS and developer view lent itself well to a cleaner engineering hand-off, one of the major goals for the new design system</li>
         </ul>
     <p>
         The team had actually already begun to make the switch, but each new project meant every component had to be built from scratch every time. This is where I came in!
@@ -100,31 +100,47 @@
         I researched and based our system off of the principles of Brad Frost's <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank"><i>Atomic Design</i></a>. I also did a deep dive of well-known design systems like Google's Material Design, IBM's Carbon Design, and Microsoft's MorningStar Design Systems for inspiration.
     </p>
     <img src="/images/portfolio/factset/atomic.png">
-    <div class="caption">How atomic design is structured, first at a high level, then a specific example of the makings of a dropdown</div>
+    <div class="caption">How atomic design is structured &mdash; first at a high level, then an example of an atomically built dropdown</div>
 
     <p>
         As a team, we began breaking down each component of our library and mapping components to each level of organization and determining which components were more complex and could be built out of smaller atoms or molecules. The library needed to be structured such that future editors of the library would be able to easily understand it and make changes.
     </p>
     <img src="/images/portfolio/factset/menus.png">
-    <div class="caption">Breaking down menus into smaller pieces to create a responsive component</div>
+    <div class="caption">Breaking down menus into smaller pieces to create a menu component</div>
     <p>
-        Some logistical questions we tackled during this phase of planning included: how do I group components intuitively? What kind of naming conventions do I use to become the team standard? How granular should each “atom” be (e.g. is the background of a button too specific? What about a text label?)
+        Some logistical questions we tackled during this phase of planning included: how do I group components intuitively? What kind of naming conventions do I use to become the team standard? How granular should each atom be? (E.g. is the background of a button too specific of a component? What about a text label?)
     <h3>Some Highlights Along the Way</h3>
-    <ul>
-        <li>engineering handoff</li>
-        <li>Built in states</li>
-        <li>Responsive, resizable components</li>
+
+    <p>
+        An ongoing discussion we had was about the engineering handoff; the existing flow required a lot of manual labor. We worked in conjunction with our frontend engineering teams to create a more standardized, dynamic process. Our vision was that any small design change could quickly propagate to all of our applications with minimal need for extensive communication.
+    </p>
+    <p>
+        We experimented first with Zeplin. I had previously worked with a Zeplin and Sketch workflow, and thought it would adapt nicely for our use case; however, Zeplin wasn't very well integrated with Figma at the time and the handoff process did not see much improvement. We instead looked toward Figma's native capabilities in their "Code" tab &mdash; it was more similar than I had anticipated to Zeplin. Due to time constraints and other projects, we left this particular discussion at this stage for the remainder of my internship.
+    </p>
+    <img src="/images/portfolio/factset/developertab.png">
+    <div class="caption">The "Code" tab automatically generates CSS for text styles, positioning, padding and more for each layer</div>
+
+    <p>
+        Each component had multiple states &mdash; what happens when I want to mock something with a hover state? How will the engineers in charge of the frontend library know what the hover state is? For this (and many other variable pieces like icons), I used the power of Figma’s nested components. Nested components allowed each UI pattern to be dynamic and flexible, and each state (hover, active, disabled, focus, etc.) could be built into the layers of an individual component. I referenced <a href="https://medium.com/@nspace/building-flexible-components-in-figma-41113aa69493" target="_blank">this article</a> by Thomas Lowry frequently as I built.
+    </p>
+        <img src="/images/portfolio/factset/buttons.png">
+        <div class="caption">Two button components: one showing it's hover state and one showing it's resting state. The icon button below shows a circle, but can be easily swapped with any other icon in the library using nested components</div>
+    <p>
+        I was also very stubborn about not wanting users of the library to have to "unlink" each component from the master library to properly customize them. If each component had to be unlinked, then any changes to the master component would not reflect in their mockups, effectively diminishing the purpose of having a master library. I made it a personal goal to make every component as responsive, resizable, and reusable as possible. 
+    </p>
+    <p>
+        I accomplished this with a combination of some incredibly powerful Figma features &mdash; between constraints, grids, and nested frames & components, about 95% of the system was fully customizable without the need to sever the connection to the master library.
+    </p>
         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/293769494?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-        <div class="caption">Tabs and windows</div>
-    </ul>
+        <div class="caption">Fully customizable tabs and windows, built responsively with nested components (48s)</div>
 
     <h3>Results</h3>
     <p>
-        By the end of the summer, the "atoms" and "molecules" had been built into the component library in full. The most frequently used "organism" UI patterns had also been integrated into the library and demo. 
+        By the end of my internship, the "atoms" and "molecules" had been built into the component library in full. The most frequently used "organism" UI patterns had also been integrated into the library and demo. Many more complex patterns could be built by mixing and matching.
     </p>
 
     <img src="/images/portfolio/factset/example.png" />
-    <div class="caption">Using the leftmost atoms & molecules and a variety of form elements (more atoms & molecules & even organisms), these three frequently-used UI patterns can be built</div>
+    <div class="caption">Using the leftmost atoms & molecules and a variety of form elements (made of more atoms & molecules & even organisms), these three frequently-used UI patterns can be built</div>
 
     <p>
         The visual design team began integrating these components into their daily workflow. Some of my biggest challenges came from understanding how components were used on the platform as well as how the visual designers build them, then integrating this thinking into my system designs.
@@ -133,10 +149,15 @@
         <iframe src="https://player.vimeo.com/video/293769458?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <div class="caption">A (silent) demo of how to use the library to quickly build out a page</div>
+    <div class="caption">A (silent) demo of how to use the library to quickly build out a page (3m38s)</div>
     <p>
         I learned a good deal about systematically creating a reliable and reusable design system. Moving forward the team's primary objectives were to work further with our developers to implement the visual redesign in a streamlined, scalable way. Regretfully, my internship came to a close at this point and I was unable to accompany them in the next stages!
     </p>
+
+    <p>
+        If you're interested, you can check out the demo file in Figma.
+    </p>
+    <a href="https://www.figma.com/file/Icy1Av0kGaz2H0GRvsURLD/Component-Library-Demo?node-id=161%3A17188" target="_blank" class="animated-button thar-three">Peruse the Demo File</a>
 
     <div>
         <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">back</a></span>
