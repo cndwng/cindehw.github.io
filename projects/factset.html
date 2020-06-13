@@ -45,39 +45,99 @@
         <br /><br />
     </div>
 
-    <h2>FactSet Design Systems</h2>
+    <h2>FactSet Design System</h2>
 
     <div class="overview">
         <img src="/images/covers/factset_cover2.png">
         <div class="description"><h3>FactSet Research Systems, UX Design Intern</h3>
             <i>Summer 2018</i>
             <div class="whatis"><a href="https://www.factset.com/" target="_blank">What is FactSet?</a></div>
-            <p>A responsive visual component library for FactSet's design systems, created using atomic design principles.
+            <p>A responsive visual component library for FactSet's design system, created using atomic design principles.
             </p>
         </div>
     </div>
 
-    <p>FactSet's Visual Design team was working on transitioning from using Adobe Fireworks to using Figma. My project for the summer was creating a visual library using atomic design principles with the intention of creating a new, fully developed design system.</p>
+    <p>
+        Factset is a financial tech company that works on software for financial data. Being a large, well-established company, they had an existing design library with strict guidelines for each component. My project for the summer was creating a visual library using atomic design principles with the intention of creating a new design system. I also built a tutorial/demo file to showcase the library and teach the visual team how to use it.
+    </p>
 
-    <p>While my focus was on the visual side, I spoke and worked with my managers and some frontend developers to plan out how to develop a system where small visual design changes can propagate quickly to our applications. With those discussions in mind, I built the library using nested components and created a demo that showed how each component was broken down and how it should be used.</p>
+    <p>
+        I created a quick five minute video to explain some context & demo the component library. I walk through a tutorial of how to use the library (& some handy Figma features) and break down how some of the components were built.
+    </p>
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/294787543?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="caption">Walking through the final demo file</div>
 
+    <h3>A Period of Transition</h3>
+    <p>
+        When I joined as a UX Design Intern the summer of 2018, the visual design was in a period of major transition. For much of Factset's recent history, the visual design team used Adobe Fireworks for UI design. The existing visual library was built in Fireworks; however, the software was discontinued by Adobe in 2012.
+    </p>
+
+    <p>
+        The existing library had guidelines and specifications hosted on a Wordpress site, but in the form of hundreds of screenshots. As a result, it was a slow process to propagate changes to our Wordpress library and to our engineers to implement into our applications. This, coupled with a visual redesign resulting from our recently signed contract with Bank of America Merrill Lynch (BAML), presented a need to move away from Fireworks and rebuild the library. 
+    </p>
+
+    <p>
+        The contract with BAML included a modernization of our visual design, so this transition period served as a good opportunity to make the switch. But switch to what?
+    </p>
+
+    <h3>Why Figma?</h3>
+    <p>
+        We landed on Figma as our software of choice. Some of the advantages Figma offered follow: 
+    </p>
+        <ul>
+            <li>Figma is hosted in-browser, so it is compatible with both Windows & Mac OS. No one on the team would need to to switch operating systems!</li>
+            <li>Team libraries are hosted on the web and update automatically, so there was a simpler internal version control than Sketch</li>
+            <li>Figma's built-in CSS and developer view lends itself well to a cleaner engineering hand-off, one of the major goals for the new design system</li>
+        </ul>
+    <p>
+        The team had actually already begun to make the switch, but each new project meant every component had to be built from scratch every time. This is where I came in!
+    </p>
+
+    <h3>Atomic Design Principles</h3>
+    <p>
+        I researched and based our system off of the principles of Brad Frost's <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank"><i>Atomic Design</i></a>. I also did a deep dive of well-known design systems like Google's Material Design, IBM's Carbon Design, and Microsoft's MorningStar Design Systems for inspiration.
+    </p>
+    <img src="/images/portfolio/factset/atomic.png">
+    <div class="caption">How atomic design is structured, first at a high level, then a specific example of the makings of a dropdown</div>
+
+    <p>
+        As a team, we began breaking down each component of our library and mapping components to each level of organization and determining which components were more complex and could be built out of smaller atoms or molecules. The library needed to be structured such that future editors of the library would be able to easily understand it and make changes.
+    </p>
     <img src="/images/portfolio/factset/menus.png">
     <div class="caption">Breaking down menus into smaller pieces to create a responsive component</div>
-    
-    <p>Using the smaller pieces, the components can be rearranged and mix & matched to build into larger UI patterns.</p>
+    <p>
+        Some logistical questions we tackled during this phase of planning included: how do I group components intuitively? What kind of naming conventions do I use to become the team standard? How granular should each “atom” be (e.g. is the background of a button too specific? What about a text label?)
+    <h3>Some Highlights Along the Way</h3>
+    <ul>
+        <li>engineering handoff</li>
+        <li>Built in states</li>
+        <li>Responsive, resizable components</li>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/293769494?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        <div class="caption">Tabs and windows</div>
+    </ul>
+
+    <h3>Results</h3>
+    <p>
+        By the end of the summer, the "atoms" and "molecules" had been built into the component library in full. The most frequently used "organism" UI patterns had also been integrated into the library and demo. 
+    </p>
+
     <img src="/images/portfolio/factset/example.png" />
-    <div class="caption">Using the leftmost pieces and a variety of form elements, these three UI patterns can be built</div>
+    <div class="caption">Using the leftmost atoms & molecules and a variety of form elements (more atoms & molecules & even organisms), these three frequently-used UI patterns can be built</div>
 
-    <p>Listen to me ramble more about the work I did during my internship and watch me walk through (super speedily) my demo file below! This file serves as a tutorial on the library and how to use the components efficiently.</p>
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/294787543?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-    <br /><br />
+    <p>
+        The visual design team began integrating these components into their daily workflow. Some of my biggest challenges came from understanding how components were used on the platform as well as how the visual designers build them, then integrating this thinking into my system designs.
+    </p>
+    <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe src="https://player.vimeo.com/video/293769458?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <div class="caption">A (silent) demo of how to use the library to quickly build out a page</div>
+    <p>
+        I learned a good deal about systematically creating a reliable and reusable design system. Moving forward the team's primary objectives were to work further with our developers to implement the visual redesign in a streamlined, scalable way. Regretfully, my internship came to a close at this point and I was unable to accompany them in the next stages!
+    </p>
 
-    <h3>Other Demos</h3>
-    <p>I've also created a couple (silent) videos demonstrating how I built tabs and building a few screens using the team library.</p>
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/293769494?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-    <br /><br />
-    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/293769458?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-    <br /><br />
     <div>
         <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">back</a></span>
         <span id="next"><a href="apps.html">next<img src="/images/arrow2_right.png"></a></span>
@@ -113,8 +173,8 @@
 				<img src="/images/covers/factset_cover2.png">
 			</div>
 			<img src="/images/covers/factset_cover1.png">
-			<h3>FactSet Design Systems</h3>
-			Creating a responsive library for FactSet's design systems.
+			<h3>FactSet Design System</h3>
+			Creating a responsive library for FactSet's design system.
 		</a></div> -->
 
 		<div class="projects"><a href="/projects/apps.html">
