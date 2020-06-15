@@ -287,12 +287,15 @@ footer {
     align-items: center;
 }
     .bio { float: left;}
+
     .grass {
         float: right;
         z-index: -5;
+        margin-top: -20px;
+
     }
         .grass img {
-            width: 450px;
+            width: 420px;
         }
 
 
@@ -333,7 +336,7 @@ footer {
     .sticky {
         position: fixed;
         top: 0;
-        background-color: rgba(247, 247, 247, .8);
+        background-color: rgba(251, 251, 251, .8);
     }
     
     /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
