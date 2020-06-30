@@ -69,7 +69,7 @@
     </p>
 </div>
 <div class="container port-overflow">
-    <iframe style="border: none;" width="100%" height="75%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBiMKlbng4eISBdNweJxTmO%2Fnxj-cares%3Fnode-id%3D314%253A1%26viewport%3D1172%252C187%252C0.1832997053861618%26scaling%3Dscale-down-width" allowfullscreen></iframe>
+    <iframe class="pic" style="border: none;" width="100%" height="75%" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBiMKlbng4eISBdNweJxTmO%2Fnxj-cares%3Fnode-id%3D314%253A1%26viewport%3D1172%252C187%252C0.1832997053861618%26scaling%3Dscale-down-width" allowfullscreen></iframe>
     <div class="caption" style="padding-top: 20px;">If the embedded experience does not work for you, you can find the prototype <a href="https://www.figma.com/proto/BiMKlbng4eISBdNweJxTmO/nxj-cares?node-id=314%3A1&scaling=scale-down-width&viewport=1172%2C187%2C0.1832997053861618">here</a>.</div>
 </div>
 <div class="container port fade-in">
@@ -95,33 +95,41 @@
     
     <h3>Wireframing</h3>
     <p>
-        I looked into GoFundMe as our primary inspiration for this platform. GoFundMe serves similar goals, but with a few differences. The most important requirements for the Perks at Work platform were the following:
+        I looked into GoFundMe as our primary inspiration for this platform. GoFundMe is already a successful fundraising platform, so it made sense to look into their structure and determine what elements we could pull.
+    </p>
+    <img class="pic" src="/images/portfolio/paw/gofundme.png">
+    <div class="caption">A screenshot of an individual fundraiser's page on GoFundMe. A lot of the structure of my wireframes and final mocks were from this platform because of the closely aligned goals.</div>
+    <p>
+        There were, however, some differences. The most important requirements for the Perks at Work platform were the following:
+    </p>
         <ul>
             <li>Have individual fundraisers for different hospitals, scalable and adaptable for future, non-hospital fundraisers</li>
             <li>Showcase progress for each individual item, focusing on the # funded rather than the dollar amount</li>
             <li>Highlight contributions made by all three possible contributors (individuals, corporations, merchant partners)</li>
             <li>Provide updates on the fundraising, fulfillment, and delivery of the products</li>
         </ul>
+    <p>
+        I mapped out a comparison between the two platforms to get a better idea of where they diverge.
     </p>
     <img src="/images/portfolio/paw/gofundme_comparison.png">
     <div class="caption">A comparison of GoFundMe features and the Perks at Work platform needs</div>
     
     <p>
-        With these in mind, I created the following wireframe for an individual hospital, adopting GoFundMe's right sidebar highlighting overall progress and activity feed, keeping the primary call to action visible at all times. I used the left side of the screen for breaking down the details and specifics for each fundraiser, including the breakdown of progress for each item funded.
+        With this in mind, I created the following wireframe for an individual hospital, adopting GoFundMe's right sidebar highlighting overall progress and activity feed, keeping the primary call to action visible at all times. I used the left side of the screen for breaking down the details and specifics for each fundraiser, including the breakdown of progress for each item funded.
     </p>
-    <img src="/images/portfolio/paw/wireframe.png">
+    <img class="pic" src="/images/portfolio/paw/wireframe.png">
     <div class="caption">The initial page wireframe</div>
 
     <p>
-        Clicking the "contribute" button would open a modal that allows customers to choose their contribution amount (fixed amounts due to tech constraints) and add a personalized message.
+        Clicking the "contribute" button would open a modal that allows customers to choose their contribution amount (fixed amounts due to tech constraints) and add a personalized message. Typically our purchase flow would bring customers to an item description page. However, we didn't want the experience to feel like a purchase rather than a donation or contribution, hence our decision to keep customers on the same fundraiser page and implement a modal instead.
     </p>
-    <img src="/images/portfolio/paw/wiremodal.png">
+    <img class="pic" src="/images/portfolio/paw/wiremodal.png">
     <div class="caption">Wireframe of the purchase modal</div>
 
     <p>
         The rest of the purchase flow adopted our existing cart experience, with a new item icon and messaging unique to this platform.
     </p>
-    <img src="/images/portfolio/paw/cart.png" />
+    <img class="pic" src="/images/portfolio/paw/cart.png" />
     <div class="caption">Adding to the cart & our existing purchase flow</div>
 
     <h3>Iterating to the Final Product</h3>
@@ -129,21 +137,26 @@
         After handing off initial wireframes and higher fidelity mockups to the engineers, we pushed out a version of the page very similar to the initial wireframe for our initial sprint. Our MVP included only funding individual items and the activity feed. We launched only for Elmhurst and Kings County Hospital. Donations began streaming in, and we began thinking about how to answer the question, "What happens after I donate?"
     </p>
     <p>
-        We looked to Kickstarter's tab navigation and adapted it to highlight milestones (e.g. "Tablets completely funded!"), progress on fulfillment, and updates directly from the hospitals.
+        We looked to Kickstarter here. We wanted to keep attention on the details of the fundraiser, but still showcase updates (and potentially more information in the future) on the page. Their tab navigation was a good solution to our problem.
     </p>
-    <img src="/images/portfolio/paw/updates.png" />
+    <img class="pic" src="/images/portfolio/paw/kickstarter.png">
+    <div class="caption">A screenshot of a Kickstarter page showing the Updates tab.</div>
+    <p>
+        We adapted their Updates tab and navigation to highlight milestones (e.g. "Tablets completely funded!"), progress on fulfillment, and updates directly from the hospitals.
+    </p>
+    <img class="pic" src="/images/portfolio/paw/updates.png">
     <div class="caption">The updates tab</div>
 
     <p>
         Our client success team was also very quickly expanding to several more hospitals. Thus, we needed to create a page to allow discovery of the breadth of offerings as well as an avenue for the community to nominate their own local hospitals.
     </p>
-    <img src="/images/portfolio/paw/listing.png" />
+    <img class="pic" src="/images/portfolio/paw/listing.png">
     <div class="caption">The listing section & entry point for the nomination form</div>
 
     <p>
-        Our final individual hospital page mockup had a larger focus on telling the "story" for each hospital.
+        Our final individual hospital page mockup also had a larger focus on telling the "story" for each hospital, adding more individualized details about the hospital.
     </p>
-    <div style="max-height: 80vh; overflow-y: scroll;"><img src="/images/portfolio/paw/hospital.png" /></div>
+    <div class="pic" style="max-height: 80vh; overflow-y: scroll;"><img src="/images/portfolio/paw/hospital.png"></div>
     <div class="caption">A final mockup</div>
 
     <a href="https://www.figma.com/proto/BiMKlbng4eISBdNweJxTmO/nxj-cares?node-id=314%3A1&scaling=scale-down-width&viewport=1172%2C187%2C0.1832997053861618" target="_blank" class="animated-button thar-three">Interact with the Prototype</a>
@@ -241,7 +254,7 @@
 <footer>
     <div class="social">
     <a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
-    <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
+    <!-- <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a> -->
     <a href="mailto:cindehw@gmail.com"><img data-feather="mail" /></a>
     </div>
 </footer>

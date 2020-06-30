@@ -60,7 +60,7 @@
         -webkit-column-count: 1;
         column-count:         1;
     }
-    .overlay2 {
+    .overlay2, .overlay2:hover {
         display: none;
       }
     p {

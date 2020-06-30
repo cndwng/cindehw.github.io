@@ -56,49 +56,96 @@
         </div>
     </div>
 
-    <p>During my summer at StartupTree, a platform for managing entrepreneurship on college campuses, my manager and the CEO sought to construct a module to <strong>1) create an end-to-end competition judging platform and 2) develop a more consistent interface for StartupTree's platform. </strong> Applying to jobs and entering competitions is common for university entrepreneurship, and our platform had a primitive system for these processes, but it needed to evolve. I worked with a team of engineers and product managers and served as the sole product designer for this project. </p>
+    <p>
+        While I was a Product Designer for StartupTree, a platform for managing entrepreneurship on college campuses, we discovered a need for college entrepreneurship programs to run competitions, and more generally collect applications for things like job postings.
+    </p>
 
-    <h3>Sketches and Notes</h3>
-    <p>We had a meeting with a school that intended to use our platform and determined our target users' needs. We asked about their specific use cases and challenges, their pain points with existing platforms and systems, and "must haves" and wants.</p>
+    <p>
+        For the purpose of this case study, we focused on helping administrators of college entrepreneurship programs run competitions. I generally refer to the module as the "Applications module" to reference the broader scope.
+    </p>
 
-    <div class="pic"><img src="/images/portfolio/apps/00.jpg"></div>
-    <div class="caption">Notes from our interview with a business school program director</div>
+    <h3>The Problem</h3>
+    <p>
+        We interviewed an administrator at Harvard Business School to discuss how they ran competitions and their current challenges and pain points with existing platforms and systems.
+    </p>
 
-    <p>From these notes, we identified 3 main users:</p>
+    <img class="pic" src="/images/portfolio/apps/notes.jpg">
+    <div class="caption">Notes from our interview with the Harvard Business School's entrepreneurship program director</div>
+
+    <p>
+        The StartupTree CEO is also the director of eHub (the physical entrepreneurial space) at Cornell, and served as another important resource in understanding the needs of other administrators of similar programs.
+    </p>
+
+    <p>
+        We discovered that schools host entrepreneurship competitions, but need to use a variety of tools on multiple platforms to run them. Currently, there is no centralized platform to manage these competitions.
+    </p>
+
+    <img src="/images/portfolio/apps/problem.png">
+    <div class="caption">Entrepreneurship administrators have to use a variety of platforms and mediums to run competitions, end to end</div>
+
+    <p>
+        Their largest pain point was the judging flow. At HBS, they had used a competing platform for 2 years, but the system crashed, and they had to revert to their previous paper rubrics. 
+    </p>
+
+    <p>
+        Secondarily, startups, student organizations, and independent projects can recruit on StartupTree, so during the process we wanted to create something that would be able to collect applications for this use case as well.
+    </p>
+
+    <h3>The User(s!)</h3>
+    <p>We identified 3 kinds of users for this module:</p>
         <ol>
-            <li>the administrator</li>
-            <li>the applicant</li>
-            <li>the judge</li>
+            <li>the administrators</li>
+            <li>the judges</li>
+            <li>the applicants</li>
         </ol>
-    <p>We decided that our focus would primarily be the administrator and judge users. The applicant's interface would need to change minimally (a very rudimentary form of the module existed already); however, the administrator would gain a lot of functionality and freedom and there was no existing judge user.</p>
-    </p>
-    <p>I drafted some basic flows as well as a list of needs for each part of the competition flow, from creating the competition on the admin side to reviewing rubrics and judging. Because of time constraints, we tried to stick with existing, familiar UI components.</p>
-    <div class="pic"><img src="/images/portfolio/apps/001.jpg"></div>
-    <div class="caption">Some quick sketches, notes, needs, wants, flows, etc. .</div>
 
-    
-    <h3>For the Administrator</h3>
-    <p>The administrator's workflow was the most complicated to map out. There were many actions an admin could take, so we had to find a way that listed all the actions visibly and also showed important information at a glance. Thus, we adopted a dashboard for each application. We chose statistics that showed the most important information about the competition as well as some insightful information about the applicant breakdown. While designing this dashboard, I also redesigned the dashboards for the rest of the admin panel and graphs.
+    <p>
+        Our focus would be on the first two users identified, due to time constraints. We had a very rudimentary version of the applicant flow built that would only need to be upgraded minimally. However, we wanted to upgrade existing systems so the administrator to gain a lot of functionality and freedom, and we would be building the judge flow from scratch.
     </p>
-    <div class="pic"><img src="/images/portfolio/apps/0.png"></div>
-    <div class="caption">An administrator's dashboard for each competition</div>
 
-    <p>Creation of each application was broken down into multiple layers to allow for creating competitions without having to provide all the information upfront. Admins first add the most crucial information -- the details about time, deadline, etc. -- then create the application questions for applicants, and add rubrics for judging and judges last. Giving administrators flexibility (being able to add and remove judges, edit the application, etc.) is important for error recovery. Editing an application brings them through the same process.
+    <h3>The Admin</h3>
+    <p>
+        Typical administrators are faculty members of entrepreneurship programs at universities who are already familiar with the StartupTree platform. They're looking for ways to better facilitate the application process for competitions specifically and in general.
     </p>
-    <div class="pic"><img src="/images/portfolio/apps/03.png"></div>
-    <div class="caption">Breaking up the creation process of an application</div>
+    <img src="/images/portfolio/apps/admin_persona.png">
+    <div class="caption">A typical administrator.</div>
+
+    <p>
+        The basic workflow for an admin user involves creating and managing the event, the application questions, and the judging. Throughout, they need to be able to monitor progress at each step and make changes on the fly.
+    </p>
+
+    <img src="/images/portfolio/apps/adminflow.png">
+    <div class="caption">The admin workflow. At the end of a round, they might need to repeat the entire process again.</div>
+
+    <p>Armed with the information we had gathered from our interviews with Harvard Business School </p>
+
+    <img class="pic" src="/images/portfolio/apps/notes2.jpg">
+    <div class="caption">Some messy notes, sketches, and flows from my notebook. If only I had remembered to document the neater planning sessions! Rookie mistake.</div>
+
+    <p>
+        Admins needed a central location to navigate through the process of managing a competition, so we created a dashboard that serves as a pivot point into the rest of the managing flow. While designing this module, I also planned on redesigning many other views for admin users, so this dashboard needed to be scalable and applicable to other StartupTree modules. The majority of the information for these dashboards can be pulled from existing user profiles.
+    </p>
+
+    <img class="pic" src="/images/portfolio/apps/0.png">
+    <div class="caption">An administrator's central dashboard for each competition. While visually very clean, if I could revisit this project I think re-exploring the navigation would allow for better user experience. I think this is missing callouts for the "bigger" actions.</div>
+
+    <p>
+        Creation of each application needed to be broken down into smaller pieces. Admins often do not have all the details of the event upfront upon creation. They may first add the most crucial information &mdash; the event details about time, deadline, etc. &mdash; then create the application questions for applicants, and add rubrics and judges last. Giving administrators flexibility and keeping these pieces independent from each other allow admins to work asynchronously and allows for better error recovery.
+    </p>
+    <img class="pic" src="/images/portfolio/apps/03.png">
+    <div class="caption">Breaking up the creation process of an application into four steps, all of which can be completed or revisited at any time. This screen is for inviting and managing judges.</div>
 
     <p>The final step for the administrator is the review of all the evaulations to choose winners (or applicants to advance to the next round). Evaluations can be shown by applicant or by judge and may also be downloaded as pdfs.
     </p>
 
-    <div class="pic"><img src="/images/portfolio/apps/04.png"></div>
+    <img class="pic" src="/images/portfolio/apps/04.png">
     <div class="caption">An administrator's view of an individual applicant</div>
 
     <h3>For the Judge</h3>
     <p>From the conversation with our school and our CEO's knowledge of the kinds of competitions that are run by university entrepreneurship, we identified the judge user to primarily be of an older demographic with industry experience. That being said, they likely would be less tech-savvy, so we chose to create as straightforward and narrow of a process as possible.
     </p>
 
-    <div class="pic"><img src="/images/portfolio/apps/05.png"></div>
+    <img class="pic" src="/images/portfolio/apps/05.png">
     <div class="caption">Log in, sign up. If I were a judge, which would I want?</div>
 
     <p>An obstacle we ran into when designing the judging side is that judges may not be on the StartupTree platform -- and may not want to be. But some judges may already be on the platform! </p>
@@ -206,7 +253,7 @@
 <footer>
     <div class="social">
     <a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
-    <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a>
+    <!-- <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a> -->
     <a href="mailto:cindehw@gmail.com"><img data-feather="mail" /></a>
     </div>
 </footer>
