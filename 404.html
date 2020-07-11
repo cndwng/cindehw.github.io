@@ -21,7 +21,32 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-123121945-1');
-	</script>
+    </script>
+    
+    <style>
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+            border: none;
+        }
+
+        h1 {
+            /* padding-top: 30px;  */
+            text-align: center; 
+            font-family: 'Vollkorn', serif; 
+            font-size: 40px;
+        }
+
+        @media screen and (max-width:650px) {
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
 
 </head>
 <body>
@@ -38,17 +63,21 @@
     </div>
 </div>
 
-<div class="container port fade-in">
+<div class="container fade-in" style="max-width: 1100px; min-height: 700px;">
     <div>
-        <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">go back!</a></span>
-        <br /><br />
+        <div class="left">
+            <div>
+                <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">go back!</a></span>
+                <br /><br />
+            </div>
+            <img src="/images/404.png">
+            <h1>Ack! This page doesn't exist.</h1>
+            <a href="/" class="animated-button thar-three">Bring me home!</a>
+        </div>
+        <div class="right">
+            <img src="/images/cactuses.png">
+        </div>
     </div>
-
-    <img src="/images/404.png">
-
-    <div style="padding-top: 30px; text-align: center; color: #945861; font-family: 'Vollkorn', serif; font-size: 40px;">Ack! This page doesn't exist.</div>
-    <a href="/" class="animated-button thar-three">Take me home!</a>
-
 </div>
 
 <footer>
