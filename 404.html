@@ -21,7 +21,32 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-123121945-1');
-	</script>
+    </script>
+    
+    <style>
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+            border: none;
+        }
+
+        h1 {
+            /* padding-top: 30px;  */
+            text-align: center; 
+            font-family: 'Vollkorn', serif; 
+            font-size: 40px;
+        }
+
+        @media screen and (max-width:650px) {
+            h1 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
 
 </head>
 <body>
@@ -38,23 +63,27 @@
     </div>
 </div>
 
-<div class="container port fade-in">
+<div class="container fade-in" style="max-width: 1100px; min-height: 700px;">
     <div>
-        <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">go back!</a></span>
-        <br /><br />
+        <div class="left">
+            <div>
+                <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">go back!</a></span>
+                <br /><br />
+            </div>
+            <img src="/images/404.png">
+            <h1>Ack! This page doesn't exist.</h1>
+            <a href="/" class="animated-button thar-three">Bring me home!</a>
+        </div>
+        <div class="right">
+            <img src="/images/cactuses.png">
+        </div>
     </div>
-
-    <img src="/images/404.png">
-
-    <div style="padding-top: 30px; text-align: center; color: #945861; font-family: 'Vollkorn', serif; font-size: 40px;">Ack! This page doesn't exist.</div>
-    <a href="/" class="animated-button thar-three">Take me home!</a>
-
 </div>
 
 <footer>
     <div class="social">
     <a href="https://linkedin.com/in/cindywa" target="_blank"><img data-feather="linkedin" /></a>
-    <!-- <a href="https://instagram.com/cindydoubleyou" target="_blank"><img data-feather="instagram" /></a> -->
+    <a href="https://instagram.com/cnd.wng" target="_blank"><img data-feather="instagram" /></a>
     <a href="https://dribbble.com/cndwng" target="_blank">
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" class="feather"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M3 10.7366C3 10.7366 9.62199 10.7668 13 9.5C17 8 18.5 5.00003 18.5 5.00003" /><path d="M5.5 18.8084C5.5 18.8084 9 13.889 13 13C17.5 12 21.8515 13 21.8515 13"/><path d="M8.5 2.99997C8.5 2.99997 12.3889 8.49997 13.5 11C15.5 15.5 16 20.5 16 20.5"/></svg>
     </a>
