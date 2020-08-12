@@ -58,7 +58,7 @@
     }
 
 body {
-    background: #fbfbfb;
+    background: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
@@ -332,7 +332,7 @@ footer {
     .sticky {
         position: fixed;
         top: 0;
-        background-color: rgba(251, 251, 251, .8);
+        background-color: rgba(255, 255, 255, .8);
     }
     
     /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
