@@ -1,3 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap'); */
+
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -117,19 +122,24 @@ li a:hover:before {
 }
 
 h2 {
-    font-family: 'Vollkorn', serif;
-    color: #945861;
+    font-family: 'Lora', serif;
+    color: #666;
     text-align: center;
-    margin-block-start: .3em;
-    font-size: 28px;
+    margin-block-start: .5em;
+    font-weight: 400;
+    font-size: 40px;
 }
 
 h3 {
-    font-family: 'Vollkorn', serif;
-    color: #999;
+    font-family: 'Lora', sans-serif;
+    color: #945861;
     text-align: left;
     margin: 10px 0px 5px;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: .5pt;
+    margin-block-start: .6em;
+    margin-block-end: .4em;
 }
 
 p, ul {
@@ -194,7 +204,7 @@ footer {
 
 .container img {width: 100%;}
 
-.port {min-height: unset; width: 800px;}
+.port {min-height: unset; width: 900px;}
 
 .port-overflow {width: 1100px;}
 
@@ -253,7 +263,7 @@ footer {
 }
 
 #back a, #next a {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Lora', serif;
     opacity: .7;
     transition: .3s ease;
     color: rgba(0, 0, 0, .8);
@@ -273,7 +283,7 @@ footer {
 }
 
 .topnav {
-    font-family: 'Vollkorn', serif;
+    font-family: 'Lora', serif;
     text-transform: lowercase;
     z-index: 100;
     width: 100%;
@@ -368,10 +378,10 @@ footer {
 }
 
     .hello {
-        font-family: 'Vollkorn', serif;
+        font-family: 'Lora', serif;
         font-size: 50px;
         margin: 1% 25% 0% 0%;
-        color: rgba(150, 88, 97, 0.7);
+        color: rgba(150, 88, 97, 1);
     }
 
     .sub__hello {
@@ -427,7 +437,7 @@ footer {
         display: inline-block;
         text-decoration: none;
         color: #945861;
-        font-family: "Vollkorn", serif;
+        font-family: "Lora", serif;
         font-size: 18px;
     }
 
@@ -639,7 +649,7 @@ footer {
     margin: auto;
     text-align: center;
     font-style: italic;
-    font-size: 16px;
+    font-size: 20px;
     padding: 10px 0px 20px;
 }
 
