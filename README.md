@@ -1,2 +1,2 @@
-# cindehw.github.io aka cindyw.me
+# cndwng.github.io aka cndwng.com
 me web
