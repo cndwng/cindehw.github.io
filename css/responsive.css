@@ -60,8 +60,8 @@
         -webkit-column-count: 1;
         column-count:         1;
     }
-    .overlay2, .overlay2:hover {
-        display: none;
+    .overlay2, .projects:hover .overlay2 {
+        opacity: 1;
       }
     p {
         font-size: 18px;
