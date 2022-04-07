@@ -19,7 +19,7 @@
     .grass img {max-width: 100%; width: 400px; opacity: 1;}
     .hawaii img {width: 200px;}
     .hat img {width: 200px;}
-    .hello, .sub__hello, .subsub__hello {margin-right: 5%;}
+    .hello, .sub__hello {margin-right: 5%;}
     .topnav {
         top: 0;
         text-align: center; 
@@ -29,8 +29,9 @@
     .topnav .name {
         margin: auto; 
         padding: 10px 10px 0px 10px;}
-    .topnav .navlink {
+    .topnav .navlink, .topnav .item {
         margin: auto;
+        width: 100%;
     }
     .activities__title {display: none;}
     .activities__titlem {
@@ -62,10 +63,14 @@
     }
     .overlay2, .projects:hover .overlay2 {
         opacity: 1;
+        width: 90vw;
       }
     p {
         font-size: 18px;
     }
+    .moe img {width:100%;}
+    .hat {opacity: .5;}
+    .hat img {width: 50%;}
 }
 
 @media screen and (max-width:280px) {

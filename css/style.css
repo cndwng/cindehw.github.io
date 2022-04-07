@@ -228,7 +228,6 @@ footer {
     right: 30px;
     top: 0;
     z-index: -5;
-    /* overflow: hidden; */
 }
     .hat img {
         width: 200px;
@@ -281,12 +280,11 @@ footer {
     text-align: right; 
     float: right;
 }
-
+#myTopNav {width: 100vw;}
 .topnav {
     font-family: 'Lora', serif;
     text-transform: lowercase;
     z-index: 100;
-    width: 100%;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -325,7 +323,9 @@ footer {
         align-content: center;
     }
 
-    .topnav .item {padding: 5px 20px;}
+    .topnav .item {
+        padding: 5px 20px;
+    }
 
     .topnav a {
         text-decoration: none;
@@ -370,7 +370,6 @@ footer {
     -moz-column-gap:      20px;
     column-count:         3;
     column-gap:           20px; 
-
 }
 
 .hellobox {
@@ -385,13 +384,8 @@ footer {
     }
 
     .sub__hello {
-        margin: 0% 25% 0% 5%;
         font-size: 24px;
         line-height: 1.6em;
-    }
-
-    .subsub__hello {
-        margin: 0% 25% 3% 5%;
     }
 
 .separator {
