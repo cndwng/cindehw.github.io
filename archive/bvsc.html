@@ -166,166 +166,166 @@
         </footer>
 
         <script>
-            var balls = {};
-            var calls = {};
+            // var balls = {};
+            // var calls = {};
 
-            var avgBall = {};
-            var avgCall = {};
+            // var avgBall = {};
+            // var avgCall = {};
 
-            var active;
+            // var active;
 
-            function median(numbers) {
-                // median of [3, 5, 4, 4, 1, 1, 2, 3] = 3
-                var median = 0, numsLen = numbers.length;
-                numbers.sort(function(a, b){return a-b});
+            // function median(numbers) {
+            //     // median of [3, 5, 4, 4, 1, 1, 2, 3] = 3
+            //     var median = 0, numsLen = numbers.length;
+            //     numbers.sort(function(a, b){return a-b});
             
-                if (
-                    numsLen % 2 === 0 // is even
-                ) {
-                    // average of two middle numbers
-                    median = (numbers[numsLen / 2 - 1] + numbers[numsLen / 2]) / 2;
-                } else { // is odd
-                    // middle number only
-                    median = numbers[(numsLen - 1) / 2];
-                }
+            //     if (
+            //         numsLen % 2 === 0 // is even
+            //     ) {
+            //         // average of two middle numbers
+            //         median = (numbers[numsLen / 2 - 1] + numbers[numsLen / 2]) / 2;
+            //     } else { // is odd
+            //         // middle number only
+            //         median = numbers[(numsLen - 1) / 2];
+            //     }
             
-                return median;
-            }
+            //     return median;
+            // }
 
-            function mean(numbers) {
-                let total = 0;
-                for (i = 0; i < numbers.length; i += 1) {
-                    total += numbers[i];
-                }
-                return total / numbers.length;
-            }
-            d3.csv("/data/balls.csv").then(function(ballsData) {
-                ballsData.forEach( (d,i) => {
-                    for(entry in d) {
-                        if (checkIfNumber(d[entry])) {
-                            if (balls[entry] == undefined) {
-                                balls[entry] = [Number(d[entry])];
-                            } else {
-                                balls.entry = balls[entry].push(Number(d[entry]));
-                            }
-                        }
-                    }
-                });
-                delete balls["entry"];
-                for( entry in balls ) {
-                    avgBall[entry] = {};
-                    avgBall[entry]['nos']=balls[entry];
-                    avgBall[entry]['mean'] = mean(balls[entry]).toFixed(2);
-                    avgBall[entry]['median'] = median(balls[entry]);
-                };
+            // function mean(numbers) {
+            //     let total = 0;
+            //     for (i = 0; i < numbers.length; i += 1) {
+            //         total += numbers[i];
+            //     }
+            //     return total / numbers.length;
+            // }
+            // d3.csv("/data/balls.csv").then(function(ballsData) {
+            //     ballsData.forEach( (d,i) => {
+            //         for(entry in d) {
+            //             if (checkIfNumber(d[entry])) {
+            //                 if (balls[entry] == undefined) {
+            //                     balls[entry] = [Number(d[entry])];
+            //                 } else {
+            //                     balls.entry = balls[entry].push(Number(d[entry]));
+            //                 }
+            //             }
+            //         }
+            //     });
+            //     delete balls["entry"];
+            //     for( entry in balls ) {
+            //         avgBall[entry] = {};
+            //         avgBall[entry]['nos']=balls[entry];
+            //         avgBall[entry]['mean'] = mean(balls[entry]).toFixed(2);
+            //         avgBall[entry]['median'] = median(balls[entry]);
+            //     };
 
-            });
-            d3.csv("/data/calls.csv").then(function(callsData) {
-                callsData.forEach( (d,i) => {
-                    for(entry in d) {
-                        if (checkIfNumber(d[entry])) {
-                            if (calls[entry] == undefined) {
-                                calls[entry] = [Number(d[entry])];
-                            } else {
-                                calls.entry = calls[entry].push(Number(d[entry]));
-                            }
-                        }
-                    }
-                });
-                delete calls["entry"];
-                for( entry in calls ) {
-                    avgCall[entry] = {};
-                    avgCall[entry]['nas'] = calls[entry].filter(function(n) {return isNaN(n);});
-                    calls[entry] = calls[entry].filter(function(n) {return !isNaN(n);});
-                    avgCall[entry]['mean'] = mean(calls[entry]).toFixed(2);
-                    avgCall[entry]['median'] = median(calls[entry]);
-                };
+            // });
+            // d3.csv("/data/calls.csv").then(function(callsData) {
+            //     callsData.forEach( (d,i) => {
+            //         for(entry in d) {
+            //             if (checkIfNumber(d[entry])) {
+            //                 if (calls[entry] == undefined) {
+            //                     calls[entry] = [Number(d[entry])];
+            //                 } else {
+            //                     calls.entry = calls[entry].push(Number(d[entry]));
+            //                 }
+            //             }
+            //         }
+            //     });
+            //     delete calls["entry"];
+            //     for( entry in calls ) {
+            //         avgCall[entry] = {};
+            //         avgCall[entry]['nas'] = calls[entry].filter(function(n) {return isNaN(n);});
+            //         calls[entry] = calls[entry].filter(function(n) {return !isNaN(n);});
+            //         avgCall[entry]['mean'] = mean(calls[entry]).toFixed(2);
+            //         avgCall[entry]['median'] = median(calls[entry]);
+            //     };
 
-                var scatter = chart.append("g")
-                    .attr("class", "scatter")
+            //     var scatter = chart.append("g")
+            //         .attr("class", "scatter")
                     
-                for (nxjer in avgBall) {
-                    let circle = scatter.append("circle")
-                        .attr("class","point")
-                        .attr("id", nxjer)
-                        .attr("r",5)
-                        .attr("cx", xScale(translateNaN(avgBall[nxjer]["mean"])))
-                        .attr("cy", yScale(translateNaN(avgCall[nxjer]["mean"])))
-                        .attr("transform", "translate("+(margin.left)+","+(margin.top)+")");
-                };
+            //     for (nxjer in avgBall) {
+            //         let circle = scatter.append("circle")
+            //             .attr("class","point")
+            //             .attr("id", nxjer)
+            //             .attr("r",5)
+            //             .attr("cx", xScale(translateNaN(avgBall[nxjer]["mean"])))
+            //             .attr("cy", yScale(translateNaN(avgCall[nxjer]["mean"])))
+            //             .attr("transform", "translate("+(margin.left)+","+(margin.top)+")");
+            //     };
 
-                scatter.selectAll("circle")
-                    .data(Object.keys(avgBall))
-                    // .on('mouseover', function(id) {updateInfo(id)})
-                    .on('click', function(id) {updateInfo(id)});
+            //     scatter.selectAll("circle")
+            //         .data(Object.keys(avgBall))
+            //         // .on('mouseover', function(id) {updateInfo(id)})
+            //         .on('click', function(id) {updateInfo(id)});
 
-                list = d3.select("#list").append("ul");
+            //     list = d3.select("#list").append("ul");
 
-                for(nxjer in avgBall) {
-                    list.append("li")
-                        .attr("id", nxjer)
-                        .text(nxjer)
-                };
+            //     for(nxjer in avgBall) {
+            //         list.append("li")
+            //             .attr("id", nxjer)
+            //             .text(nxjer)
+            //     };
                 
-                list.selectAll("li")
-                    .data(Object.keys(avgBall))
-                    .on('click', function(id) {updateInfo(id)});
-            });
+            //     list.selectAll("li")
+            //         .data(Object.keys(avgBall))
+            //         .on('click', function(id) {updateInfo(id)});
+            // });
             
-            let chart = d3.select("svg#chart")
-            let width = chart.attr("width");
-            let height = chart.attr("height");
-            let margin = {top: 50, right: 40, bottom: 30, left:60};
-            let chartWidth = width - margin.left - margin.right; 
-            let chartHeight = height - margin.top - margin.bottom;
+            // let chart = d3.select("svg#chart")
+            // let width = chart.attr("width");
+            // let height = chart.attr("height");
+            // let margin = {top: 50, right: 40, bottom: 30, left:60};
+            // let chartWidth = width - margin.left - margin.right; 
+            // let chartHeight = height - margin.top - margin.bottom;
 
 
-            let xScale = d3.scaleLinear()
-                .domain([0,10])
-                .range([0, chartWidth]);
-            let yScale = d3.scaleLinear()
-                .domain([-5, 5])
-                .range([chartHeight, 0]);
+            // let xScale = d3.scaleLinear()
+            //     .domain([0,10])
+            //     .range([0, chartWidth]);
+            // let yScale = d3.scaleLinear()
+            //     .domain([-5, 5])
+            //     .range([chartHeight, 0]);
 
-            let yAxis =  d3.axisLeft(yScale).ticks(11);
-                chart.append("g").attr("class", "y axis")
-                    .attr("transform", "translate("+(margin.left)+","+(margin.top)+")")
-                    .style("stroke-width", "1")
-                    .call(yAxis);
-            let xAxis = d3.axisBottom(xScale).ticks(11);
-                chart.append("g").attr("class","x axis")
-                    .attr("transform", "translate("+(margin.left)+","+(margin.top + chartHeight/2)+")")
-                    .style("stroke-width", "1")
-                    .call(xAxis);
+            // let yAxis =  d3.axisLeft(yScale).ticks(11);
+            //     chart.append("g").attr("class", "y axis")
+            //         .attr("transform", "translate("+(margin.left)+","+(margin.top)+")")
+            //         .style("stroke-width", "1")
+            //         .call(yAxis);
+            // let xAxis = d3.axisBottom(xScale).ticks(11);
+            //     chart.append("g").attr("class","x axis")
+            //         .attr("transform", "translate("+(margin.left)+","+(margin.top + chartHeight/2)+")")
+            //         .style("stroke-width", "1")
+            //         .call(xAxis);
 
-            let labels = chart.append("g").attr("class","labels");
+            // let labels = chart.append("g").attr("class","labels");
 
-            function updateInfo(id) {
-                active = id;
-                d3.select("#name").text(id);
-                d3.select("#ballMean").text(isNA(avgBall[id]['mean']));
-                d3.select("#callMean").text(isNA(avgCall[id]['mean']));
-                d3.select("#ballMedian").text(isNA(avgBall[id]['median']));
-                d3.select("#callMedian").text(isNA(avgCall[id]['median']));
-            }
+            // function updateInfo(id) {
+            //     active = id;
+            //     d3.select("#name").text(id);
+            //     d3.select("#ballMean").text(isNA(avgBall[id]['mean']));
+            //     d3.select("#callMean").text(isNA(avgCall[id]['mean']));
+            //     d3.select("#ballMedian").text(isNA(avgBall[id]['median']));
+            //     d3.select("#callMedian").text(isNA(avgCall[id]['median']));
+            // }
 
-            function checkIfNumber(n) {
-                return n != "";
-            }
+            // function checkIfNumber(n) {
+            //     return n != "";
+            // }
 
-            function isNA(n) {
-                if (isNaN(n)) { 
-                    return "N/A";
-                }
-                return n;
-            }
+            // function isNA(n) {
+            //     if (isNaN(n)) { 
+            //         return "N/A";
+            //     }
+            //     return n;
+            // }
 
-            function translateNaN(n) {
-                if (isNaN(n)) {
-                    return 0;
-                }
-                return n;
-            }
+            // function translateNaN(n) {
+            //     if (isNaN(n)) {
+            //         return 0;
+            //     }
+            //     return n;
+            // }
 
             // feather icons
             feather.replace({ viewBox: '0 0 30 30' , width: '30', height: '30', preserveAspectRatio:'xMidYMid meet'})
