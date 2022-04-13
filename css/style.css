@@ -1,7 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -64,9 +65,9 @@
 
 body {
     background: #fff;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
+    font-family: 'Space Grotesk', 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
     margin: 0;
     padding: 0;
 }
@@ -75,76 +76,42 @@ a {
     text-decoration: none;
     color: #945861;
     position: relative;
+    transition: .3s;
 }
 
-.sub__hello a:before, p a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #945861;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+a:hover:not(.projects a) {
+    text-decoration: underline;
+    color: #222;
+    position: relative;
 }
 
-.sub__hello a:hover:before, p a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
 
-ol {font-size: 20px;}
+ol {font-size: 1.5rem;}
 
-li a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #945861;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-li a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+h1 {
+    font-family: 'Shrikhand', sans-serif;
+    color: #945861;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Shrikhand', sans-serif;
     color: #666;
-    text-align: center;
-    margin-block-start: .5em;
-    font-weight: 400;
-    font-size: 40px;
+    margin: 10px 0px 5px;
+    font-weight: 500;
+    font-size: 1.75rem;
+    letter-spacing: .5pt;
 }
 
 h3 {
-    font-family: 'Lora', sans-serif;
-    color: #945861;
-    text-align: left;
-    margin: 10px 0px 5px;
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: .5pt;
-    margin-block-start: .6em;
-    margin-block-end: .4em;
+    font-size: 1.5rem;
 }
 
 p, ul {
-    font-size: 20px;
-    line-height: 1.6em;
+    font-size: 1.5rem;
+    line-height: 160%;
 }
 
 
@@ -155,12 +122,12 @@ footer {
 
     footer a, .socials a {
         padding: 0px 5px;
-        color: #999;
+        color: #945861;
         transition: .3s ease;
     }
 
     footer a:hover, .socials a:hover {
-        color: #945861;
+        color: #222;
     }
 
     .social {
@@ -197,16 +164,18 @@ footer {
     }
 
 .container {
-    min-height: 40vh;
-    width: 80%;
+    min-height: 60vh;
+    width: 90vw;
     margin: auto;
 }
 
 .container img {width: 100%;}
 
-.port {min-height: unset; width: 900px;}
+.port {min-height: unset; width: 60vw;}
 
-.port-overflow {width: 1100px;}
+.port-overflow {width: 90vw;}
+
+.pic {filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.1));}
 
 .vid {
     width: 100%;
@@ -217,11 +186,6 @@ footer {
         width: 100%;
         height: 75%;
     }
-
-.pic {
-    box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
-}
-
 
 .hat {
     position: absolute;
@@ -254,21 +218,37 @@ footer {
         transform: rotate(30deg);
         opacity: .5;
     }
+    .bio { float: left;}
 
-#back img, #next img {
+    .grass {
+        float: right;
+        z-index: -5;
+        margin-top: -20px;
+
+    }
+        .grass img {
+            width: 360px;
+        }
+
+#back img{
     width: 50px;
     padding: 10px 10px 0px 10px;
     margin: 0;
+    opacity: .8;
 }
 
-#back a, #next a {
-    font-family: 'Lora', serif;
-    opacity: .7;
+#back img:hover{
+    opacity: 1;
+}
+
+#back a{
+    font-family: 'Space Grotesk', 'Lato', sans-serif;
+    opacity: 1;
     transition: .3s ease;
-    color: rgba(0, 0, 0, .8);
+    color: #666;
 }
 
-#back a:hover, #next a:hover {opacity: 1;}
+#back a:hover {color: #945861;}
 
 
 #back {
@@ -282,7 +262,7 @@ footer {
 }
 #myTopNav {width: 100vw;}
 .topnav {
-    font-family: 'Lora', serif;
+    font-family: 'Shrikhand', sans-serif;
     text-transform: lowercase;
     z-index: 100;
     text-align: center;
@@ -290,27 +270,15 @@ footer {
     flex-flow: row wrap;
     align-items: center;
 }
-    .bio { float: left;}
-
-    .grass {
-        float: right;
-        z-index: -5;
-        margin-top: -20px;
-
-    }
-        .grass img {
-            width: 420px;
-        }
-
 
     .name {
         width: 200px;
-        padding: 30px 20px 20px 30px;
+        padding: 20px 20px 10px 20px;
     }
 
     .name svg {
         width: 100%;
-        fill: #000;
+        fill: #2B2728;
         vertical-align: middle;
         transition: .3s ease;
     }
@@ -329,20 +297,20 @@ footer {
 
     .topnav a {
         text-decoration: none;
-        color: #000;
+        color: #666;
         padding: 0px 3px;
         transition: .3s ease;
-
+        font-size: 1.2rem;
     }
 
     .topnav a.active {color: #999;}
 
-    .topnav a:hover {color: #945861;}
+    .topnav a:hover {color: #945861; text-decoration: underline;}
 
     .sticky {
         position: fixed;
         top: 0;
-        background-color: rgba(255, 255, 255, .8);
+        background-color: white;
     }
     
     /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -359,7 +327,6 @@ footer {
 
     .sidebyside img, .port img {
         width: 100%;
-        margin: 10px 0px;
     }
 
 .cols {    
@@ -377,7 +344,7 @@ footer {
 }
 
     .hello {
-        font-family: 'Lora', serif;
+        font-family: 'Shrikhand', sans-serif;
         font-size: 50px;
         margin: 1% 25% 0% 0%;
         color: rgba(150, 88, 97, 1);
@@ -431,29 +398,8 @@ footer {
         display: inline-block;
         text-decoration: none;
         color: #945861;
-        font-family: "Lora", serif;
+        font-family: 'Shrikhand', sans-serif;
         font-size: 18px;
-    }
-
-    .blurb a:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color: #945861;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s;
-    }
-
-    .blurb a:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1);
     }
 
 .left {
@@ -478,7 +424,6 @@ footer {
     display: flex;  
     flex-flow: column nowrap;
     padding-left: 10px;
-    border-left: 1px dashed black;
 }
 
     .right__activity {
@@ -511,35 +456,37 @@ footer {
 }
 
     .projects {
-        max-width: 400px;
-        padding: 10px 10px 20px;
+        max-width: 420px;
+        margin: 0px 20px 40px;
         font-size: 16px;
     }
 
     .projects img {
-        width: 95%;
+        width: 100%;
     }
 
     .projects a {
-        color: black;
+        color: #2B2728;
     }
 
     .overlay2 {
         position: absolute;
         margin-top: 0;
-        width: 400px;
+        width: 420px;
         opacity: 0;
         transition: .3s linear;
         z-index: 89;
       }
 
     .overlay2 img {
-        max-width: 95%;
+        width: 100%;
+        margin-left: -5px;
+        margin-top: -5px;
     }
     
     .projects:hover .overlay2 {
         opacity: 1;
-      }
+    }
 
 .art__container {
     margin: auto;
@@ -585,7 +532,6 @@ footer {
     .art img {
         align-self: start;
         width: 100%;    
-        box-shadow: 0px 2px 3px 0 rgba(30, 30, 30, 0.1);
         background-color: #fff;
     }
 
@@ -624,26 +570,32 @@ footer {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
     .overview img {
-        max-width: 300px;
-        padding: 10px;
+        max-width: 320px;
+    }
+    .overview h1 {
+        text-align: left;
+        margin-block-start: .2rem;
+        margin-block-end: .2rem;
     }
 
 .description {
-    width: 58%;
-    padding-left: 10px;
+    max-width: 65%;
+    padding-left: 20px;
 }
 .description p {
-    margin-block-start: .1em;
+    font-size: 1rem;
 }
 
 .caption {
     margin: auto;
     text-align: center;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 300;
     padding: 10px 0px 20px;
 }
 
@@ -666,7 +618,7 @@ footer {
   
 .text {
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -703,32 +655,6 @@ footer {
     width: 100px;
 }
 
-.whatis {
-    padding-top: 10px;
-    font-size: 16px;
-}
-
-.whatis a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #945861;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.whatis a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
 .gameplay {
     width: 100%;
     margin: 20px 0px;
@@ -754,7 +680,7 @@ a.animated-button, a.animated-button:visited {
 	margin: 20px auto 30px;
 	padding: 14px 30px;
 	color: #fff;
-	font-size:14px;
+	font-size: 1rem;
 	border-radius: 0;
 	font-weight: bold;
 	text-align: center;
@@ -762,7 +688,6 @@ a.animated-button, a.animated-button:visited {
 	text-transform: uppercase;
 	overflow: hidden;
 	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -843,6 +768,7 @@ a.animated-button.thar-three:hover {
 	color: #fff !important;
 	background-color: transparent;
 	text-shadow: nthree;
+    text-decoration: none;
 }
 a.animated-button.thar-three:hover:before {
 	left: 0%;

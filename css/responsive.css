@@ -49,24 +49,23 @@
     .portfolio {
         max-width: 90%; 
         margin: auto;}
+    .projects {
+        transition: .3s;
+    }
+    .projects:hover {
+        opacity: .7;
+    }
+    .overlay2 {display: none;}
     .art, .description {
         max-width: unset; 
         width: 90%; 
         margin: 0px auto 20px;}
     .shade1, .shade2, .doodle {width: 50%;}
     .projects {max-width: 90%;}
-    .projects a:hover {opacity: .7;}
     .art__container, .misc, .cols, .adobe {  
         -moz-column-count:    1;
         -webkit-column-count: 1;
         column-count:         1;
-    }
-    .overlay2, .projects:hover .overlay2 {
-        opacity: 1;
-        width: 90vw;
-      }
-    p {
-        font-size: 18px;
     }
     .moe img {width:100%;}
     .hat {opacity: .5;}

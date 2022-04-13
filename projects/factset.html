@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>cindy wang</title>
+        <title>factset | cndwng</title>
         <link rel="stylesheet" type="text/css" href="/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="/css/responsive.css"/>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -33,8 +33,10 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="/projects/">UX</a></div>
-        <div class="topnav item"><a href="/graphics.html">Other</a></div>
+        <div class="topnav item"><a href="/projects/">UX/UI</a></div>
+
+        <div class="topnav item"><a href="/graphics.html">Graphics</a></div>
+        <!-- <div class="topnav item"><a href="/photo.html">Photo</a></div>         -->
         <div class="topnav item"><a href="/Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
 </div>
@@ -42,200 +44,39 @@
 <div class="container port fade-in">
     <div>
         <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">back</a></span>
-        <span id="next"><a href="/projects/startuptreemobile.html">next<img src="/images/arrow2_right.png"></a></span>
         <br /><br />
     </div>
-
-    <h2>FactSet Design System</h2>
-
     <div class="overview">
         <img src="/images/covers/factset_cover2.png">
-        <div class="description"><h3>FactSet Research Systems, UX Design Intern</h3>
-            <i>Summer 2018</i>
-            <div class="whatis"><a href="https://www.factset.com/" target="_blank">What is FactSet?</a></div>
-            <p>A responsive visual component library for FactSet's design system, created using atomic design principles.
+        
+        <div class="description">
+            <h1>Fusion Design System</h1>
+            August 2020 to Present &#8226; <a href="https://www.factset.com/" target="_blank">FactSet</a>
+            <p>
+                FactSet's newest design system, Fusion, created using atomic design principles & the spiciest Figma features. Responsive! Adaptive! Accessible!
             </p>
         </div>
     </div>
 
+    <h2>My role on the team</h2>
+    <h3>UX/UI Designer</h3>
     <p>
-        Factset is a financial tech company that works on software for financial data. Being a large, well-established company, they had an existing design library with strict guidelines for each component. My project for the summer was creating a visual library using atomic design principles with the intention of creating a new design system. I also built a tutorial/demo file to showcase the library and teach the visual team how to use it.
+        I work on designing, prototyping, and testing our design system components and patterns, collaborating closely with designers on app teams and serving as the point person for the engineering team.
     </p>
 
+    <h3>Figma Library Guru</h3>
     <p>
-        I created a quick five minute video to explain some context & demo the component library. I walk through a tutorial of how to use the library (& some handy Figma features) and break down how some of the components were built. Further explanation can be found below!
+        I led the construction of the majority of the components in our Figma library, creating lightweight, easy-to-use, and flexible Figma components.
     </p>
-    <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe src="https://player.vimeo.com/video/294787543?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <div class="caption">Walking through the final demo file (5m15s)</div>
+    <p>Fun fact! I was also an intern for FactSet's UX team back in 2018, and my summer project was to build out <a href="/archive/factset_intern.html">FactSet's first Figma component library.</a></p>
 
-    <h3>A Period of Transition</h3>
+    <h3>Systems Overseer</h3>
     <p>
-        When I joined as a UX Design Intern the summer of 2018, the visual design was in a period of major transition. For much of Factset's recent history, the visual design team used Adobe Fireworks for UI design. The existing visual library was built in Fireworks; however, the software was discontinued by Adobe in 2012.
+        I champion the Fusion initiative to oversee the design of our apps, meeting biweekly to iterate and ensure consistency between all Fusion applications.
     </p>
 
-    <p>
-        The existing library had guidelines and specifications hosted on a Wordpress site, but in the form of hundreds of screenshots. As a result, it was a slow process to propagate changes to our Wordpress library and to our engineers to implement into our applications. This, coupled with a visual redesign resulting from our recently signed contract with Bank of America Merrill Lynch (BAML), presented a need to move away from Fireworks and rebuild the library. 
-    </p>
+    <h2>Please contact me for current examples of design systems work.</h2>
 
-    <p>
-        The contract with BAML included a modernization of our visual design, so this transition period served as a good opportunity to make the switch. But switch to what?
-    </p>
-
-    <h3>Why Figma?</h3>
-    <p>
-        We landed on Figma as our software of choice. Some of the advantages Figma offered follow: 
-    </p>
-        <ul>
-            <li>Figma is hosted in-browser, so it is compatible with both Windows & Mac OS. No one on the team would need to to switch operating systems!</li>
-            <li>Team libraries are hosted on the web and update automatically, so there was a simpler internal version control than Sketch</li>
-            <li>Figma's built-in CSS and developer view lent itself well to a cleaner engineering hand-off, one of the major goals for the new design system</li>
-        </ul>
-    <p>
-        The team had actually already begun to make the switch, but each new project meant every component had to be built from scratch every time. This is where I came in!
-    </p>
-
-    <h3>Atomic Design Principles</h3>
-    <p>
-        I researched and based our system off of the principles of Brad Frost's <a href="https://bradfrost.com/blog/post/atomic-web-design/" target="_blank"><i>Atomic Design</i></a>. I also did a deep dive of well-known design systems like Google's Material Design, IBM's Carbon Design, and Microsoft's MorningStar Design Systems for inspiration.
-    </p>
-    <img src="/images/portfolio/factset/atomic.png">
-    <div class="caption">How atomic design is structured &mdash; first at a high level, then an example of an atomically built dropdown</div>
-
-    <p>
-        As a team, we began breaking down each component of our library and mapping components to each level of organization and determining which components were more complex and could be built out of smaller atoms or molecules. The library needed to be structured such that future editors of the library would be able to easily understand it and make changes.
-    </p>
-    <img class="pic" src="/images/portfolio/factset/menus.png">
-    <div class="caption">Breaking down menus into smaller pieces to create a menu component</div>
-    <p>
-        Some logistical questions we tackled during this phase of planning included: how do I group components intuitively? What kind of naming conventions do I use to become the team standard? How granular should each atom be? (E.g. is the background of a button too specific of a component? What about a text label?)
-    <h3>Some Highlights Along the Way</h3>
-
-    <p>
-        An ongoing discussion we had was about the engineering handoff; the existing flow required a lot of manual labor. We worked in conjunction with our frontend engineering teams to create a more standardized, dynamic process. Our vision was that any small design change could quickly propagate to all of our applications with minimal need for extensive communication.
-    </p>
-    <p>
-        I experimented first with Zeplin. Previously, I had worked with a Zeplin and Sketch workflow, and thought it would adapt nicely for our use case; however, Zeplin wasn't very well integrated with Figma at the time and the handoff process did not see much improvement. Instead, I looked toward Figma's native capabilities in their "Code" tab &mdash; it was more similar than I had anticipated to Zeplin. Due to time constraints and other projects, we left this particular discussion at this stage for the remainder of my internship.
-    </p>
-    <img class="pic" src="/images/portfolio/factset/developertab.png">
-    <div class="caption">The "Code" tab automatically generates CSS for text styles, positioning, padding and more for each layer</div>
-
-    <p>
-        Each component had multiple states &mdash; what happens when I want to mock something with a hover state? How will the engineers in charge of the frontend library know what the hover state is? For this (and many other variable pieces like icons), I used the power of Figma's nested components. Nested components allowed each UI pattern to be dynamic and flexible, and each state (hover, active, disabled, focus, etc.) could be built into the layers of an individual component. I referenced <a href="https://medium.com/@nspace/building-flexible-components-in-figma-41113aa69493" target="_blank">this article</a> by Thomas Lowry frequently as I built.
-    </p>
-        <img class="pic" src="/images/portfolio/factset/buttons.png">
-        <div class="caption">Two button components: one showing it's hover state and one showing it's resting state. The icon button below shows a circle, but can be easily swapped with any other icon in the library using nested components</div>
-    <p>
-        I was also very stubborn about not wanting users of the library to have to "unlink" each component from the master library to properly customize them. If each component had to be unlinked, then any changes to the master component would not reflect in their mockups, effectively diminishing the purpose of having a master library. I made it a personal goal to make every component as responsive, resizable, and reusable as possible. 
-    </p>
-    <p>
-        I accomplished this with a combination of some incredibly powerful Figma features &mdash; between constraints, grids, and nested frames & components, about 95% of the system was fully customizable without the need to sever the connection to the master library.
-    </p>
-        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/293769494?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-        <div class="caption">Fully customizable tabs and windows, built responsively with nested components (48s)</div>
-
-    <h3>Results</h3>
-    <p>
-        By the end of my internship, the "atoms" and "molecules" had been built into the component library in full. The most frequently used "organism" UI patterns had also been integrated into the library and demo. Many more complex patterns could be built by mixing and matching.
-    </p>
-
-    <img class="pic" src="/images/portfolio/factset/example.png" />
-    <div class="caption">Using the leftmost atoms & molecules and a variety of form elements (made of more atoms & molecules & even organisms), these three frequently-used UI patterns can be built</div>
-
-    <p>
-        The visual design team began integrating these components into their daily workflow. Some of my biggest challenges came from understanding how components were used on the platform as well as how the visual designers build them, then integrating this thinking into my system designs.
-    </p>
-    <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe src="https://player.vimeo.com/video/293769458?byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <div class="caption">A (silent) demo of how to use the library to quickly build out a page (3m38s)</div>
-    <p>
-        I learned a good deal about systematically creating a reliable and reusable design system. Moving forward the team's primary objectives were to work further with our developers to implement the visual redesign in a streamlined, scalable way. Regretfully, my internship came to a close at this point and I was unable to accompany them in the next stages!
-    </p>
-
-    <p>
-        If you're interested, you can check out the demo file in Figma.
-    </p>
-    <a href="https://www.figma.com/file/Icy1Av0kGaz2H0GRvsURLD/Component-Library-Demo?node-id=161%3A17188" target="_blank" class="animated-button thar-three">Peruse the Demo File</a>
-
-    <div>
-        <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">back</a></span>
-        <span id="next"><a href="/projects/startuptreemobile.html">next<img src="/images/arrow2_right.png"></a></span>
-        <br /><br />
-    </div>
-
-</div>
-
-<div class="container fade-in">
-	<h2>more projects</h2>
-    <div class="projects__container">
-
-		<div class="projects"><a href="/projects/apps.html">
-			<div class="overlay2">
-				<img src="/images/covers/comps_cover2.png">
-			</div>
-			<img src="/images/covers/comps_cover1.png">
-			<h3>StartupTree Competitions</h3>
-			A module built to host entrepreneurship competitions.
-		</a></div>
-
-		<div class="projects"><a href="/projects/pawcares.html">
-			<div class="overlay2">
-				<img src="/images/covers/pawcares_cover2.png">
-			</div>
-			<img src="/images/covers/pawcares_cover1.png">
-			<h3>Perks at Work Fundraising</h3>
-			A fundraising platform hosted on Next Jump's e-commerce site.
-		</a></div>
-
-		<div class="projects"><a href="/projects/starstruck.html">
-			<div class="overlay2">
-				<img src="/images/covers/starstruck_cover2.png">
-			</div>
-			<img src="/images/covers/starstruck_cover1.png">
-			<h3>Starstruck</h3>
-			A 1 or 2 player gravity-less puzzle platformer set in space.
-		</a></div>
-
-		<!-- <div class="projects"><a href="/projects/factset.html">
-			<div class="overlay2">
-				<img src="/images/covers/factset_cover2.png">
-			</div>
-			<img src="/images/covers/factset_cover1.png">
-			<h3>FactSet Design System</h3>
-			Creating a responsive library for FactSet's design system.
-		</a></div> -->
-
-		<div class="projects"><a href="/projects/startuptreemobile.html">
-			<div class="overlay2">
-				<img src="/images/covers/startuptreemobile_cover2.png">
-			</div>
-			<img src="/images/covers/startuptreemobile_cover1.png">
-			<h3>StartupTree Mobile App</h3>
-			A mobile application built for StartupTree.
-		</a></div>
-
-		<div class="projects"><a href="/projects/dripdrop.html">
-			<div class="overlay2">
-				<img src="/images/covers/dripdrop_cover2.png">
-			</div>
-			<img src="/images/covers/dripdrop_cover1.png">
-			<h3>dripdrop</h3>
-			A web-based action game following the journey of a dew drop.
-		</a></div>
-		
-		<div class="projects"><a href="/projects/sequencer.html">
-			<div class="overlay2">
-				<img src="/images/covers/sequencer_cover2.png">
-			</div>
-			<img src="/images/covers/sequencer_cover1.png">
-			<h3>Interactive Visual Music Sequencer</h3>
-			A pentatonic tone sequencer built with a Teensy Arduino.
-		</a></div>
-
-	</div>
 </div>
 
 <footer>
