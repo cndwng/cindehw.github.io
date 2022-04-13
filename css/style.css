@@ -86,14 +86,16 @@ a:hover:not(.projects a) {
 }
 
 
-ol {font-size: 1.5rem;}
+ol, li {font-size: 1rem;}
 
 h1 {
     font-family: 'Shrikhand', sans-serif;
     color: #945861;
     text-align: center;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-block-end: .5em;
 }
 
 h2 {
@@ -101,17 +103,21 @@ h2 {
     color: #666;
     margin: 10px 0px 5px;
     font-weight: 500;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: .5pt;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-block-start: .5em;
+    margin-block-end: .25em;
 }
 
 p, ul {
-    font-size: 1.5rem;
-    line-height: 160%;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-block-start: .25em;
 }
 
 
@@ -224,6 +230,7 @@ footer {
         float: right;
         z-index: -5;
         margin-top: -20px;
+        padding: 20px;
 
     }
         .grass img {
@@ -300,7 +307,7 @@ footer {
         color: #666;
         padding: 0px 3px;
         transition: .3s ease;
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     .topnav a.active {color: #999;}
@@ -340,25 +347,24 @@ footer {
 }
 
 .hellobox {
-    padding: 30px 0px;
+    padding: 2.25rem 0px;
+    min-height: 45vh;
 }
 
     .hello {
         font-family: 'Shrikhand', sans-serif;
-        font-size: 50px;
-        margin: 1% 25% 0% 0%;
-        color: rgba(150, 88, 97, 1);
+        font-size: 3rem;
+        margin: 1rem 2rem 0 0;
+        color: #945861;
     }
-
-    .sub__hello {
-        font-size: 24px;
-        line-height: 1.6em;
+    .sub__hello p {
+        font-size: 1.25rem;
     }
 
 .separator {
     width: 200px;
     margin: auto;
-    padding: 15px 0px;
+    padding: 1.25rem 0;
 }
     .separator img {
         width: 100%;
@@ -399,7 +405,7 @@ footer {
         text-decoration: none;
         color: #945861;
         font-family: 'Shrikhand', sans-serif;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
 .left {
@@ -458,7 +464,7 @@ footer {
     .projects {
         max-width: 420px;
         margin: 0px 20px 40px;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .projects img {
@@ -575,6 +581,7 @@ footer {
 
     .overview img {
         max-width: 320px;
+        margin: 10px;
     }
     .overview h1 {
         text-align: left;
@@ -594,7 +601,7 @@ footer {
     margin: auto;
     text-align: center;
     font-style: italic;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 300;
     padding: 10px 0px 20px;
 }
@@ -618,7 +625,7 @@ footer {
   
 .text {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;

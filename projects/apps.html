@@ -8,7 +8,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:image" content="/images/preview.png">
+        <meta property="og:image" content="/images/preview.jpg">
         <meta property="og:description" content="A portfolio site highlighting design work by Cindy Wang."/>
         <meta property="og:type" content="blog"/>
     
@@ -33,9 +33,9 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="/projects/">UX/UI</a></div>
-
-        <div class="topnav item"><a href="/graphics.html">Graphics</a></div>
+        <!-- <div class="topnav item"><a href="/photo.html">Photo</a></div>         -->
+        <div class="topnav item"><a href="/projects/">Projects</a></div>
+        <!-- <div class="topnav item"><a href="/graphics.html">Graphics</a></div> -->
         <!-- <div class="topnav item"><a href="/photo.html">Photo</a></div>         -->
         <div class="topnav item"><a href="/Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
@@ -81,7 +81,7 @@
         We discovered that schools host entrepreneurship competitions, but need to use a variety of tools on multiple platforms to run them. Currently, there is no centralized platform to manage these competitions.
     </p>
 
-    <img src="/images/portfolio/apps/problem.png">
+    <img src="/images/portfolio/apps/problem.jpg">
     <div class="caption">Entrepreneurship administrators have to use a variety of platforms and mediums to run competitions, end to end</div>
 
     <p>
@@ -108,14 +108,14 @@
     <p>
         Typical administrators are faculty members of entrepreneurship programs at universities who are already familiar with the StartupTree platform. They're looking for ways to better facilitate the application process for competitions specifically and in general.
     </p>
-    <img src="/images/portfolio/apps/admin_persona.png">
+    <img src="/images/portfolio/apps/admin_persona.jpg">
     <div class="caption">A typical administrator.</div>
 
     <p>
         The basic workflow for an admin user involves creating and managing the event, the application questions, and the judging. Throughout, they need to be able to monitor progress at each step and make changes on the fly.
     </p>
 
-    <img src="/images/portfolio/apps/adminflow.png">
+    <img src="/images/portfolio/apps/adminflow.jpg">
     <div class="caption">The admin workflow. At the end of a round, they might need to repeat the entire process again.</div>
 
     <p>Armed with the information we had gathered from our interviews with Harvard Business School </p>
@@ -127,26 +127,26 @@
         Admins needed a central location to navigate through the process of managing a competition, so we created a dashboard that serves as a pivot point into the rest of the managing flow. While designing this module, I also planned on redesigning many other views for admin users, so this dashboard needed to be scalable and applicable to other StartupTree modules. The majority of the information for these dashboards can be pulled from existing user profiles.
     </p>
 
-    <img class="pic" src="/images/portfolio/apps/0.png">
+    <img class="pic" src="/images/portfolio/apps/0.jpg">
     <div class="caption">An administrator's central dashboard for each competition. While visually very clean, if I could revisit this project I think re-exploring the navigation would allow for better user experience. I think this is missing callouts for the "bigger" actions.</div>
 
     <p>
         Creation of each application needed to be broken down into smaller pieces. Admins often do not have all the details of the event upfront upon creation. They may first add the most crucial information &mdash; the event details about time, deadline, etc. &mdash; then create the application questions for applicants, and add rubrics and judges last. Giving administrators flexibility and keeping these pieces independent from each other allow admins to work asynchronously and allows for better error recovery.
     </p>
-    <img class="pic" src="/images/portfolio/apps/03.png">
+    <img class="pic" src="/images/portfolio/apps/03.jpg">
     <div class="caption">Breaking up the creation process of an application into four steps, all of which can be completed or revisited at any time. This screen is for inviting and managing judges.</div>
 
     <p>The final step for the administrator is the review of all the evaulations to choose winners (or applicants to advance to the next round). Evaluations can be shown by applicant or by judge and may also be downloaded as pdfs.
     </p>
 
-    <img class="pic" src="/images/portfolio/apps/04.png">
+    <img class="pic" src="/images/portfolio/apps/04.jpg">
     <div class="caption">An administrator's view of an individual applicant</div>
 
     <h2>For the Judge</h2>
     <p>From the conversation with our school and our CEO's knowledge of the kinds of competitions that are run by university entrepreneurship, we identified the judge user to primarily be of an older demographic with industry experience. That being said, they likely would be less tech-savvy, so we chose to create as straightforward and narrow of a process as possible.
     </p>
 
-    <img class="pic" src="/images/portfolio/apps/05.png">
+    <img class="pic" src="/images/portfolio/apps/05.jpg">
     <div class="caption">Log in, sign up. If I were a judge, which would I want?</div>
 
     <p>An obstacle we ran into when designing the judging side is that judges may not be on the StartupTree platform -- and may not want to be. But some judges may already be on the platform! </p>
@@ -155,18 +155,18 @@
     <p>The judges' initial view is a list of applicants, with ranking (that changes as judges complete evaluations), the status of their evaluations, and personal notes to help the judge differentiate between individual applicants.
     </p>
 
-    <div class="pic"><img src="/images/portfolio/apps/01.png"></div>
+    <div class="pic"><img src="/images/portfolio/apps/01.jpg"></div>
     <div class="caption">The judge's initial view of all applicants</div>
 
     <p>As judges read through each application, they are also presented with an evaluation to complete. The evaluation section was designed to mimic a piece of paper or physical rubric to help improve the judge's mental model.
     </p>
 
-    <div class="pic"><img src="/images/portfolio/apps/07.png"></div>
+    <div class="pic"><img src="/images/portfolio/apps/07.jpg"></div>
     <div class="caption">The judge's evaluation view for an individual applicant</div>
 
     <p>One of our biggest pain points was determining how to incorporate force rankings. We asked questions like "Where does it fit in the flow?" and "How do we make it intuitive?" We did not want to bring judges away from their evaluations, but also did not necessarily want to add steps to the overall process. In the end, we chose to nest a modal with a table of rankings inside each evaluation (that would update globally); however, I believe this solution was not the best we could find. Because of the short timeline and limited resources, we could not user test and opted to implement it as best we could, but I would have liked to explore more options and test them with real users. 
     </p>
-    <div class="pic"><img src="/images/portfolio/apps/08.png"></div>
+    <div class="pic"><img src="/images/portfolio/apps/08.jpg"></div>
     <div class="caption">Force rankings for judges</div>
     <h2>Outcome and Reflection</h2>
     <p>As a result of building this module, StartupTree signed over a dozen of university and other entrepreneurship-related programs. Many university entrepreneurship programs host competitions and have applications for roles, and this structure is flexible enough to fulfill both needs.
@@ -182,7 +182,7 @@
     <a href="https://dribbble.com/cndwng" target="_blank">
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" class="feather"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M3 10.7366C3 10.7366 9.62199 10.7668 13 9.5C17 8 18.5 5.00003 18.5 5.00003" /><path d="M5.5 18.8084C5.5 18.8084 9 13.889 13 13C17.5 12 21.8515 13 21.8515 13"/><path d="M8.5 2.99997C8.5 2.99997 12.3889 8.49997 13.5 11C15.5 15.5 16 20.5 16 20.5"/></svg>
     </a>
-    <a href="mailto:cindehw@gmail.com"><img data-feather="mail" /></a>
+    <a href="mailto:cindy@cndwng.com"><img data-feather="mail" /></a>
     </div>
 </footer>
     

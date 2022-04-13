@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width:650px) {
-    .grass {position: relative; }
+    .grass {position: relative; float: none;}
     .grass img {max-width: 100%; width: 400px; opacity: 1;}
     .hawaii img {width: 200px;}
     .hat img {width: 200px;}
@@ -74,7 +74,7 @@
 
 @media screen and (max-width:280px) {
     .sticky + .container {padding-top: none;}
-    .topnav {font-size: .8em;}
+    .topnav {font-size: 1rem;}
     .topnav .item {padding: 10px;}
     .topnav .name {width: 100px;}
 }

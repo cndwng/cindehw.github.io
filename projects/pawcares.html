@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="/images/preview.png">
+    <meta property="og:image" content="/images/preview.jpg">
     <meta property="og:description" content="A portfolio site highlighting design work by Cindy Wang."/>
     <meta property="og:type" content="blog"/>
 
@@ -33,9 +33,8 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="/projects/">UX/UI</a></div>
-
-        <div class="topnav item"><a href="/graphics.html">Graphics</a></div>
+        <div class="topnav item"><a href="/projects/">Projects</a></div>
+        <!-- <div class="topnav item"><a href="/graphics.html">Graphics</a></div> -->
         <!-- <div class="topnav item"><a href="/photo.html">Photo</a></div>         -->
         <div class="topnav item"><a href="/Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
@@ -54,17 +53,19 @@
             <p>A fundraising platform built during COVID-19 to send supplies to NYC hospitals.</p>
         </div>
     </div>
-
+    <h2>The problem</h2>
+    <p>The impact of COVID-19 has been felt worldwide, one of the hardest hit populations being frontline workers in NYC. How might Next Jump use their resources to help this population?</p>
     <p>
-        The impact of COVID-19 has been felt worldwide, one of the hardest hit being NYC -- this past year has been my first time living in such a densely populated, diverse area, and the effects of the pandemic locally has been difficult to watch. With hospitals overwhelmed, Next Jump decided to push for a pro bono initiative to raise funds to build care packages for frontline workers.
+        This past year has been my first time living in such a densely populated, diverse area, and the effects of the pandemic locally have been difficult to watch. With hospitals overwhelmed, Next Jump decided to push for a pro bono initiative to raise funds to build care packages for frontline workers.
     </p>
+    <h2>My role</h2>
     <p>
-        I served as the UI/UX designer to build a fundraising platform. Since April this year, our platform has raised over $180k in the US and over &#163;40k in the UK. 
+        I served as the UI/UX designer to build a fundraising platform. In the months following April 2020, the platform raised over $180k in the US and over &#163;40k in the UK. 
     </p>
 
     <h2>The Final Prototype</h2>
     <p>
-        The high fidelity mockups and prototype can be found below. Keeping scrolling for the process!
+        The high fidelity mockups and prototype can be found below. 
     </p>
 </div>
 <div class="container port-overflow">
@@ -72,35 +73,35 @@
     <div class="caption" style="padding-top: 20px;">If the embedded experience does not work for you, you can find the prototype <a href="https://www.figma.com/proto/BiMKlbng4eISBdNweJxTmO/nxj-cares?node-id=314%3A1&scaling=scale-down-width&viewport=1172%2C187%2C0.1832997053861618">here</a>.</div>
 </div>
 <div class="container port fade-in">
-    <h2>The Beginning: How Do We Best Help Hospitals in Need?</h2>
+    <h2>The Beginning</h2>
     <p>
         Next Jump runs an e-commerce platform with corporate clients and merchant partners and over 70 million unique users on the site. We were able to leverage each of these angles to 
         <ol>
             <li>
-                understand what hospitals needed most from our corporate contacts at NYC Health + Hospitals, 
+                Understand what hospitals needed most from our corporate contacts at NYC Health + Hospitals, 
             </li>
             <li>
-                ask our customer base to help us fund care packages with those items
+                Ask our customer base to help us fund care packages with those items
             <li> 
-                utilize our merchant contacts to organize order fulfillment and send these packages to the hospitals.
+                Utilize our merchant contacts to organize order fulfillment and send these packages to the hospitals.
             </li>
         </ol>
     </p>
     <p>
         With our NYC Health + Hospitals contacts, we identified two of the hardest hit local hospitals: Elmhurst & Kings County as well as the items they needed the most. Beyond personal protective equipment, their greatest needs were laptops & tablets, clothing (like scrubs & towels), and snacks.
     </p>
-    <img src="/images/portfolio/paw/hospitalneeds.png">
+    <img src="/images/portfolio/paw/hospitalneeds.jpg">
     <div class="caption">A breakdown of hospital needs beyond PPE</div>
     <p>
         We focused on the biggest and smallest ticket items (electronics and snacks) due to our existing relationships with the merchants that sell these items.
     </p>
     
-    <!-- <h2>A Brief Look at Flows</h2>
+    <h2>A Brief Look at Flows</h2>
     <p>
         Two main flows we took into consideration were order fulfillment and the customer flow. We wanted the order fulfillment process to be scalable for many fundraisers, so we planned the product keeping in mind all of the teams involved. The overall customer flow was similar to the standard e-commerce flow.
     </p>
-    <img src="/images/portfolio/paw/flowcharts.png">
-    <div class="caption">A high level overview of order fulfillment and customer flow</div> -->
+    <img src="/images/portfolio/paw/flowcharts.jpg">
+    <div class="caption">A high level overview of order fulfillment and customer flow</div>
     
     <h2>Initial research</h2>
     <p>
@@ -118,26 +119,26 @@
     <p>
         I mapped out a comparison between the two platforms to get a better idea of where they diverge.
     </p>
-    <img src="/images/portfolio/paw/gofundme_comparison.png">
+    <img src="/images/portfolio/paw/gofundme_comparison.jpg">
     <div class="caption">A comparison of GoFundMe features and the Perks at Work platform needs</div>
     
     <h2>Wireframes</h2>
     <p>
         With this in mind, I created the following wireframe for an individual hospital, adopting GoFundMe's right sidebar highlighting overall progress and activity feed. We kept the primary CTA visible at all times. I used the left side of the screen for the details and specifics of each fundraiser, including the breakdown of progress for each item funded.
     </p>
-    <img class="pic" src="/images/portfolio/paw/wireframe.png">
+    <img class="pic" src="/images/portfolio/paw/wireframe.jpg">
     <div class="caption">The initial page wireframe</div>
 
     <p>
         Clicking the "contribute" button would open a modal that allows customers to choose their contribution amount (fixed amounts due to tech constraints) and add a personalized message. Typically our purchase flow would bring customers to an item description page. However, we didn't want the experience to feel like a purchase rather than a donation or contribution, hence our decision to keep customers on the same fundraiser page and implement a modal instead.
     </p>
-    <img class="pic" src="/images/portfolio/paw/wiremodal.png">
+    <img class="pic" src="/images/portfolio/paw/wiremodal.jpg">
     <div class="caption">Wireframe of the purchase modal</div>
 
     <p>
         The rest of the purchase flow adopted our existing cart experience, with a new item icon and messaging unique to this platform.
     </p>
-    <img class="pic" src="/images/portfolio/paw/cart.png" />
+    <img class="pic" src="/images/portfolio/paw/cart.jpg" />
     <div class="caption">Adding to the cart & our existing purchase flow</div>
 
     <h2>Iterating</h2>
@@ -150,19 +151,19 @@
     <p>
         We added an Updates tab and navigation to highlight milestones (e.g. "Tablets completely funded!"), progress on fulfillment, and messages directly from the hospitals.
     </p>
-    <img class="pic" src="/images/portfolio/paw/updates.png">
+    <img class="pic" src="/images/portfolio/paw/updates.jpg">
     <div class="caption">The updates tab</div>
 
     <p>
         Our client success team was also very quickly expanding to several more hospitals. Thus, we needed to create a page to allow discovery of the breadth of offerings as well as an avenue for the community to nominate their own local hospitals.
     </p>
-    <img class="pic" src="/images/portfolio/paw/listing.png">
+    <img class="pic" src="/images/portfolio/paw/listing.jpg">
     <div class="caption">The listing section & entry point for the nomination form</div>
 
     <p>
         Our final individual hospital page mockup also had a larger focus on telling the "story" for each hospital, adding more individualized details about the hospital.
     </p>
-    <div class="pic" style="max-height: 80vh; overflow-y: scroll;"><img src="/images/portfolio/paw/hospital.png"></div>
+    <div class="pic" style="max-height: 80vh; overflow-y: scroll;"><img src="/images/portfolio/paw/hospital.jpg"></div>
     <div class="caption">A final mockup</div>
 
     <img src="/images/portfolio/paw/graphic.png" style="float: left; max-width: 400px; margin: 0px 25px 10px 0px;">
@@ -183,7 +184,7 @@
     <a href="https://dribbble.com/cndwng" target="_blank">
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" class="feather"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M3 10.7366C3 10.7366 9.62199 10.7668 13 9.5C17 8 18.5 5.00003 18.5 5.00003" /><path d="M5.5 18.8084C5.5 18.8084 9 13.889 13 13C17.5 12 21.8515 13 21.8515 13"/><path d="M8.5 2.99997C8.5 2.99997 12.3889 8.49997 13.5 11C15.5 15.5 16 20.5 16 20.5"/></svg>
     </a>
-    <a href="mailto:cindehw@gmail.com"><img data-feather="mail" /></a>
+    <a href="mailto:cindy@cndwng.com"><img data-feather="mail" /></a>
     </div>
 </footer>
 

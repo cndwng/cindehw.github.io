@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="/images/preview.png">
+    <meta property="og:image" content="/images/preview.jpg">
     <meta property="og:description" content="A portfolio site highlighting design work by Cindy Wang."/>
     <meta property="og:type" content="blog"/>
 
@@ -33,9 +33,8 @@
         </a>
     </div>
     <div class="navlink">
-        <div class="topnav item"><a href="/projects/">UX/UI</a></div>
-
-        <div class="topnav item"><a href="/graphics.html">Graphics</a></div>
+        <div class="topnav item"><a href="/projects/">Projects</a></div>
+        <!-- <div class="topnav item"><a href="/graphics.html">Graphics</a></div> -->
         <!-- <div class="topnav item"><a href="/photo.html">Photo</a></div>         -->
         <div class="topnav item"><a href="/Resume.pdf" target="_blank">R&#233;sum&#233;</a></div>
     </div>
@@ -83,10 +82,10 @@
     </p>
     <div class="sidebyside">
         <div class="left">
-            <img src="/images/portfolio/starstruck/moves.png">
+            <img src="/images/portfolio/starstruck/moves.jpg">
         </div> 
         <div class="right">
-            <img src="/images/portfolio/starstruck/combo.png">
+            <img src="/images/portfolio/starstruck/combo.jpg">
         </div>
     </div>
     <div class="caption">The core actions (left) and example level design combining actions (right)</div>
@@ -98,23 +97,23 @@
     <p>
         Originally we wanted to the rope to stretch like a rubber band &mdash; although rope physics was challenging, we managed to implement a stretching rope. After playtesting, players found it unintuitive and clunky, so we scrapped the mechanism altogether.
     </p>
-    <img src="/images/portfolio/starstruck/rope.png">
+    <img src="/images/portfolio/starstruck/rope.jpg">
     <div class="caption">The rope was built using a chain of small objects, linked together at the end. Our original thoughts were to insert a new link somewhere in our chain to "stretch" the rope</div>
     <p>The mechanic for collecting stars underwent a number of drastic changes:</p>
     <ul>
         <li>For the paper prototype, the initial thought was the rope would have to loop around each star to collect. The math ended up being pretty difficult to implement, so we started with just contact with the astronauts' bodies.</li>
         <li>We created our first prototype's star collection to be triggered by contact with bodies only, but also built a version where contact with the rope would also collect the stars. As soon as we debuted the latter, the gameplay became way more satisfying and way more fun!</li>
     </ul>    
-    <img src="/images/portfolio/starstruck/starcollection.png">
+    <img src="/images/portfolio/starstruck/starcollection.jpg">
     <div class="caption">Our original intended star collection mechanic</div>
     <p>The control scheme for the game also went through a few iterations:</p>
     <ul>
         <li>The intention was for the game to be single player, but after demoing a second set of controls for the second astronaut, it was a huge hit and became the primary control schema for the game. We also added Xbox controls for better co-op experience!</li>
-        <img src="/images/portfolio/starstruck/controls.png">
+        <img src="/images/portfolio/starstruck/controls.jpg">
         <div class="caption">Two ways to map arrow key movement to rotational movement on the planets. [A] was the winner!</div>    
         <li>Movement around planets was rotational, so we faced some challenges mapping this movement to the arrow keys. We started with [A] (shown above), but playtesters found it confusing. But after changing it to [B], it was even worse! We ended up sticking to our guns and keeping the original scheme.</li>
     </ul>    <video autoplay loop muted class="gameplay">
-        <source src="/images/portfolio/starstruck/playtest.mov">
+        <source src="/images/portfolio/starstruck/playtest.mp4">
     </video>
     <div class="caption">We had nearly a dozen playtesting sessions with different groups of people &mdash; it was helpful to get their feedback and input on the game and really fun to see them enjoy what we had built.</div>
     <h2>Demoing the Game</h2>
@@ -142,11 +141,6 @@
 
     <p>Starstruck was a ton of fun to demo, especially watching friends (and strangers!) co-op together. When I have time to kill, I always use two player controls on the keyboard (one hand per astronaut) or co-op it with a friend. </p>
     <a href="https://gamejolt.com/games/starstruck/431185" target="_blank" class="animated-button thar-three">Play Starstruck</a>
-
-    <div>
-        <span id="back"><a href="javascript:history.go(-1)"><img src="/images/arrow2_left.png">back</a></span>
-        <br /><br />
-    </div>
 </div>
 
 <footer>
@@ -156,7 +150,7 @@
     <a href="https://dribbble.com/cndwng" target="_blank">
         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" class="feather"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/><path d="M3 10.7366C3 10.7366 9.62199 10.7668 13 9.5C17 8 18.5 5.00003 18.5 5.00003" /><path d="M5.5 18.8084C5.5 18.8084 9 13.889 13 13C17.5 12 21.8515 13 21.8515 13"/><path d="M8.5 2.99997C8.5 2.99997 12.3889 8.49997 13.5 11C15.5 15.5 16 20.5 16 20.5"/></svg>
     </a>
-    <a href="mailto:cindehw@gmail.com"><img data-feather="mail" /></a>
+    <a href="mailto:cindy@cndwng.com"><img data-feather="mail" /></a>
     </div>
 </footer>
 
