@@ -267,7 +267,6 @@ footer {
     text-align: right; 
     float: right;
 }
-#myTopNav {width: 100vw;}
 .topnav {
     font-family: 'Shrikhand', sans-serif;
     text-transform: lowercase;
@@ -276,6 +275,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    width: 100%;
 }
 
     .name {
