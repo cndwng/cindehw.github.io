@@ -143,8 +143,8 @@ footer {
 
     .foot__pic {
         position: absolute;
-        left: -20;
-        bottom: -60;
+        left: -20px;
+        bottom: -60px;
         z-index: -5;
         overflow: hidden;
     }
@@ -229,8 +229,8 @@ footer {
     .grass {
         float: right;
         z-index: -5;
-        margin-top: -20px;
-        padding: 20px;
+        margin-right: 20px;
+        margin-top: -30px;
 
     }
         .grass img {
@@ -347,8 +347,8 @@ footer {
 }
 
 .hellobox {
-    padding: 2.25rem 0px;
-    min-height: 45vh;
+    padding: 3rem;
+    min-height: 50vh;
 }
 
     .hello {
