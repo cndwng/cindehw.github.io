@@ -351,9 +351,9 @@ footer {
 }
 
 .hellobox {
-    padding: 3rem 2rem;
+    padding: 2rem 3rem;
     max-width: 1640px;
-    min-height: 50vh;
+    min-height: 40vh;
 }
 
     .hello {
