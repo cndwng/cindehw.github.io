@@ -110,7 +110,11 @@ h2 {
 h3 {
     font-size: 1.25rem;
     line-height: 1.2;
-    margin-block-start: .5em;
+    margin-block-start: .75em;
+    margin-block-end: .25em;
+}
+
+h4 {
     margin-block-end: .25em;
 }
 
@@ -347,7 +351,8 @@ footer {
 }
 
 .hellobox {
-    padding: 3rem;
+    padding: 3rem 2rem;
+    max-width: 1640px;
     min-height: 50vh;
 }
 
