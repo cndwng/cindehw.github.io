@@ -101,7 +101,8 @@ h1 {
 h2 {
     font-family: 'Shrikhand', sans-serif;
     color: #666;
-    margin: 10px 0px 5px;
+    margin-block-start: 1.5em;
+    margin-block-end: .25em;
     font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: .5pt;
@@ -110,7 +111,7 @@ h2 {
 h3 {
     font-size: 1.25rem;
     line-height: 1.2;
-    margin-block-start: .75em;
+    margin-block-start: 1em;
     margin-block-end: .25em;
 }
 
@@ -469,7 +470,7 @@ footer {
 
     .projects {
         max-width: 420px;
-        margin: 0px 20px 40px;
+        margin: 20px 20px 40px;
         font-size: 1rem;
     }
 
@@ -609,7 +610,7 @@ footer {
     font-style: italic;
     font-size: 1rem;
     font-weight: 300;
-    padding: 10px 0px 20px;
+    padding: 0.75rem 0 1.5rem;
 }
 
 .overlay {
