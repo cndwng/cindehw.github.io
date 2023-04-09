@@ -1,7 +1,8 @@
 body {
     background-color: #FFFCF6;
     color: #140D0E;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Mono', 'Space Grotesk', sans-serif;
+    margin: 0;
 }
 
 nav {
@@ -24,7 +25,7 @@ nav li {
 nav li#home { 
     padding: 0.5rem 1rem;
     background-color: #FFD600;
-    font-family: 'Rubik Mono One', 'Space Grotesk Mono', 'Space Grotesk', sans-serif;
+    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 3rem;
 }
 
@@ -45,51 +46,59 @@ nav li#home:hover {
 }
 
 main {
-    padding: 1.5rem 1.5rem 5rem;
+    padding: 2rem;
     text-align: center;
+    margin-bottom: 4rem;
 }
 
-.nametag {
-    margin-bottom: 3rem;
+#introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-.nametag img {
-    border: 24px solid #FFA654;
-    border-radius: 8px;
-    width: 16rem;
-    height: 16rem;
-    margin-bottom: -2rem;
+.nametag-image {
+    background: url(me.jpg);
+    background-size: cover;
+    display: block;
+    border: 1.5rem solid #FFA654;
+    border-radius: 0.5rem;
+    width: 18rem;
+    height: 18rem;
 }
 
-#introduction h1 {
-    display: inline-block;
+.nametag h1 {
+    width: fit-content;
     padding: 1rem;
-    margin: 0;
+    margin: -5rem 0 0 3rem;
     border-radius: 0.5rem;
     background-color: #0A1968;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 3rem;
     color: #EEB6D4;
+    text-align: left;
     box-shadow: -12px 12px #EEB6D4;
 }
 
-#introduction h2 {
-    display: inline-block;
+.fact-card h2 {
+    display: inline-flex;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 1rem;
     padding-right: 1rem;
     margin: 0;
 }
 
-#introduction h3 {
+.fact-card h3 {
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 1rem;
     margin: 1.5rem 0 0;
 }
 
-#introduction .fact-card {
+.fact-card {
     max-width: 42rem;
-    margin: auto;
+    margin-left: 3rem;
+    height: fit-content;
     padding: 2rem;
     border-radius: 0.5rem;
     background-color: #EEB6D4;
@@ -99,27 +108,31 @@ main {
     text-align: left;
 }
 
-#introduction ul {
+.fact-card ul {
     list-style-type: none;
     font-family: 'Space Mono', 'Space Grotesk', sans-serif;
     font-style: italic;
     padding: 0;
-    margin: 0.25rem 0 0;
+    margin: 0;
 }
 
-#introduction li {
+.fact-card li {
+    display: flex;
     margin-top: 0.5rem;
+}
+
+.fact-card li:nth-last-of-type(1) {
+    margin-right: 0;
 }
 
 .fact-card-label {
     font-weight: bold;
-    display: inline-block;
-    margin-right: 2rem;
-    width: 8rem;
+    min-width: 8rem;
+    margin-right: 1.5rem;
 }
 
 .fact-card-value {
-    display: inline-block;
+    align-self: stretch;
 }
 
 .fact-card-value a, a:visited{
@@ -148,7 +161,7 @@ main {
 }
 
 #bio li a, #bio li a:visited {
-    font-family: 'Rubik Mono One', 'Space Grotesk Mono', 'Space Grotesk', sans-serif;
+    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 1.5rem;
     color: #DCB9FF;
     text-decoration: none;
@@ -164,13 +177,23 @@ footer {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    max-width: 98vw;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     background-color: #765BFF;
     color: #EDFFDC;
     font-family: 'Space Mono', 'Space Grotesk', sans-serif;
     font-style: italic;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0;
 }
 
 footer a, footer a:visited {
@@ -180,4 +203,45 @@ footer a, footer a:visited {
 footer a:hover {
     font-weight: bold;
     transition: 0.2s;
+}
+
+@media screen and (max-width: 800px) {
+    #introduction {
+        flex-flow: column;
+        margin-top: 0;
+    }
+
+    .nametag-image {
+        max-width: 12rem;
+        max-height: 12rem;
+        margin: 0 auto -2rem;
+        border: 1rem solid #FFA654;
+    }
+
+    .nametag h1 {
+        margin: 0 0 3rem;
+        font-size: 2rem;
+    }
+
+    .fact-card {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+
+    .fact-card li {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+    footer {
+        text-align: center;
+        margin: 0 0.5rem;
+        bottom: 0;
+        border-radius: 0.5rem 0.5rem 0 0;
+        font-size: 0.75rem;
+    }
 }
