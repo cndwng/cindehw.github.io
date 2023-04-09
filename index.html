@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:image" content="/images/preview.jpg">
-        <meta property="og:description" content="A portfolio site highlighting design work by Cindy Wang."/>
+        <meta property="og:description" content="Cindy Wang + no vowels = CNDWNG (a portfolio site)"/>
         <meta property="og:type" content="blog"/>
         <title>home • cndwng</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -74,4 +74,23 @@
         </ul>
     </footer>
 </body>
+<script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.offsetHeight;
+    let isMin = false;
+
+    window.addEventListener("scroll", mininimizeNav);
+
+    function mininimizeNav() {
+        console.log(window.scrollY);
+        if (window.scrollY >= (navHeight) && !isMin) {
+            nav.classList.add("minimize-nav");
+            isMin = true;
+        } else if (window.scrollY < (navHeight - 24) && isMin){
+            nav.classList.remove("minimize-nav");
+            isMin = false;
+        }
+    }
+    
+</script>
 </html>

@@ -188,9 +188,9 @@
 
     window.onscroll = function() {stickyNav()};
 
-    var navbar = document.getElementById("myTopnav");
+    const nav = document.getElementById("myTopnav");
 
-    var sticky = navbar.offsetTop;
+    const offset = navbar.offsetTop;
 
     function stickyNav() {
         if (window.pageYOffset >= sticky) {
