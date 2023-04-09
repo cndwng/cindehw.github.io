@@ -122,6 +122,15 @@ main {
     display: inline-block;
 }
 
+.fact-card-value a, a:visited{
+    color:#0A1968;
+}
+
+.fact-card-value a:hover {
+    transition: 0.2s;
+    font-weight: bold;
+}
+
 #bio ul {
     display: flex;
     flex-direction: column;
