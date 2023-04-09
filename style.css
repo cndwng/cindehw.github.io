@@ -1,0 +1,173 @@
+body {
+    background-color: #FFFCF6;
+    color: #140D0E;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+    width: fit-content;
+    border-radius: 0.5rem;
+}
+
+nav li#home { 
+    padding: 0.5rem 1rem;
+    background-color: #FFD600;
+    font-family: 'Rubik Mono One', 'Space Grotesk Mono', 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+}
+
+nav li#home a, nav li#home a:visited {
+    color: #044A24;
+    text-decoration: none;
+}
+
+nav li#home:hover {
+    transition: 0.2s;
+    box-shadow: -8px 8px #044A24;
+    transform: translate(4px, -4px);
+}
+
+#no-vowels {
+    font-size: 0.75rem;
+    margin-top: -0.5rem;    
+}
+
+main {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.nametag {
+    margin-bottom: 3rem;
+}
+
+.nametag img {
+    border: 24px solid #FFA654;
+    border-radius: 8px;
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: -2rem;
+}
+
+#introduction h1 {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    background-color: #0A1968;
+    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    color: #EEB6D4;
+    box-shadow: -12px 12px #EEB6D4;
+}
+
+#introduction h2 {
+    display: inline-block;
+    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    padding-right: 1rem;
+    margin: 0;
+}
+
+#introduction h3 {
+    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    margin: 1.5rem 0 0;
+}
+
+#introduction .fact-card {
+    max-width: 42rem;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #EEB6D4;
+    color: #0A1968;
+    border: 4px solid #0A1968;
+    box-shadow: 12px -12px 0px #FFA654;
+    text-align: left;
+}
+
+#introduction ul {
+    list-style-type: none;
+    font-family: 'Space Mono', 'Space Grotesk', sans-serif;
+    font-style: italic;
+    padding: 0;
+    margin: 0.25rem 0 0;
+}
+
+#introduction li {
+    margin-top: 0.5rem;
+}
+
+.fact-card-label {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 2rem;
+    width: 8rem;
+}
+
+.fact-card-value {
+    display: inline-block;
+}
+
+#bio ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+#bio li {
+    width: fit-content; 
+    padding: 0.5rem 1rem;
+    background-color: #044A24;
+    margin-bottom: 3rem;
+    border-radius: 0.25rem;
+}
+
+#bio li a, #bio li a:visited {
+    font-family: 'Rubik Mono One', 'Space Grotesk Mono', 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    color: #DCB9FF;
+    text-decoration: none;
+}
+
+#bio li:hover {
+    transition: 0.2s;
+    box-shadow: -8px 8px #DCB9FF;
+    transform: translate(4px, -4px);
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #765BFF;
+    color: #EDFFDC;
+    font-family: 'Space Mono', 'Space Grotesk', sans-serif;
+    font-style: italic;
+}
+
+footer a {
+    color: #EDFFDC;
+}
+
+footer a:hover {
+    font-weight: bold;
+    transition: 0.2s;
+}
