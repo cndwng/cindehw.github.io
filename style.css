@@ -239,8 +239,10 @@ footer a:hover {
     }
     footer {
         text-align: center;
-        margin: 0 0.5rem;
+        right: 0.5rem;
+        left: 0.5rem;
         bottom: 0;
+        padding: 0.5rem;
         border-radius: 0.5rem 0.5rem 0 0;
         font-size: 0.75rem;
     }
