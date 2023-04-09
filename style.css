@@ -173,7 +173,7 @@ footer {
     font-style: italic;
 }
 
-footer a {
+footer a, footer a:visited {
     color: #EDFFDC;
 }
 
