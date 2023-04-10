@@ -5,6 +5,27 @@ body {
     margin: 0;
 }
 
+*:focus-visible {
+    outline: #765BFF dashed 2px;
+    outline-offset: 0px;
+}
+
+a {
+    font-family: 'Space Mono', 'Space Grotesk', sans-serif;
+    text-decoration: underline;
+}
+
+
+a:hover, a:focus-visible {
+    transition: 0.2s;
+    font-weight: bold;
+    text-decoration: underline wavy;
+}
+
+a:focus-visible {
+    outline: none;
+}
+
 nav {
     text-align: center;
     position: sticky;
@@ -35,7 +56,9 @@ nav li {
     transition: 0.2s ease-in-out;
 }
 
-#home a:hover, #home a:focus {
+#home a:hover, #home a:focus-visible {
+    outline: #765BFF dashed 2px;
+    outline-offset: 0px;
     transition: 0.2s;
     box-shadow: -8px 8px #044A24;
     transform: translate(4px, -4px);
@@ -142,11 +165,6 @@ main {
 
 .fact-card-value a, a:visited{
     color:#0A1968;
-}
-
-.fact-card-value a:hover, .fact-card-value a:focus {
-    transition: 0.2s;
-    font-weight: bold;
 }
 
 #bio ul {
@@ -270,6 +288,19 @@ footer a:hover, footer a:focus {
         padding: 1rem 0;
     }
 
+    #home a {
+        font-size: 2rem;
+    }
+
+    .minimize-nav #home a {
+        font-size: 1.5rem;
+    }
+    
+    #no-vowels {
+        font-size: 0.5rem;
+        margin-top: -0.25rem;
+    }
+
     .nametag-image {
         max-width: 12rem;
         max-height: 12rem;
@@ -284,8 +315,8 @@ footer a:hover, footer a:focus {
 
     footer {
         text-align: center;
-        right: 0.5rem;
-        left: 0.5rem;
+        right: 0;
+        left: 0;
         bottom: 0;
         padding: 0.5rem;
         border-radius: 0.25rem 0.25rem 0 0;
