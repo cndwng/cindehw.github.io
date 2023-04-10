@@ -15,18 +15,19 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     </head>
 <body>
     <nav>
         <ul>
-            <li id="home"><a href="/">
-                cndwng
-                <div id="no-vowels">
-                    *me, no vowels
-                </div>
-            </a></li>
-            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
-            <li class="nav-order-right block"><a href="">about</a></li> -->
+            <li id="home">
+                <button onclick="window.confetti({ disableForReducedMotion: true })">
+                    cndwng
+                    <div id="no-vowels">
+                        *me, no vowels
+                    </div>
+                </button>
+            </li>
         </ul>
     </nav>
     <main>

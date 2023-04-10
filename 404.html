@@ -15,6 +15,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     </head>
 <body>
     <nav>
@@ -25,13 +26,11 @@
                     *me, no vowels
                 </div>
             </a></li>
-            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
-            <li class="nav-order-right block"><a href="">about</a></li> -->
         </ul>
     </nav>
     <main>
         <section id="error-404">
-            <h1 class="block"><a href="/">404</a></h1>
+            <h1 class="block"><button onclick="window.confetti({ disableForReducedMotion: true })">404</button></h1>
             <span>Uh oh – This page doesn't exist!</span>
         </section>
     </main>
