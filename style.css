@@ -45,9 +45,10 @@ nav li {
     width: fit-content;
 }
 
-#home a, #home a:visited {
+#home button {
     padding: 0.5rem 1rem;
     background-color: #FFD600;
+    border: none;
     border-radius: 0.5rem;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 3rem;
@@ -56,12 +57,11 @@ nav li {
     transition: 0.2s ease-in-out;
 }
 
-#home a:hover, #home a:focus-visible {
-    outline: #765BFF dashed 2px;
-    outline-offset: 0px;
+#home button:hover, #home button:focus-visible {
     transition: 0.2s;
     box-shadow: -8px 8px #044A24;
     transform: translate(4px, -4px);
+    cursor: pointer;
 }
 
 #no-vowels {
