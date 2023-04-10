@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-*:focus-visible {
+*:focus-visible, .block a:focus-visible, #home a:focus-visible {
     outline: #765BFF dashed 2px;
     outline-offset: 0px;
 }
@@ -13,8 +13,8 @@ body {
 a {
     font-family: 'Space Mono', 'Space Grotesk', sans-serif;
     text-decoration: underline;
+    font-style: italic;
 }
-
 
 a:hover, a:focus-visible {
     transition: 0.2s;
@@ -22,9 +22,24 @@ a:hover, a:focus-visible {
     text-decoration: underline wavy;
 }
 
-#home a:focus-visible, #error-404 a:focus-visible, #bio li a:focus-visible {
-    outline: #765BFF dashed 2px;
-    outline-offset: 0px;
+.block a, .block a:visited {
+    display: flex;
+    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+
+    /* things to overwrite */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+    background-color: #044A24;
+    color: #DCB9FF;
+}
+
+.block a:hover, .block a:focus-visible {
+    transition: 0.2s;
+    transform: translate(4px, -4px);
+    box-shadow: -0.5rem 0.5rem #DCB9FF;
 }
 
 a:focus-visible {
@@ -40,6 +55,7 @@ nav {
 nav ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
     padding: 1.5rem 0;
     margin: 0;
@@ -48,17 +64,38 @@ nav ul {
 nav li {
     display: flex;
     width: fit-content;
+    height: fit-content;
+    margin-right: 1.5rem;
+    order: 1;
+}
+
+nav li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+
+.nav-order-left {
+    order: 0;
+}
+
+.nav-order-right {
+    order: 2;
+}
+
+#home {
+    order: 1;
 }
 
 #home button, #home a {
+    order: 0;
     padding: 0.5rem 1rem;
-    background-color: #FFD600;
     border: none;
     border-radius: 0.5rem;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 3rem;
-    color: #044A24;
+    font-style: normal;
     text-decoration: none;
+    background-color: #FFD600;
+    color: #044A24;
     transition: 0.2s ease-in-out;
 }
 
@@ -180,24 +217,6 @@ main {
     padding: 0;
 }
 
-#bio li a, #bio li a:visited {
-    display: block;
-    padding: 0.5rem 1rem;
-    margin-bottom: 2rem;
-    background-color: #044A24;
-    border-radius: 0.25rem;
-    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
-    font-size: 1.5rem;
-    color: #DCB9FF;
-    text-decoration: none;
-}
-
-#bio li a:hover, #bio li a:focus-visible {
-    transition: 0.2s;
-    box-shadow: -0.5rem 0.5rem #DCB9FF;
-    transform: translate(4px, -4px);
-}
-
 #error-404 {
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 2rem;
@@ -205,8 +224,6 @@ main {
 }
 
 #error-404 h1 a, #error-404 h1 a:visited {
-    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
-    display: block;
     width: fit-content;
     margin: auto;
     padding: 0rem 2rem;
@@ -215,13 +232,20 @@ main {
     background-color: #85192A;
     color: #FFA654;
     box-shadow: -0.75rem 0.75rem #FFA654;
-    text-decoration: none;
 }
 
 #error-404 h1 a:hover, #error-404 h1 a:focus-visible {
     transition: 0.2s;
     box-shadow: -1.25rem 1.25rem #FFA654;
     transform: translate(0.25rem, -0.25rem);
+}
+
+#bio ul {
+    margin: 0;
+}
+
+#bio li {
+    margin-bottom: 2rem;
 }
 
 footer {
@@ -232,8 +256,8 @@ footer {
     border-radius: 0.25rem;
     background-color: #765BFF;
     color: #EDFFDC;
-    font-family: 'Space Mono', 'Space Grotesk', sans-serif;
-    font-style: italic;
+    /* font-family: 'Space Mono', 'Space Grotesk', sans-serif; */
+    /* font-style: italic; */
 }
 
 footer ul {
@@ -278,6 +302,10 @@ footer a, footer a:visited {
 }
 
 @media screen and (max-width: 480px) {
+    .block a {
+        font-size: 1.25rem;
+    }
+    
     main {
         padding: 1rem;
     }
@@ -309,6 +337,15 @@ footer a, footer a:visited {
     .nametag h1 {
         margin: 0 0 3rem;
         font-size: 2rem;
+    }
+
+    #error-404 {
+        font-size: 1.5rem;
+    }
+
+    #error-404 h1 a {
+        font-size: 4.5rem;
+        padding: 0rem 1rem;
     }
 
     footer {
