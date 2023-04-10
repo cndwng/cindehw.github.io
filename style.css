@@ -22,6 +22,11 @@ a:hover, a:focus-visible {
     text-decoration: underline wavy;
 }
 
+#home a:focus-visible, #error-404 a:focus-visible, #bio li a:focus-visible {
+    outline: #765BFF dashed 2px;
+    outline-offset: 0px;
+}
+
 a:focus-visible {
     outline: none;
 }
@@ -45,7 +50,7 @@ nav li {
     width: fit-content;
 }
 
-#home button {
+#home button, #home a {
     padding: 0.5rem 1rem;
     background-color: #FFD600;
     border: none;
@@ -57,7 +62,7 @@ nav li {
     transition: 0.2s ease-in-out;
 }
 
-#home button:hover, #home button:focus-visible {
+#home button:hover, #home button:focus-visible, #home a:hover, #home a:focus-visible {
     transition: 0.2s;
     box-shadow: -8px 8px #044A24;
     transform: translate(4px, -4px);
@@ -175,22 +180,19 @@ main {
     padding: 0;
 }
 
-#bio li {
-    width: fit-content; 
-    padding: 0.5rem 1rem;
-    background-color: #044A24;
-    margin-bottom: 3rem;
-    border-radius: 0.25rem;
-}
-
 #bio li a, #bio li a:visited {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #044A24;
+    border-radius: 0.25rem;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 1.5rem;
     color: #DCB9FF;
     text-decoration: none;
 }
 
-#bio li:hover, #bio li:focus {
+#bio li a:hover, #bio li a:focus-visible {
     transition: 0.2s;
     box-shadow: -0.5rem 0.5rem #DCB9FF;
     transform: translate(4px, -4px);
@@ -203,6 +205,7 @@ main {
 }
 
 #error-404 h1 a, #error-404 h1 a:visited {
+    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     display: block;
     width: fit-content;
     margin: auto;
@@ -215,7 +218,7 @@ main {
     text-decoration: none;
 }
 
-#error-404 h1 a:hover, #error-404 h1 a:focus {
+#error-404 h1 a:hover, #error-404 h1 a:focus-visible {
     transition: 0.2s;
     box-shadow: -1.25rem 1.25rem #FFA654;
     transform: translate(0.25rem, -0.25rem);
@@ -246,11 +249,6 @@ footer li {
 
 footer a, footer a:visited {
     color: #EDFFDC;
-}
-
-footer a:hover, footer a:focus {
-    font-weight: bold;
-    transition: 0.2s;
 }
 
 @media screen and (max-width: 800px) {
