@@ -1,1 +1,0 @@
-  7/29/20 12:45:18 AM EDT: Starting composition “Comp 3”.  Output To: /Users/cwang/Documents/Comp 3_1.mov    7/29/20 12:45:18 AM EDT: Finished composition “Comp 3”.  Total Time Elapsed: 0 SecondsLog closed on 7/29/20 at 12:45:18 AM EDT
