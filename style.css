@@ -275,7 +275,7 @@ footer ul {
 
 footer li {
     display: inline-block;
-    margin: 0;
+    margin: 0 0.5rem;
 }
 
 footer a, footer a:visited {
@@ -316,7 +316,7 @@ footer a, footer a:visited {
     }
     
     main {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 
     nav ul {
@@ -364,5 +364,10 @@ footer a, footer a:visited {
         bottom: 0;
         padding: 0.5rem;
         font-size: 0.75rem;
+    }
+
+    footer li {
+        display: inline-block;
+        margin: 0 0.25rem;
     }
 }
