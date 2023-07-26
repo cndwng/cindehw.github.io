@@ -57,7 +57,8 @@ a:focus-visible {
 
 nav {
     text-align: center;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
 }
 
@@ -66,7 +67,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     list-style-type: none;
-    padding: 1.5rem 0;
+    padding: 1rem;
     margin: 0;
 }
 
@@ -76,10 +77,6 @@ nav li {
     height: fit-content;
     margin: 0rem 0.75rem;
     order: 1;
-}
-
-nav li:nth-last-of-type(1) {
-    margin-right: 0;
 }
 
 .nav-order-left {
@@ -120,32 +117,36 @@ nav li:nth-last-of-type(1) {
     margin-top: -0.5rem;    
 }
 
-.minimize-nav #home a {
+.minimize-nav #home a, .minimize-nav #home button {
     font-size: 2rem;
     transition: 0.2s ease-in-out;
 }
 
 main {
-    padding: 2rem;
     text-align: center;
-    margin-bottom: 4rem;
+    width: 100%;
+}
+
+main section {
+    margin: auto;
 }
 
 #introduction {
-    width: 50vw;
-    margin: auto;
     text-align: left;
+    min-height: 100vh;
+    width: 50vw;
 }
 
 .nametag {
     width: 100%;
+    padding-top: 4rem;
 }
 
 .nametag-image {
     background: url(me.jpg);
     background-size: cover;
     background-position: center;
-    margin-top: -5rem;
+    background-color: #FFFCF6;
     display: block;
     border-radius: 0.5rem;
     width: 100%;
@@ -153,9 +154,7 @@ main {
 }
 
 .nametag h1 {
-    width: fit-content;
     margin: 2rem 0 1.5rem;
-    border-radius: 0.5rem;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 4rem;
     color: #0A1968;
@@ -211,18 +210,11 @@ main {
     color:#0A1968;
 }
 
-#bio ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-}
-
 #error-404 {
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 2rem;
     color: #85192A;
+    padding-top: 8rem;
 }
 
 #error-404 h1 button {
@@ -243,8 +235,17 @@ main {
     cursor: pointer;
 }
 
+#bio {
+    padding-top: 8rem;
+}
+
 #bio ul {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 #bio li {
@@ -278,31 +279,26 @@ footer a, footer a:visited {
 }
 
 @media screen and (max-width: 800px) {
-    #introduction {
+    main section, #introduction {
         width: 80%;
     }
 }
-
 
 
 @media screen and (max-width: 480px) {
     .block a {
         font-size: 1.25rem;
     }
-    
-    main {
-        padding: 1.5rem;
-    }
 
     nav ul {
         padding: 1rem 0;
     }
 
-    #home a {
+    #home a, #home button {
         font-size: 2rem;
     }
 
-    .minimize-nav #home a {
+    .minimize-nav #home a, .minimize-nav #home button {
         font-size: 1.5rem;
     }
     
@@ -311,8 +307,9 @@ footer a, footer a:visited {
         margin-top: -0.25rem;
     }
 
-    #introduction {
-        width: 100%;
+    main section, #introduction {
+        padding: 0 1rem;
+        width: unset;
     }
 
     .nametag h1 {

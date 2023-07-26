@@ -28,8 +28,6 @@
                     </div>
                 </button>
             </li>
-            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
-            <li class="nav-order-right block"><a href="Resume.pdf">about</a></li> -->
         </ul>
     </nav>
     <main>
@@ -43,7 +41,7 @@
             </div>
             <div class="fact-card">
                 <div>I&apos;m a systems-minded product designer, currently working on growth at a fintech startup. Portfolio is a work in progress, but I'm always happy to chat if you're curious about me or my work!</div>
-                <h3>Quick facts ✼ </h3>
+                <h3>What I'm up to ✼ </h3>
                 <ul>
                     <li>
                         <div class="fact-card-label">location:</div>
@@ -59,7 +57,7 @@
                     </li>
                     <li>
                         <div class="fact-card-label"></div>
-                        <div class="fact-card-value"><a href="Resume.pdf">Résumé</a></div>
+                        <div class="fact-card-value"><a href="Resume.pdf">résumé</a></div>
                     </li>
                 </ul>
             </div>
@@ -88,8 +86,6 @@
 <script>
     const nav = document.querySelector("nav");
     const navHeight = nav.offsetHeight;
-    console.log(navHeight);
-    console.log(window.scrollY);
     let isMin = false;
 
     window.addEventListener("scroll", mininimizeNav);
@@ -98,7 +94,7 @@
         if (window.scrollY >= (navHeight) && !isMin) {
             nav.classList.add("minimize-nav");
             isMin = true;
-        } else if (window.scrollY < (navHeight - 24) && isMin){
+        } else if (window.scrollY < (navHeight) && isMin){
             nav.classList.remove("minimize-nav");
             isMin = false;
         }
