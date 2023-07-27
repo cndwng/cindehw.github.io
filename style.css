@@ -1,12 +1,27 @@
+:root {
+    --near-black: #140D0E;
+    --cream: #FFFCF6;
+    --piglet: #FFC1E3;
+    --wine: #85192A;
+    --creamsicle: #FFA654;
+    --dandelion: #FFD600;
+    --easter: #EDFFDC;
+    --forest: #044A24;
+    --navy: #0A1968;
+    --deep-navy: #050A26;
+    --lavender: #DCB9FF;
+    --violet: #6E52FF;
+}
+
 body {
-    background-color: #FFFCF6;
-    color: #140D0E;
+    background-color: var(--cream);
+    color: var(--near-black);
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
 }
 
 *:focus-visible, .block a:focus-visible, #home a:focus-visible {
-    outline: #765BFF dashed 2px;
+    outline: var(--violet) dashed 2px;
     outline-offset: 0px;
 }
 
@@ -15,7 +30,7 @@ a {
     text-decoration: underline;
     font-style: italic;
     transition: 0.2s ease-in-out;
-    color: #0A1968;
+    color: var(--navy);
 }
 
 a:hover, a:focus-visible {
@@ -41,13 +56,13 @@ p {
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     font-size: 1.5rem;
-    background-color: #044A24;
-    color: #DCB9FF;
+    background-color: var(--forest);
+    color: var(--lavender);
 }
 
 .block a:hover, .block a:focus-visible {
     transform: translate(4px, -4px);
-    box-shadow: -0.5rem 0.5rem #DCB9FF;
+    box-shadow: -0.5rem 0.5rem var(--lavender);
     transition: 0.2s ease-in-out;
 }
 
@@ -100,13 +115,13 @@ nav li {
     font-size: 3rem;
     font-style: normal;
     text-decoration: none;
-    background-color: #FFD600;
-    color: #044A24;
+    background-color: var(--dandelion);
+    color: var(--forest);
     transition: 0.2s ease-in-out;
 }
 
 #home button:hover, #home button:focus-visible, #home a:hover, #home a:focus-visible {
-    box-shadow: -8px 8px #044A24;
+    box-shadow: -8px 8px var(--forest);
     transform: translate(4px, -4px);
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -132,88 +147,97 @@ main section {
 }
 
 #introduction {
-    text-align: left;
+    box-sizing: border-box;
     min-height: 100vh;
     width: 50vw;
+    padding: 4rem 0 0;
+    text-align: left;
+    color: var(--navy);
+    font-size: 1.25rem;
 }
 
-.nametag {
-    width: 100%;
-    padding-top: 4rem;
-}
-
-.nametag-image {
+.intro-image {
     background: url(me.jpg);
     background-size: cover;
     background-position: center;
-    background-color: #FFFCF6;
+    background-color: var(--piglet);
     display: block;
     border-radius: 0.5rem;
     width: 100%;
     height: 16rem;
 }
 
-.nametag h1 {
+#introduction h1 {
     margin: 2rem 0 1.5rem;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 4rem;
-    color: #0A1968;
+    color: var(--navy);
 }
 
-.fact-card h2 {
-    display: inline-flex;
+#introduction h2 {
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 1.25rem;
-    margin: 0;
+    margin: 2rem 0 1rem;
 }
 
-.fact-card h3 {
-    font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
-    font-size: 1.25rem;
-    margin: 2rem 0;
-}
-
-.fact-card {
-    color: #0A1968;
-    text-align: left;
-    font-size: 1.25rem;
-}
-
-.fact-card ul {
+#introduction ul {
     list-style-type: none;
     font-family: 'Space Mono', 'Space Grotesk', sans-serif;
     font-style: italic;
     padding: 0;
-    margin: 0;
+    margin: 0 0 7rem;
 }
 
-.fact-card li {
+#introduction li {
     display: flex;
     margin-top: 0.5rem;
 }
 
-.fact-card li:nth-last-of-type(1) {
+#introduction li:nth-last-of-type(1) {
     margin-right: 0;
 }
 
-.fact-card-label {
+.intro-label {
     font-weight: bold;
     min-width: 10rem;
     margin-right: 1.5rem;
 }
 
-.fact-card-value {
+.intro-value {
     align-self: stretch;
 }
 
 .fact-card-value a, a:visited{
-    color:#0A1968;
+    color:var(--navy);
+}
+
+#work-summary {
+    min-height: 50vh;
+}
+
+#work-summary h2 {
+    margin: 0;
+}
+
+#marquee {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 1rem 0;
+    margin: -3.25rem 0 0;
+    background-color: var(--forest);
+    color: var(--easter);
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    font-family: 'Space Mono', 'Space Grotestk', sans-serif;
+    font-style: italic;
 }
 
 #error-404 {
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 2rem;
-    color: #85192A;
+    color: var(--wine);
     padding-top: 8rem;
 }
 
@@ -223,14 +247,14 @@ main section {
     padding: 0rem 2rem;
     border-radius: 0.5rem;
     font-size: 9rem;
-    background-color: #85192A;
-    color: #FFA654;
-    box-shadow: -0.75rem 0.75rem #FFA654;
+    background-color: var(--wine);
+    color: var(--creamsicle);
+    box-shadow: -0.75rem 0.75rem var(--creamsicle);
 }
 
 #error-404 h1 button:hover, #error-404 h1 button:focus-visible {
     transition: 0.2s;
-    box-shadow: -1.25rem 1.25rem #FFA654;
+    box-shadow: -1.25rem 1.25rem var(--creamsicle);
     transform: translate(0.25rem, -0.25rem);
     cursor: pointer;
 }
@@ -258,8 +282,8 @@ footer {
     right: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem 0.5rem 0 0;
-    background-color: #765BFF;
-    color: #EDFFDC;
+    background-color: var(--violet);
+    color: var(--easter);
     max-width: 100%;
 }
 
@@ -279,7 +303,7 @@ footer a, footer a:visited {
 }
 
 @media screen and (max-width: 800px) {
-    main section, #introduction {
+    main section:not(#work-summary), #introduction {
         width: 80%;
     }
 }
@@ -307,26 +331,40 @@ footer a, footer a:visited {
         margin-top: -0.25rem;
     }
 
-    main section, #introduction {
-        padding: 0 1rem;
+    main section:not(#work-summary), #introduction {
+        margin: 0 1rem;
         width: unset;
+        min-height: unset;
     }
 
-    .nametag h1 {
-        font-size: 2.5rem;
+    .intro-image {
+        height: 10rem;
     }
 
-    .fact-card {
+    #introduction {
+        padding-top: 3rem;
         font-size: 1rem;
     }
 
-    .fact-card h3 {
-        margin: 1.5rem 0;
+    #introduction h1 {
+        font-size: 2.25rem;
+        margin: 1.5rem 0 1rem;
     }
 
-    .fact-card li {
+    #introduction h2 {
+        margin: 1.5rem 0 0.5rem;
+    }
+
+    #introduction ul {
+        margin: 0 0 6rem;
+    }
+
+    #introduction li {
         display: block;
-        margin-top: 1rem;
+    }
+
+    #marquee {
+        font-size: 1rem;
     }
 
     #error-404 {

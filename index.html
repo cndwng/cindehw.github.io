@@ -32,36 +32,39 @@
     </nav>
     <main>
         <section id="introduction">
-            <div class="nametag">
-                <div class="nametag-image"></div>
+            <div>
+                <div role="img" alt="me, cindy, at the cherry blossoms in Washington, DC" class="intro-image"></div>
                 <h1>
                     Hello ✼<br />
                     I’m Cindy
                 </h1>
-            </div>
-            <div class="fact-card">
-                <div>I&apos;m a systems-minded product designer, currently working on growth at a fintech startup. Portfolio is a work in progress, but I'm always happy to chat if you're curious about me or my work!</div>
-                <h3>What I'm up to ✼ </h3>
+                <div>Systems-minded product designer, currently working on growth at a fintech startup. Reach out to chat!</div>
+                <h2>What I'm up to ✼ </h2>
                 <ul>
                     <li>
-                        <div class="fact-card-label">location:</div>
-                        <div class="fact-card-value">brooklyn, ny</div>
+                        <div class="intro-label">work:</div>
+                        <div class="intro-value"><a href="https://getflex.com" target="_blank">flex</a></div>
                     </li>
                     <li>
-                        <div class="fact-card-label">currently:</div>
-                        <div class="fact-card-value"><a href="https://getflex.com" target="_blank">flex</a></div>
+                        <div class="intro-label">for fun:</div>
+                        <div class="intro-value">tennis • rock climbing • photography • making music</div>
                     </li>
                     <li>
-                        <div class="fact-card-label">hobbies:</div>
-                        <div class="fact-card-value">tennis • rock climbing • photography • making music</div>
+                        <div class="intro-label">where:</div>
+                        <div class="intro-value">brooklyn, ny</div>
                     </li>
                     <li>
-                        <div class="fact-card-label"></div>
-                        <div class="fact-card-value"><a href="Resume.pdf">résumé</a></div>
+                        <div class="intro-label"></div>
+                        <div class="intro-value"><a href="Resume.pdf">résumé</a></div>
                     </li>
                 </ul>
             </div>
         </section>
+        <!-- <section id="work-summary">
+            <h2 aria-label="featured work below">
+                <pre id="marquee" aria-hidden="true">featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓ featured work ↓</pre>
+            </h2>
+        </section> -->
     </main>
     <footer>
         <ul>
@@ -85,12 +88,16 @@
 </body>
 <script>
     const nav = document.querySelector("nav");
+    const marquee = document.querySelector("marquee");
+    const workSummary = document.querySelector("work-summary");
     const navHeight = nav.offsetHeight;
+
     let isMin = false;
 
-    window.addEventListener("scroll", mininimizeNav);
+    window.addEventListener("scroll", scrollEvent);
 
-    function mininimizeNav() {
+    function scrollEvent() {
+        // minimize navigation
         if (window.scrollY >= (navHeight) && !isMin) {
             nav.classList.add("minimize-nav");
             isMin = true;
@@ -98,7 +105,9 @@
             nav.classList.remove("minimize-nav");
             isMin = false;
         }
+        // scroll marquee
+        if (window.scroll)
     }
-    
+
 </script>
 </html>
