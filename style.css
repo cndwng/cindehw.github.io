@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--cream);
+    background-color: white;
     color: var(--near-black);
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
@@ -212,7 +212,7 @@ main section {
 }
 
 #work-summary {
-    min-height: 50vh;
+    min-height: 100vh;
 }
 
 #work-summary h2 {
