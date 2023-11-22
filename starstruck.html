@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/images/preview.jpg">
+        <meta property="og:description" content="Cindy Wang + no vowels = CNDWNG (a portfolio site)"/>
+        <meta property="og:type" content="blog"/>
+        <title>fusion design system • cndwng</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="/">
+                cndwng
+                <div id="no-vowels">
+                    *me, no vowels
+                </div>
+            </a></li>
+            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
+            <li class="nav-order-right block"><a href="">about</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <section class="case-study">
+            <img class="pic" alt="a gif of gameplay" src="images/portfolio/starstruck/cover.png">
+            <h1>Starstruck</h1>
+            CS3152: Intro to Game Developmenet &#8226; Spring 2020 &#8226; <a href="https://gamejolt.com/games/starstruck/431185" target="_blank">Play the Game</a>
+            <p>
+                Starstruck is a gravity-less puzzle platformer for one or two players, created by a group of Cornell undergraduates. Two astronauts connected by a rope, Nova & David, travel from galaxy to galaxy. Bouncing from planet to planet, they hop through portals, and avoid enemies to collect stars to fill their home.
+            </p>
+            <p>
+                I served as a programmer, focusing on the UI, and did some part-time design work. 
+            </p>
+        
+            <div style="margin: 2rem 0; padding:56.25% 0 0 0;position:relative;"> <iframe src="https://www.youtube.com/embed/vwoJ0Cq6URA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+            <div class="caption">The game trailer</div>
+           
+            <h2>Initial Prototyping & Brainstorming</h2>
+            <p>
+                Our initial inspiration for our game was the story of Laika, the first dog to be sent to space. What conceptually started as a dog on a leash playing fetch evolved into two astronauts connected by a rope collecting the stars. Jumping from planet to planet, they lasso around stars to fill their empty home galaxy.
+            </p>
+            <p>
+                In order to test the initial mechanics, we built a paper prototype. We simulated actions on a large foam board, with our characters being controlled with push pins connected by a rubber band.
+            </p>
+            <img class="pic" alt="paper prototype of the game" src="images/portfolio/starstruck/paper.jpg">
+            <div class="caption">Our paper prototype</div>
+        
+            <h2>Designing Levels</h2>
+            <p>
+                Our level designs were assembled from a few actions. Manipulating the enemies, portals, and position and size of the planets allowed for engaging gameplay and interesting variance between levels.
+            </p>
+            <img style="max-width: 800px;" class="pic" alt="paper prototype of the game" src="images/portfolio/starstruck/moves.jpg">
+            <img style="max-width: 800px;" class="pic" alt="paper prototype of the game" src="images/portfolio/starstruck/combo.jpg">
+            <div class="caption">The core actions (top) and example level design combining actions (bottom)</div>
+        
+            <h2>Playtesting Prototypes</h2>
+            <p>
+                In our development cycle, we built several prototypes to playtest with gamers. With each prototype, we took notes and interviewed our playtesters and created new levels. The game went through a lot of big changes thanks to the player feedback.
+            </p>
+            <p>
+                Our first idea was for the rope to stretch like a rubber band. Although the rope physics were challenging to get right, we managed to implement a stretching rope. But after playtesting, players found it unintuitive and clunky, so we scrapped the stretching mechanism altogether.
+            </p>
+
+            <img style="max-width: 800px;" class="pic" alt="paper prototype of the rope stretch mechanic" src="images/portfolio/starstruck/rope.jpg">
+            <div class="caption">The rope was built using a chain of small objects, linked together at the end. Our original idea was to insert a new link somewhere in our chain to "stretch" the rope</div>
+            <p>The mechanic for collecting stars underwent a number of drastic changes:</p>
+            <ul>
+                <li>For the paper prototype, we initially wanted the rope to loop around each star to collect. The math ended up being pretty difficult, so we started with just contact with the astronauts' bodies.</li>
+                <li>We created our first prototype&rsquo;s star collection to be triggered by contact with astronaut bodies only, but also built a version where contact with the rope would also collect the stars. As soon as we debuted the latter, the gameplay became way more satisfying and way more fun!</li>
+            </ul>
+            <img style="max-width: 800px;" class="pic" alt="star collection mechanism sketches" src="images/portfolio/starstruck/starcollection.jpg">
+
+            <div class="caption">Our original intended star collection mechanic</div>
+            <img style="max-width: 800px;" class="pic" alt="sketches of planet movement controls" src="images/portfolio/starstruck/controls.jpg">
+            <div class="caption">Two ways to map arrow key movement to rotational movement on the planets. [A] was the winner!</div>    
+            <p>The control scheme for the game also went through a few iterations:</p>
+            <ul>
+                <li>The intention was for the game to be single player, but after demoing a second set of controls for the second astronaut, it was a huge hit and became the primary control schema for the game. We also added Xbox controls for better co-op experience!</li>
+
+                <li>Movement around planets was rotational, so we faced some challenges mapping this movement to the arrow keys. We started with [A] (shown above), but playtesters found it confusing. But after changing it to [B], it was even worse! We ended up sticking to our guns and keeping the original scheme.</li>
+            </ul>    
+            
+            <video style="max-width: 800px;" autoplay loop muted class="pic">
+                <source src="images/portfolio/starstruck/playtest.mp4">
+            </video>
+            <div class="caption">We had nearly a dozen playtesting sessions with different groups of people &mdash; it was helpful to get their feedback and input on the game and really fun to see them enjoy what we had built.</div>
+            <h2>Demoing the Game</h2>
+            <p>
+                We demoed our final game at <a href="https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/" target="_blank">BOOM</a> as well as the <a href="https://cis.cornell.edu/about/outreach-events/boom-bits-our-minds/" target="_blank">GDIAC showcase</a> at the end of the semester in May 2019. Students, professors, and community members in the Ithaca community gather on Cornell&rsquo;s campus to playtest the games built during the semester. Audience members vote for their favorite picks.
+            </p>
+            <p>
+                Our game ended up winning "Most Polished," judged by staff members in the Game Design community, as well as "Audience Favorite." Watching people co-op the game with their friends was incredibly satisfying and a lot of fun.
+            </p>
+            <img style="max-width: 800px;" class="pic" alt="a gif of 2 astronauts in a video game going through a portal" src="images/portfolio/starstruck/gameplay.gif">
+            <div class="caption">A quick gif of gameplay</div>
+            <p>
+                We also applied to BostonFIG&rsquo;s indie game showcase, <a href="https://fest.bostonfig.com/" target="_blank">BostonFIG Fest</a>. We were accepted and showcased our game in September 2019 to the indie game development community. 
+            </p>
+            <img style="max-width: 800px;" class="pic" alt="a gif of 2 astronauts in a video game going through a portal" src="images/portfolio/starstruck/bfig.jpg">
+            <img style="max-width: 800px;" class="pic" alt="a gif of 2 astronauts in a video game going through a portal" src="images/portfolio/starstruck/bfig2.jpg">
+            <div class="caption">Our team at BostonFIG</div>
+        
+            <p>Starstruck was a ton of fun to demo, especially watching friends (and strangers!) co-op together. When I have time to kill, I always use two player controls on the keyboard (one hand per astronaut) or co-op it with a friend. </p>
+            <a href="https://gamejolt.com/games/starstruck/431185" target="_blank">Play Starstruck</a>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com/in/cndwng">linkedin</a>
+            </li>
+            • 
+            <li>        
+                <a href="https://instagram.com/cnd.wng">instagram</a>
+            </li>
+            • 
+            <li>
+                <a href="https://dribbble.com/cndwng">dribbble</a>
+            </li>
+            • 
+            <li>
+                <a href="mailto:cindy@cndwng.com">email</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.offsetHeight;
+    let isMin = false;
+
+    window.addEventListener("scroll", mininimizeNav);
+
+    function mininimizeNav() {
+        if (window.scrollY >= (navHeight) && !isMin) {
+            nav.classList.add("minimize-nav");
+            isMin = true;
+        } else if (window.scrollY < (navHeight - 24) && isMin){
+            nav.classList.remove("minimize-nav");
+            isMin = false;
+        }
+    }
+    
+</script>
+</html>

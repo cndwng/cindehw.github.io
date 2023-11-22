@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: var(--egg);
     color: var(--near-black);
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
@@ -44,7 +44,7 @@ p {
     line-height: 160%;
 }
 
-.block a, .block a:visited, .block button {
+.block a, .block a:visited, .block button, a .block {
     border: none;
     display: flex;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
@@ -60,7 +60,7 @@ p {
     color: var(--lavender);
 }
 
-.block a:hover, .block a:focus-visible {
+.block a:hover, .block a:focus-visible, .project-tile:hover .block, .project-tile:focus-visible .block {
     transform: translate(4px, -4px);
     box-shadow: -0.5rem 0.5rem var(--lavender);
     transition: 0.2s ease-in-out;
@@ -146,14 +146,21 @@ main section {
     margin: auto;
 }
 
-#introduction {
+#introduction, .case-study {
     box-sizing: border-box;
-    min-height: 100vh;
     width: 50vw;
     padding: 4rem 0 0;
     text-align: left;
     color: var(--navy);
     font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+#introduction {
+    min-height: 100vh;
 }
 
 .intro-image {
@@ -161,10 +168,11 @@ main section {
     background-size: cover;
     background-position: center;
     background-color: var(--piglet);
-    display: block;
     border-radius: 0.5rem;
-    width: 100%;
-    height: 16rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    outline: 6px solid var(--creamsicle);
+    max-height: 36rem;
 }
 
 #introduction h1 {
@@ -211,8 +219,74 @@ main section {
     color:var(--navy);
 }
 
+.case-study {
+    width: 75vw;
+    margin-bottom: 8rem;
+}
+
+.case-study h1, .case-study h2, .case-study h3 {
+    margin-block-start: 1.5em;
+    margin-block-end: 0.5em;
+}
+
+.case-study p {
+    margin-block-start: 0.5rem;
+    margin-block-end: 1.25rem;
+}
+
+.pic {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1.5rem auto 0;
+}
+
+.caption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.case-study li {
+    margin-bottom: 1rem;
+}
+
 #work-summary {
     min-height: 100vh;
+}
+
+.project-list {
+    width: 50vw;
+    margin: 4rem auto;
+}
+
+
+.project-tile {
+    text-decoration: none;
+    margin-top: 2rem;
+    display: block;
+    position: relative;
+}
+
+.project-tile img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project-tile:hover img {
+    outline: 6px solid var(--lavender);
+    transition: .5s;
+}
+
+.project-tile:hover {
+    text-decoration: none;
+}
+
+.project-name {
+    position: absolute;
+    bottom: 2rem;
+    margin: 0 2rem;
+    width: fit-content;
 }
 
 #work-summary h2 {
@@ -302,16 +376,31 @@ footer a, footer a:visited {
     color: #EDFFDC;
 }
 
+@media screen and (max-width: 1024px) {
+    main section:not(#work-summary), #introduction, .case-study, .project-list {
+        width: 60%;
+    }
+    #introduction h1 {
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
-    main section:not(#work-summary), #introduction {
+    main section:not(#work-summary), #introduction, .case-study, .project-list {
         width: 80%;
+    }
+    #introduction h1 {
+        margin: 2rem 0 1.5rem;
+        font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
+        font-size: 3rem;
+        color: var(--navy);
     }
 }
 
 
 @media screen and (max-width: 480px) {
-    .block a {
-        font-size: 1.25rem;
+    .block a, a .block {
+        font-size: 1rem;
     }
 
     nav ul {
@@ -331,17 +420,16 @@ footer a, footer a:visited {
         margin-top: -0.25rem;
     }
 
-    main section:not(#work-summary), #introduction {
+    main section:not(#work-summary), #introduction, .case-study, .project-list {
         margin: 0 1rem;
         width: unset;
-        min-height: unset;
     }
 
     .intro-image {
         height: 10rem;
     }
 
-    #introduction {
+    #introduction, .case-study {
         padding-top: 3rem;
         font-size: 1rem;
     }

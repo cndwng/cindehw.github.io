@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/images/preview.jpg">
+        <meta property="og:description" content="Cindy Wang + no vowels = CNDWNG (a portfolio site)"/>
+        <meta property="og:type" content="blog"/>
+        <title>fusion design system • cndwng</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="/">
+                cndwng
+                <div id="no-vowels">
+                    *me, no vowels
+                </div>
+            </a></li>
+            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
+            <li class="nav-order-right block"><a href="">about</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <section class="case-study">
+            <img class="pic" alt="a collage of UI components" src="images/portfolio/factset/cover.png">
+
+            <h1>Fusion Design System</h1>
+            <p>August 2020 to June 2022 &#8226; <a href="https://www.factset.com/" target="_blank">FactSet</a></p>
+            <p>
+                The Fusion Design System is FactSet&rsquo;s new design system, built using atomic design principles. Focused on workflow-driven applications with a sleek visual design, the core tenets of Fusion are that it is responsive, adaptive, and accessible.
+            </p>
+
+            <h2>My role</h2>
+            <ul>
+                <li>
+                    <b>Designer</b> — I designed and prototyped our components and patterns, collabing closely with designers & engineers alike.
+                </li>
+                <li>
+                    <b>Figma Library Guru</b> — 
+                    I led the construction of the majority of the components in our Figma library, creating lightweight, easy-to-use, and flexible Figma components. (Fun fact! I was an intern for FactSet&rsquo;s UX team back in 2018, and my summer project was to build out FactSet&rsquo;s first Figma component library.)
+                </li>
+                <li>
+                    <b>Systems Overseer</b> — I consulted with designers on app teams to advise on designs from a systems perspective. We met biweekly to iterate on designs and identify gaps in our design system to address.
+                </li>
+            </ul>
+
+            <h2>Work Examples</h2>
+        
+            <h3>Date Inputs with Rolling & Relative Dates</h3>
+            <p>
+                I designed the original date input and calendar components as well as the pattern for adding rolling or relative dates. I also wrote the design guidance on how to use each.
+            </p>
+            <img class="pic" alt="Examples of how to select dates in the Fusion design system" src="images/portfolio/factset/datepicker2.png">
+            <img class="pic" alt="More examples of date selection" src="images/portfolio/factset/datepicker3.png">
+            <div style="margin-bottom: 2rem;" class="caption">Flows for various methods of date input</div>
+            <img class="pic" alt="Guidance written about selecting rolling and relative dates" src="images/portfolio/factset/datepicker.png">
+            <div class="caption">Guidance written about using date inputs with comboboxes with rolling and relative dates</div>
+        
+            <h3>Drag and drop patterns</h3>
+            <p>
+                I worked on several drag and drop patterns in multiple contexts, ensuring all of them were accessible and developed a pattern now implemented almost everywhere drag and drop is available.
+            </p>
+            <img class="pic" alt="Examples of drag and drop visuals" src="images/portfolio/factset/dragdrop.jpg">
+            <div class="caption">Some drag and drop patterns in Fusion</div>
+        
+            <h3>Grid states and interactions</h3>
+            <p>
+                FactSet&rsquo;s products feature lots of complicated grids. I designed a system of states and interactions that is intuitive to view and works seamlessly together.
+            </p>
+            <img class="pic" alt="Every combination of states in a Fusion grid" src="images/portfolio/factset/gridstates.png">
+            <div class="caption">A comprehensive view of the states on a grid cell and how different states interact on the same grid</div>
+        
+            <h2>Case Study: Grid Actions & Settings</h2>
+        
+            <h3>Problem</h3>
+            <p>FactSet users use multiple applications and have to learn each unique way to interact with a grid. How might we create a seamless experience from app to app for grid users?</p>
+        
+            <h3>The Team</h3>
+            <ul>
+                <li>3 UX Designers</li>
+                <li>1 Accessibility expert</li>
+                <li>Design systems engineering team</li>
+            </ul>
+        
+            <h3>Ideation</h3>
+            <p>We audited our applications, both new and old, to explore the needs of our app teams. We used this information to inform the structure of our shared grid settings experience.</p>
+            <p>We also researched other grids, with a focus on web-based applications. Among these were ag-grid, Google Sheets, and, of course, Excel. The common thread in many applications was a context menu triggered from the column header.</p>
+        
+            <h3>Solution</h3>
+            <h4>Part 1: Context Menu</h4>
+            <p>Performing actions in-context was a common use case across the board. We designed a context menu attached to the column header for this.</p>
+            <img class="pic" alt="UI example of a menu opening from a column header" src="images/portfolio/factset/contextmenu.jpg">
+            <div class="caption">An example of the column context menu</div>
+        
+            <h4>Part 2: Grid Display Drawer</h4>
+            <p>Other actions and settings would live in a drawer attached to every grid, accessible via the context menu or the settings button on top of every grid.</p>
+        
+            <img class="pic" alt="Example of a grid with a drawer on top filled with settings" src="images/portfolio/factset/displaydrawer1.png">
+            <div class="caption">Where the drawer lives in context of a grid</div>
+        
+        
+            <p>The drawer has three views:</p>
+            <ul>
+                <li>Options: for grid level settings, sorting/grouping, and other grid level actions</li>
+                <li>Filters: for managing filters on each column in one place</li>
+                <li>Columns: for managing which columns are in view</li>
+            </ul>
+            <img class="pic" alt="Three views of the drawer used to manage grid settings" src="images/portfolio/factset/displaydrawer2.png">
+            <div class="caption">The three views of the drawer: options, filters, columns</div>
+        
+            <h3>Afterwards</h3>
+            <p>A number of spinoff components and patterns were enhanced or created to support this feature, helping us grow our design system further.</p>
+            <p>We've also integrated a number of improvements and new features after receiving feedback from users and app teams.</p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com/in/cndwng">linkedin</a>
+            </li>
+            • 
+            <li>        
+                <a href="https://instagram.com/cnd.wng">instagram</a>
+            </li>
+            • 
+            <li>
+                <a href="https://dribbble.com/cndwng">dribbble</a>
+            </li>
+            • 
+            <li>
+                <a href="mailto:cindy@cndwng.com">email</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.offsetHeight;
+    let isMin = false;
+
+    window.addEventListener("scroll", mininimizeNav);
+
+    function mininimizeNav() {
+        if (window.scrollY >= (navHeight) && !isMin) {
+            nav.classList.add("minimize-nav");
+            isMin = true;
+        } else if (window.scrollY < (navHeight - 24) && isMin){
+            nav.classList.remove("minimize-nav");
+            isMin = false;
+        }
+    }
+    
+</script>
+</html>
