@@ -430,6 +430,10 @@ footer a, footer a:visited {
         margin: 0 1rem;
         width: unset;
     }
+    
+    .case-study {
+        margin-bottom: 4rem;
+    }
 
     .intro-image {
         height: 10rem;
