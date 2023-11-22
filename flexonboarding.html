@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/images/preview.jpg">
+        <meta property="og:description" content="Cindy Wang + no vowels = CNDWNG (a portfolio site)"/>
+        <meta property="og:type" content="blog"/>
+        <title>fusion design system • cndwng</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="/">
+                cndwng
+                <div id="no-vowels">
+                    *me, no vowels
+                </div>
+            </a></li>
+            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
+            <li class="nav-order-right block"><a href="">about</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <section class="case-study">
+            <img class="pic" alt="a zoomed out view of the onboarding flow" src="images/portfolio/flexonboarding/cover.jpg">
+
+            <h1>Flex Onboarding</h1>
+            <p>
+                November 2022 to August 2023 &#8226; <a href="https://www.getflex.com/" target="_blank">Flex</a>
+            </p>
+            <p>
+                Flex helps customers split their rent payment into two installments over the course of a month instead of having to pay their largest (!) recurring cost all in one chunk. Users pay their first installment when rent is due, then Flex pays their rent directly their property using this first payment and a credit line.
+            </p>
+            <p>
+                I was the primary product designer for the Consumer Growth business unit at Flex, leading the UX for product-driven growth. While I was working on user onboarding, I collaborated with 2 PMs, a small team of frontend engineers, and a rotating cast of marketing and analytics folks. 
+            </p>
+
+            <h2>Problem</h2>
+            <p>
+                Flex onboarding had been almost exactly the same since the inception of the product. (Here we define onboarding as the account setup flow, from the first time a user clicks &ldquo;Get Started&rdquo;, all the way until they&apos;re ready to pay their next month's rent with Flex.) 
+            </p>
+            <img class="pic" alt="a zoomed out view of the onboarding flow" src="images/portfolio/flexonboarding/overview.png">
+            <p>
+                There are a <i>lot</i> of screens and some very high friction steps (like a soft credit check). And the user has to get through the entire flow all at once! If they leave, they have to start over. There were some very obvious areas for improvement. Our challenge: which are the lowest hanging fruit and the highest impact improvements to make?
+            </p>
+
+            <h2>Framework</h2>
+            <p>We framed onboarding with 3 different lenses:</p>
+            <ul><b>Vision</b> What is our north star goal for how onboarding looks?</ul>
+            <ul><b>Optimization</b> What incremental changes can we make to get closer to our vision?</ul>
+            <ul><b>Modularization</b> What do we technically need to do to enable our vision?</ul>
+
+            <h2>Vision exploration & research</h2>
+            <p>
+                We started with uncovering our north star vision. Fueled by years of reading <a href="https://www.useronboard.com/">UserOnboard</a> teardowns and <a href="https://growth.design/">growth.design</a> case studies, I built a series of wireframe prototypes that challenged the existing, highly linear structure of our onboarding flow. At a high level they are represented by these sketches:
+            </p>
+            <img class="pic" alt="sketches of 3 possible ways to reorder events" src="images/portfolio/flexonboarding/sketches.png">
+            <p>
+                We ran a handful of qualitative user interviews, asking questions about the order of steps and digging into the steps with the highest turnover. Separately, I interviewed a handful of our cross-functional partners in Legal & Compliance, Risk, Ops, and Customer Service to ask about their biggest pain points from both a business and user perspective.
+            </p>
+            <p>
+                Some of our learnings:
+                <ul>
+                    <li>We ask for payment method way too soon</li>
+                    <li>It can be really difficult to find your property</li>
+                    <li>Users don&apos;t feel the "Aha!" moment until the very last step</li>
+                    <li>It&apos;s a lot to ask users to complete in one session (our analytics team dug into this and learned that 30% of our users take more than 30 days to sign up once they begin onboarding)</li>
+                </ul>
+            </p>
+            <p>We used these learnings to prioritize particular areas for improvement and to inform the direction of change.</p>
+            <h2>Optimization and modularization execution</h2>
+            <p>
+                Flex is in a relatively unique position where we see a huge spike in traffic right around when rent is due. We can leverage this to get very quick learnings for our various experiments, so we moved <i>fast</i>.
+            </p>
+            <p>
+                We ran 1 or 2 experiments per month, each of which typically focused on one particular step of onboarding; almost all (!) resulted in either positive or neutral changes to both stepwise and overall conversion. (We tried adding clicks/screens once or twice and it was a big flop.) I&apos;ll summarize the most successful below.
+            </p>
+            <h3>Resume onboarding</h3>
+            <p>
+                Due to a tangle of technical debt, users who left the onboarding flow would have to start from the beginning if they came back. We spent a couple months untangling and rejiggering the experience so that users could come back and get dropped back right where they were! We saw a +5.41% lift in signups here.
+            </p>
+            <p>
+                This also enabled our marketing team&apos;s retargeting efforts to be more effective at getting our users to the finish line (+2k in the first month).
+            </p>
+            <img class="pic" alt="some screens showcasing what it looks like if a user drops off on specific steps" src="images/portfolio/flexonboarding/resume.jpg">
+
+            <h3>Property connect optimizations</h3>
+            <p>
+                Depending on the user&apos;s property&apos;s relationship to Flex, some users had a lot more difficulty finding their property. They ran into redundant questions and jumped through some hoops to help us resolve some technical constraints.
+            </p>
+            <p>
+                We consolidated a couple screens and revamped the tech stack behind identifying user properties, plus introduced a couple features that helped pre-fill informations. Turns out if you reduce the amount of manual worka user needs to do, you can increase conversion (duh).
+            </p>
+            <p>
+                With these changes, we were able to lift conversion on this step by +8% and also reduce our costs by $5k a month.
+            </p>
+            <img class="pic" alt="some screens for connecting your property" src="images/portfolio/flexonboarding/billconnect.jpg">
+            <h3>Reordering the payment screen</h3>
+            <p>We pushed back asking users for a payment method to the back of the flow, and drove an impressive +3.69% lift in signups given the conceptually simple change in sequencing.</p>
+            <p>Later down the line, we ran into some issues because we also increased the number of credit checks we run with this experiment, which was costing us more money. We&apos;re still evaulating whether these changes balance out for us $$-wise.</p>
+            <img class="pic" alt="some screens for connecting your property" src="images/portfolio/flexonboarding/billconnect.jpg">
+
+            <h2>TL;DR</h2>
+            <p>Change a lot of small things, make a lot of big impact.</p>
+            <p>Key takeaways:</p>
+            <ul>
+                <li>Less screens, less clicks, higher conversion</li>
+                <li>Small changes can make big waves</li>
+                <li>Need to balance costs (time AND money) with benefit</li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com/in/cndwng">linkedin</a>
+            </li>
+            • 
+            <li>        
+                <a href="https://instagram.com/cnd.wng">instagram</a>
+            </li>
+            • 
+            <li>
+                <a href="https://dribbble.com/cndwng">dribbble</a>
+            </li>
+            • 
+            <li>
+                <a href="mailto:cindy@cndwng.com">email</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.offsetHeight;
+    let isMin = false;
+
+    window.addEventListener("scroll", mininimizeNav);
+
+    function mininimizeNav() {
+        if (window.scrollY >= (navHeight) && !isMin) {
+            nav.classList.add("minimize-nav");
+            isMin = true;
+        } else if (window.scrollY < (navHeight - 24) && isMin){
+            nav.classList.remove("minimize-nav");
+            isMin = false;
+        }
+    }
+    
+</script>
+</html>
