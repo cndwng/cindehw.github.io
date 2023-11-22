@@ -234,6 +234,10 @@ main section {
     margin-block-end: 1.25rem;
 }
 
+.case-study a {
+    display: unset;
+}
+
 .pic {
     width: 100%;
     border-radius: 1rem;

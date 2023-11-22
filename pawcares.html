@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/images/preview.jpg">
+        <meta property="og:description" content="Cindy Wang + no vowels = CNDWNG (a portfolio site)"/>
+        <meta property="og:type" content="blog"/>
+        <title>template • cndwng</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="/">
+                cndwng
+                <div id="no-vowels">
+                    *me, no vowels
+                </div>
+            </a></li>
+            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
+            <li class="nav-order-right block"><a href="">about</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <section class="case-study">
+            <img class="pic" alt="an illustration of a town with a hospital and school" src="images/portfolio/paw/graphic.png">
+            <h1>Perks at Work Fundraising</h1>
+            <p>
+                Spring 2020 &#8226; <a href="https://www.perksatwork.com/" target="_blank">Perks at Work @ Next Jump</a>
+            </p>
+            <p>
+                At the beginning of the COVID-19 pandemic, my company started an initiative to provide supplies to frontline workers at hospitals via their e-commerce platform, Perks at Work.
+            </p>
+            <h2>The problem</h2>
+            <p>
+                The impact of COVID-19 has been felt worldwide, one of the hardest hit populations being frontline workers in NYC. How might Next Jump leverage their resources to help them?
+            </p>
+            <p>
+                This past year has been my first time living in such a densely populated, diverse area, and the effects of the pandemic locally have been difficult to watch. With hospitals overwhelmed, Next Jump decided to push for a pro bono initiative to raise funds to build care packages for frontline workers.
+            </p>
+            <h2>My role</h2>
+            <p>
+                I served as the UX designer and graphic designer. I worked with 1 PM, a couple engineers, and 2 or 3 marketing & partnerships people.
+            </p>
+        
+            <h2>The Final Prototype</h2>
+            <p>
+                The high fidelity mockups and prototype can be found below. 
+            </p>
+            <iframe class="pic" style="border:none;" width="100%" height="600px" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FBiMKlbng4eISBdNweJxTmO%2Fnxj-cares%3Fpage-id%3D314%253A0%26node-id%3D314%253A1%26viewport%3D241%252C48%252C0.1%26scaling%3Dscale-down-width%26starting-point-node-id%3D314%253A1" allowfullscreen></iframe>
+            <div class="caption" style="padding-top: 20px;">If the embedded experience does not work for you, you can find the prototype <a href="https://www.figma.com/proto/BiMKlbng4eISBdNweJxTmO/nxj-cares?node-id=314%3A1&scaling=scale-down-width&viewport=1172%2C187%2C0.1832997053861618">here</a>.</div>
+            <h2>The Beginning</h2>
+            <p>
+                Next Jump runs an e-commerce platform with corporate clients and merchant partners and over 70 million unique users on the site. We were able to leverage these angles to 
+                <ol>
+                    <li>
+                        Understand what hospitals needed most from our corporate contacts at NYC Health + Hospitals, 
+                    </li>
+                    <li>
+                        Ask our customer base to help us fund care packages with those items
+                    <li> 
+                        Utilize our merchant contacts to organize order fulfillment and send these packages to the hospitals.
+                    </li>
+                </ol>
+            </p>
+            <p>
+                With our NYC Health + Hospitals contacts, we identified two of the hardest hit local hospitals: Elmhurst & Kings County as well as the items they needed the most. Beyond personal protective equipment, their greatest needs were laptops & tablets, clothing (like scrubs & towels), and snacks.
+            </p>
+            <img class="pic" alt="a scan of some notes on hospital needs during COVID-19" src="images/portfolio/paw/hospitalneeds.jpg">
+            <div class="caption">A breakdown of hospital needs beyond PPE</div>
+            <p>
+                We focused on the biggest and smallest ticket items (electronics and snacks) due to our existing relationships with the merchants that sell these items.
+            </p>
+            
+            <h2>A Brief Look at Flows</h2>
+            <p>
+                Two main flows we took into consideration were order fulfillment and the customer flow. We wanted the order fulfillment process to be scalable for many fundraisers, so we planned the product keeping in mind all of the teams involved. The overall customer flow was similar to the standard e-commerce flow.
+            </p>
+            <img class="pic" alt="a sketch of a flow chart" src="images/portfolio/paw/flowcharts.jpg">
+            <div class="caption">A high level overview of order fulfillment and customer flow</div>
+            
+            <h2>Initial research</h2>
+            <p>
+                I looked into GoFundMe as our primary inspiration for this platform. GoFundMe is already a successful fundraising platform, so it made sense to look into their structure and determine what elements we could pull.
+            </p>
+            <p>
+                The most important differentiators for the Perks at Work platform were the following:
+            </p>
+                <ul>
+                    <li>Have individual fundraisers for different hospitals, scalable and adaptable for future, non-hospital fundraisers</li>
+                    <li>Showcase progress for each individual item, focusing on the # funded rather than the dollar amount</li>
+                    <li>Highlight contributions made by all three possible contributors (individuals, corporations, merchant partners)</li>
+                    <li>Provide updates on the fundraising, fulfillment, and delivery of the products</li>
+                </ul>
+            <p>
+                I mapped out a comparison between the two platforms to get a better idea of where they diverge.
+            </p>
+            <img class="pic" alt="a chart of similarities of this project with GoFundMe" src="images/portfolio/paw/gofundme_comparison.jpg">
+            <div class="caption">A comparison of GoFundMe features and the Perks at Work platform needs</div>
+            
+            <h2>Wireframes</h2>
+            <p>
+                With this in mind, I created the following wireframe for an individual hospital, adopting GoFundMe&rsquo;s right sidebar highlighting overall progress and activity feed. We kept the primary CTA visible at all times. I used the left side of the screen for the details and specifics of each fundraiser, including the breakdown of progress for each item funded.
+            </p>
+            <img class="pic" alt="a wireframe of what a funding page could look like" src="images/portfolio/paw/wireframe.jpg">
+            <div class="caption">The initial page wireframe</div>
+        
+            <p>
+                Clicking the "contribute" button would open a modal that allows customers to choose their contribution amount (fixed amounts due to tech constraints) and add a personalized message. 
+            </p>
+            <img class="pic" alt="a wireframe of what it looks like when you donate" src="images/portfolio/paw/wiremodal.jpg">
+            <div class="caption">Wireframe of the purchase modal</div>
+        
+            <p>
+                The rest of the purchase flow adopted our existing cart experience.
+            </p>
+            <img class="pic" alt="a screenshot of the existing checkout experience" src="images/portfolio/paw/cart.jpg" />
+            <div class="caption">Adding to the cart & our existing purchase flow</div>
+        
+            <h2>MVP</h2>
+            <p>
+                Our MVP included only funding individual items and the activity feed. We launched only for Elmhurst and Kings County Hospital. Donations began streaming in, and we began thinking about how to answer the question, "What happens after I donate?"
+            </p>
+            <p>
+                We wanted to keep attention on the details of the fundraiser, but still showcase updates (and potentially more information in the future) on the page.
+            </p>
+            <h2>Expanding our efforts</h3>
+            <p>
+                We added an Updates tab and navigation to highlight milestones (e.g. "Tablets completely funded!"), progress on fulfillment, and messages directly from the hospitals.
+            </p>
+            <img class="pic" alt="a wireframe showing what it looks like when there are messages from the hospitals" src="images/portfolio/paw/updates.jpg">
+            <div class="caption">The updates tab</div>
+        
+            <p>
+                Our client success team was also very quickly expanding to several more hospitals. Thus, we needed to create a page to allow discovery of the breadth of offerings as well as an avenue for the community to nominate their own local hospitals.
+            </p>
+            <img class="pic" alt="a mockup of a list of hospitals that could be donated to" src="images/portfolio/paw/listing.jpg">
+            <div class="caption">The listing section & entry point for the nomination form</div>
+        
+            <p>
+                Our final individual hospital page mockup also had a larger focus on telling the "story" for each hospital, adding more individualized details and messaging.
+            </p>
+            <div style="max-height: 80vh; overflow-y: scroll;"><img class="pic" alt="a high fidelity mockup of an individual hospital page" src="images/portfolio/paw/hospital.jpg"></div>
+        
+            <h2>Aftermath</h2>
+            <p>
+                Within the first 48 hours of launch and very little marketing, the platform raised almost $90k for Elmhurst and Kings County Hospital.
+            </p>
+            <p>
+                To expand our impact, the team connected with local schools; many students do not have access to personal laptops or tablets to access online learning easily. The goal was to provide these children with the tech they need to continue their education online. Sadly, I left the company before I could see the next iteration of this project through!
+            </p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com/in/cndwng">linkedin</a>
+            </li>
+            • 
+            <li>        
+                <a href="https://instagram.com/cnd.wng">instagram</a>
+            </li>
+            • 
+            <li>
+                <a href="https://dribbble.com/cndwng">dribbble</a>
+            </li>
+            • 
+            <li>
+                <a href="mailto:cindy@cndwng.com">email</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.offsetHeight;
+    let isMin = false;
+
+    window.addEventListener("scroll", mininimizeNav);
+
+    function mininimizeNav() {
+        if (window.scrollY >= (navHeight) && !isMin) {
+            nav.classList.add("minimize-nav");
+            isMin = true;
+        } else if (window.scrollY < (navHeight - 24) && isMin){
+            nav.classList.remove("minimize-nav");
+            isMin = false;
+        }
+    }
+    
+</script>
+</html>
