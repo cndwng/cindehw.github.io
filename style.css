@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: var(--egg);
+    background-color: #FFFFFF;
     color: var(--near-black);
     font-family: 'Space Grotesk', sans-serif;
     margin: 0;
