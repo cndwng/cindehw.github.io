@@ -111,7 +111,7 @@ nav li {
     order: 0;
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     font-family: 'Rubik Mono One', 'Space Mono', 'Space Grotesk', sans-serif;
     font-size: 3rem;
     font-style: normal;
@@ -169,7 +169,7 @@ main section {
     background-size: cover;
     background-position: center;
     background-color: var(--piglet);
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     flex: 1 0 0;
     align-self: stretch;
     outline: 6px solid var(--creamsicle);
@@ -242,7 +242,7 @@ main section {
 
 .pic {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     margin: 1.5rem auto 0;
 }
 
@@ -276,7 +276,7 @@ main section {
 
 .project-tile img {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0.25rem;
 }
 
 .project-tile:hover img {
@@ -325,7 +325,7 @@ main section {
     width: fit-content;
     margin: auto;
     padding: 0rem 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     font-size: 9rem;
     background-color: var(--wine);
     color: var(--creamsicle);
