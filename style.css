@@ -149,7 +149,7 @@ main section {
 
 #introduction, .case-study {
     box-sizing: border-box;
-    width: 50vw;
+    width: 48rem;
     padding: 4rem 0 0;
     text-align: left;
     color: var(--navy);
@@ -209,7 +209,7 @@ main section {
 
 .intro-label {
     font-weight: bold;
-    min-width: 10rem;
+    min-width: 12rem;
     margin-right: 1.5rem;
 }
 
@@ -222,7 +222,7 @@ main section {
 }
 
 .case-study {
-    width: 75vw;
+    width: 56rem;
     margin-bottom: 8rem;
 }
 
@@ -280,7 +280,7 @@ main section {
 }
 
 .project-tile:hover img {
-    outline: 6px solid var(--lavender);
+    outline: 6px solid var(--forest);
     transition: .5s;
 }
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/images/preview.png">
+        <meta property="og:description" content="Cindy Wang + no vowels = CNDWNG (a portfolio site)"/>
+        <meta property="og:type" content="blog"/>
+        <title>flex redesign payments • cndwng</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="/">
+                cndwng
+                <div id="no-vowels">
+                    *me, no vowels
+                </div>
+            </a></li>
+            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
+            <li class="nav-order-right block"><a href="">about</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <section class="case-study">
+            <img class="pic" alt="a screen to make a payment highlighting a custom input" src="images/portfolio/flex-rxp-payments/cover.jpg"> 
+
+            <h1>Flex redesign: payments</h1>
+            <p>
+                January 2025 to present &#8226; <a href="https://www.getflex.com/" target="_blank">Flex</a>
+            </p>
+            <p>
+                Flex helps customers split their rent payment into two installments over the course of a month instead of having to pay their largest (!) recurring cost all in one chunk. Users pay their first installment when rent is due, then Flex pays their rent directly their property using this first payment and a credit line. They repay Flex later in the month.
+            </p>
+            <p>
+                I am on a team of designers working to redesign the entire app. I am leading all of payments and payment-related things with my product partner, Jessie.
+            </p>
+            <p>
+                Disclaimer: this is WIP so I can&rsquo;t share too many screens! It will be mostly process outline.
+            </p>
+
+            <h2>Overview</h2>
+            <p>
+                Flex is redesigning the consumer app! Years of sprinting to the next feature has finally caught up to us—in order to scale, we need to take a step back.
+            </p>
+            <h3>Goals</h3>
+            <ul>
+                <li>Rebuild the user experience from the ground up, with a consumer-first mindset</li>
+                <li>Create the infrastructure to scale to new verticals (from both a design systems perspective and an app IA & product strategy perspective)</li>
+            </ul>
+            <p>
+                Within the context of payments, it means breaking apart our 2 payment structure, and aligning our product more closely with both classic fintech apps and rent portals.
+            </p>
+            <p>
+                As a design team, it means rebuilding a design system from the ground up and executing on a light visual brand refresh while actively designing with it. Phew!
+            </p>
+            <h2>The approach</h2>
+            <p>
+                We need to build a payments <i>ecosystem</i> in the same way engineering has a payments engine. Payments and their actions have a lot of moving pieces that all need to fit together, no matter the configuration.
+            </p>
+            <p>
+                We&rsquo;ve done a lot of competitive audits, drawn a lot of diagrams, and explored very broadly & deeply in just a few weeks. Here are a few snapshots of the work in progress:
+            </p>
+            <img class="pic" alt="a whiteboard of app screens from our competitive audit" src="images/portfolio/flex-rxp-payments/01-competitors.png">
+            <div class="caption">Our FigJam board of screens from our competitive audit</div>
+
+            <img class="pic" alt="a colorful flow chart" src="images/portfolio/flex-rxp-payments/02-payments-overlaps.png">
+            <div class="caption">Identifying the overlaps in the various payments-related flows in our new app constructe</div>
+
+            <img class="pic" alt="a table and a bunch of wireframes" src="images/portfolio/flex-rxp-payments/03-wireframes.png">
+            <div class="caption">Starting to wireframe payments flows</div>
+
+            <img class="pic" alt="a table and a bunch of wireframes" src="images/portfolio/flex-rxp-payments/04-home-interactions.png">
+            <div class="caption">Exploring how to interact with payments on our home screen</div>
+            <h2>What&rsquo;s next</h2>
+            <p>We&rsquo;re identifying areas that need deeper iteration and more cycles, research, and data while we deliver the MVP. The redesign is the stepping stone to being able to do faster cycles and take bigger swings!</p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com/in/cndwng">linkedin</a>
+            </li>
+            • 
+            <li>        
+                <a href="https://instagram.com/cnd.wng">instagram</a>
+            </li>
+            • 
+            <li>
+                <a href="https://dribbble.com/cndwng">dribbble</a>
+            </li>
+            • 
+            <li>
+                <a href="mailto:cindy@cndwng.com">email</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.offsetHeight;
+    let isMin = false;
+
+    window.addEventListener("scroll", mininimizeNav);
+
+    function mininimizeNav() {
+        if (window.scrollY >= (navHeight) && !isMin) {
+            nav.classList.add("minimize-nav");
+            isMin = true;
+        } else if (window.scrollY < (navHeight - 24) && isMin){
+            nav.classList.remove("minimize-nav");
+            isMin = false;
+        }
+    }
+    
+</script>
+</html>

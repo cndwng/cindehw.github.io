@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="/images/preview.png">
+        <meta property="og:description" content="Cindy Wang + no vowels = CNDWNG (a portfolio site)"/>
+        <meta property="og:type" content="blog"/>
+        <title>flex partial payments • cndwng</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Grotesk:wght@400;600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="/">
+                cndwng
+                <div id="no-vowels">
+                    *me, no vowels
+                </div>
+            </a></li>
+            <!-- <li class="nav-order-left block"><a href="">projs</a></li>
+            <li class="nav-order-right block"><a href="">about</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <section class="case-study">
+            <img class="pic" alt="a screen to make a payment highlighting a custom input" src="images/portfolio/flex-partial-payments/cover.jpg"> 
+
+            <h1>Flex partial payments</h1>
+            <p>
+                January 2024 to March 2024 &#8226; <a href="https://www.getflex.com/" target="_blank">Flex</a>
+            </p>
+            <p>
+                Flex helps customers split their rent payment into two installments over the course of a month instead of having to pay their largest (!) recurring cost all in one chunk. Users pay their first installment when rent is due, then Flex pays their rent directly their property using this first payment and a credit line. They repay Flex later in the month.
+            </p>
+            <p>
+                I was the lead designer working on risk initiatives with a product manager partner and a small-but-mighty team of engineers.
+            </p>
+
+            <h2>Problem</h2>
+            <p>
+                Flex users are typically struggling to smooth their cashflow, and need as much flexibility as they can get. We often see users fail or reschedule their 2nd payment to Flex and change their card on file as they juggle their bills throughout the month.
+            </p>
+            <p>
+                From the business side, the 2nd payment is the loan repayment, and users missing this payment means impact to our loss rates. Our risk team set out to build something to recover some losses.
+            </p>
+            <p>
+                About 1,000 users write to our support team each month asking to split their 2nd payment into more installments, which is not something that we advertise that we do, so we had relatively high conviction that allowing users make repayments in partial amounts would be impactful for both our users and the business.
+            </p>
+
+            <h2>Exploration</h2>
+            <p>
+                While simple on the surface, we ran into some deep complexities in our core experience. Our explorations were largely driven by the desire to distill those complexities into a simple user experience. I&rsquo;ll dive into one as an example.
+            </p>
+            <h3>Structure of payments</h3>
+            <p>
+                Most of our core UX relies on the fact that 2nd payment = loan amount. How does a new payment interact with this structure?
+            </p>
+            <p>
+                One option was to make progress toward the total repayment amount and nest partial repayments under the larger total.
+            </p>
+            <img class="pic" alt="example of partial payments nested under a total" src="images/portfolio/flex-partial-payments/01-structure-a.png"><br />
+            
+            <p>
+                Another was to &ldquo;close out&rdquo; the 2nd payment and create a 3rd.
+            </p>
+
+            <img class="pic" alt="example of partial payments nested under a total" src="images/portfolio/flex-partial-payments/01-structure-b.png">
+
+            <p>
+                Ultimately, after pressure testing both options and running some guerilla research with friends, the latter option felt most intuitive and scalable.
+            </p>
+            <h3>Other complexities</h3>
+            <ul>
+                <li><b>Scheduling the remaining balance:</b> When do we try to collect the rest and how does it interact with our existing charge logic and reschedule flow?</li>
+                <li><b>Fees:</b> Making partial payments introduces the possibility of mixed payment methods (e.g. one payment with debit, one with credit) and some wacky fee edge cases</li>
+            </ul>
+            <p>I won&rsquo;t dive into the details of each exploration, but here is a whiteboard of a bunch of math and edge cases we worked on in the process.</p>
+
+            <img class="pic" alt="a whiteboard with a lot of arithmetic" src="images/portfolio/flex-partial-payments/02-fee-whiteboard.png">
+
+            <h2>The final design</h2>
+            <p>
+                The flow where users make payments kept a familiar structure, but introduced a new selection for users to enter a custom payment amount.
+            </p>
+            <img class="pic" alt="showing the ability to enter a custom amount in a payment flow" src="images/portfolio/flex-partial-payments/03-pay-flow.png"> <br />
+
+            <p>To make it easier for customers to understand their money movement during the month, we structured the payments to mark the partial payment as complete. All actions (including making another payment and rescheduling) were moved to the remaining &ldquo;open&rdquo; payment.</p>
+
+            <img class="pic" alt="a whiteboard with a lot of arithmetic" src="images/portfolio/flex-partial-payments/04-structure-final.png">
+
+            <h2>Results & takeaways</h2>
+            <p>
+                About 4% of all users adopted this feature and our loss rates improved by 1.9bps. Sounds small, but that is huge impact!
+            </p>
+            <p>
+                Our organic adoption of this feature continues to climb, and we have since introduced more entry points to encourage users to pay down their balances before they&rsquo;re due.
+            </p>
+            <p>
+                What felt like a straightforward design problem (how hard could adding a number input to a single screen be?) resulted in a lot of behind-the-scenes complexity. Our MVP solution wasn&rsquo;t perfect, but we identified some clear areas for improvement in the future.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://linkedin.com/in/cndwng">linkedin</a>
+            </li>
+            • 
+            <li>        
+                <a href="https://instagram.com/cnd.wng">instagram</a>
+            </li>
+            • 
+            <li>
+                <a href="https://dribbble.com/cndwng">dribbble</a>
+            </li>
+            • 
+            <li>
+                <a href="mailto:cindy@cndwng.com">email</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script>
+    const nav = document.querySelector("nav");
+    const navHeight = nav.offsetHeight;
+    let isMin = false;
+
+    window.addEventListener("scroll", mininimizeNav);
+
+    function mininimizeNav() {
+        if (window.scrollY >= (navHeight) && !isMin) {
+            nav.classList.add("minimize-nav");
+            isMin = true;
+        } else if (window.scrollY < (navHeight - 24) && isMin){
+            nav.classList.remove("minimize-nav");
+            isMin = false;
+        }
+    }
+    
+</script>
+</html>
